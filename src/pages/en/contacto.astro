@@ -1,0 +1,120 @@
+---
+// src/pages/es/contacto.astro
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import { t } from "../../i18n/ui.js";
+
+const lang = "es";
+const textos = t[lang];
+---
+
+<Layout title="Contacto - Pickleball Águilas Resort" lang={lang}>
+  <Navbar />
+
+  <main class="min-h-[85vh] bg-azul-oscuro py-16 px-6 relative overflow-hidden">
+    <div
+      class="absolute top-1/2 left-0 w-96 h-96 bg-amarillo-acento rounded-full blur-[120px] opacity-10 -translate-x-1/2 -translate-y-1/2 -z-10"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 right-10 w-64 h-64 border-[1px] border-white/5 rounded-full blur-sm"
+    >
+    </div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <h1
+          class="font-titulos text-5xl md:text-6xl text-amarillo-acento mb-4 uppercase tracking-wide"
+        >
+          {textos["contacto.titulo"]}
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto font-light">
+          {textos["contacto.subtitulo"]}
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-2xl shadow-[0_25px_80px_-15px_rgba(234,179,8,0.15)] overflow-hidden border border-white/5"
+      >
+        <div class="p-10 md:p-14 lg:p-16 flex flex-col justify-center bg-white">
+          <h3
+            class="font-titulos text-3xl mb-12 text-azul-principal uppercase leading-tight tracking-tight"
+          >
+            {textos["contacto.tagline"]}
+          </h3>
+
+          <div class="space-y-10">
+            <div class="group">
+              <h4
+                class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+              >
+                Dirección
+              </h4>
+              <p class="text-lg text-azul-oscuro font-medium leading-relaxed">
+                {textos["contacto.direccion.val"]}
+              </p>
+            </div>
+
+            <div class="group">
+              <h4
+                class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+              >
+                Reservas
+              </h4>
+              <p
+                class="text-lg text-azul-principal font-bold bg-blue-50 inline-block px-5 py-3 rounded-lg border border-blue-100 shadow-sm"
+              >
+                {textos["contacto.app.val"]}
+              </p>
+            </div>
+
+            <div class="group">
+              <h4
+                class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+              >
+                {textos["contacto.siguenos"]}
+              </h4>
+              <a
+                href="https://instagram.com/pickleball_aguilas"
+                target="_blank"
+                class="inline-flex items-center gap-2 text-xl font-bold text-gray-700 hover:text-azul-principal transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"
+                  ></rect><path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"
+                  ></line></svg
+                >
+                @pickleball_aguilas
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="min-h-[400px] lg:min-h-full relative bg-gray-200">
+          <iframe
+            src="https://maps.google.com/maps?q=Urbanizaci%C3%B3n%20Isla%20del%20Fraile,%20Aguilas,%20Murcia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="absolute inset-0 w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer lang={lang} />
+</Layout>

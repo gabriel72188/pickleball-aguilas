@@ -1,0 +1,16 @@
+/* src/styles/global.css */
+
+/* 1. PRIMERO SIEMPRE LA FUENTE DE GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@800;900&display=swap');
+
+/* 2. LUEGO TAILWIND */
+@import "tailwindcss";
+
+/* 3. LUEGO NUESTROS COLORES Y VARIABLES */
+@theme {
+    --color-azul-oscuro: #2c4a9b;
+    --color-azul-principal: #2e6fb6;
+    --color-amarillo-acento: #ffd453;
+
+    --font-titulos: 'Libre Franklin', 'Franklin Gothic Heavy', sans-serif;
+}

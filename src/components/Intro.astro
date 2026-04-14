@@ -1,0 +1,74 @@
+---
+// src/components/Intro.astro
+import { t } from "../i18n/ui.js";
+
+const pathname = Astro.url.pathname;
+const lang = pathname.includes("/en") ? "en" : "es";
+const textos = t[lang];
+
+// Imágenes de prueba (¡luego pones las tuyas!)
+const imagenFondo = "/imgdeintro2.webp";
+const imagenSuperpuesta = "/imgdeintro.webp";
+---
+
+<section class="py-20 px-6 bg-gray-50 overflow-hidden" id="contacto">
+  <div
+    class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+  >
+    <div
+      class="relative w-full aspect-square md:aspect-[4/3] lg:aspect-auto lg:h-[600px]"
+    >
+      <img
+        src={imagenFondo}
+        alt="Pistas de Pickleball"
+        class="absolute top-0 left-0 w-3/4 h-3/4 object-cover rounded-lg"
+      />
+      <div
+        class="absolute bottom-0 right-0 w-2/3 h-2/3 p-2 bg-white shadow-2xl rounded-lg z-10 transform translate-y-4 md:-translate-x-4"
+      >
+        <img
+          src={imagenSuperpuesta}
+          alt="Jugador de Pickleball"
+          class="w-full h-full object-cover rounded"
+        />
+        <div
+          class="absolute -top-4 -right-4 w-24 h-24 bg-amarillo-acento -z-10 rounded-full blur-xl opacity-60"
+        >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-white p-8 md:p-12 shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] rounded-xl relative z-20 md:-ml-12 lg:ml-0 mt-8 lg:mt-0"
+    >
+      <div
+        class="text-amarillo-acento font-bold text-sm tracking-widest italic mb-4"
+      >
+        {textos["intro.etiqueta"]}
+      </div>
+
+      <h2
+        class="text-4xl md:text-5xl font-extrabold text-azul-oscuro italic leading-tight mb-6 uppercase tracking-tighter"
+      >
+        {textos["intro.titulo"]}
+      </h2>
+
+      <div class="space-y-4 text-gray-600 mb-8">
+        <p>
+          {textos["intro.texto1"]}
+        </p>
+        <p class="font-medium text-gray-800">
+          {textos["intro.texto2"]}
+        </p>
+      </div>
+
+      <a
+        href="https://sporttia.com"
+        target="_blank"
+        class="inline-block bg-amarillo-acento text-azul-oscuro font-extrabold px-8 py-3 rounded uppercase tracking-wide shadow-lg hover:bg-yellow-400 hover:-translate-y-1 transition-transform"
+      >
+        {textos["intro.boton"]}
+      </a>
+    </div>
+  </div>
+</section>

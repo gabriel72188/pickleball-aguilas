@@ -1,0 +1,30 @@
+---
+// src/layouts/Layout.astro
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+	lang: "es" | "en";
+}
+
+const { title, lang } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Pickleball Águilas - Isla del Fraile"
+		/>
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="icon" type="image/png" href="/logo-circular.png" />
+
+		<title>{title}</title>
+	</head>
+	<body class="bg-gray-50 text-gray-900 font-sans">
+		<slot />
+	</body>
+</html>

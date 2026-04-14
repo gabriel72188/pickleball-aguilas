@@ -1,0 +1,56 @@
+---
+// src/components/Hero.astro
+import { t } from "../i18n/ui.js";
+
+// 1. Detectamos el idioma actual mirando la URL
+const pathname = Astro.url.pathname;
+const lang = pathname.includes("/en") ? "en" : "es";
+
+// 2. Cargamos los textos del idioma correcto
+const textos = t[lang];
+
+// 3. (Opcional) URL de la imagen de fondo.
+const imagenFondoUrl = "/imagen-fondo2.jpg";
+
+// 4. NUEVO: El nombre del archivo de tu logo (debe estar en la carpeta 'public')
+const logoUrl = "/logo-principal.png";
+---
+
+<section
+  class="relative bg-azul-principal bg-cover bg-center bg-no-repeat min-h-[85vh] flex items-center justify-center text-white px-6 py-20"
+  style={`background-image: url('${imagenFondoUrl}');`}
+>
+  <div class="absolute id='hero-overlay' inset-0 bg-black/65 z-10"></div>
+
+  <div class="max-w-4xl mx-auto text-center z-20 flex flex-col items-center">
+    <img
+      src={logoUrl}
+      alt={textos["hero.titulo"]}
+      class="h-70 md:h-100 lg:h-110 object-contain mb-8 drop-shadow-2xl"
+    />
+
+    <p
+      class="text-sm sm:text-lg text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed"
+    >
+      {textos["hero.subtitulo"]}
+    </p>
+
+    <div
+      class="flex flex-row gap-3 sm:gap-5 justify-center items-center w-full max-w-lg mx-auto"
+    >
+      <a
+        href={`/${lang}/unete/`}
+        class="bg-amarillo-acento text-azul-oscuro font-bold px-2 py-3 sm:px-8 sm:py-4 rounded-full shadow-lg hover:bg-yellow-400 hover:scale-105 transition-all text-sm sm:text-lg flex-1 text-center whitespace-nowrap"
+      >
+        {textos["hero.boton_principal"]}
+      </a>
+
+      <a
+        href={`/${lang}/contacto/`}
+        class="bg-white/10 text-white font-semibold px-2 py-3 sm:px-8 sm:py-4 rounded-full border border-white/30 hover:bg-white/20 transition-all text-sm sm:text-lg flex-1 text-center whitespace-nowrap"
+      >
+        {textos["hero.boton_secundario"]}
+      </a>
+    </div>
+  </div>
+</section>

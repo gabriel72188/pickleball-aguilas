@@ -1,0 +1,217 @@
+---
+// src/components/Navbar.astro
+import { t } from "../i18n/ui.js";
+
+const pathname = Astro.url.pathname;
+const lang = pathname.includes("/en") ? "en" : "es";
+const textos = t[lang];
+
+const idiomasDisponibles = [
+  {
+    codigo: "es",
+    urlBandera: "https://flagcdn.com/w20/es.png",
+    nombre: "Español",
+  },
+  {
+    codigo: "en",
+    urlBandera: "https://flagcdn.com/w20/gb.png",
+    nombre: "English",
+  },
+];
+
+const idiomaActual =
+  idiomasDisponibles.find((i) => i.codigo === lang) || idiomasDisponibles[0];
+
+const getUrlParaIdioma = (codigoDestino) => {
+  return pathname.replace(`/${lang}`, `/${codigoDestino}`);
+};
+---
+
+<nav class="bg-azul-oscuro text-white py-4 px-6 shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <a href={`/${lang}/`} class="flex items-center gap-3 z-20 group">
+      <img
+        src="/logo-pickleball-amarillo.png"
+        alt="Logo Pickleball Águilas Resort"
+        class="w-14 md:w-20 h-auto object-contain shrink-0"
+      />
+    </a>
+
+    <div class="hidden md:flex items-center gap-8 font-medium">
+      <a href={`/${lang}/`} class="hover:text-amarillo-acento transition-colors"
+        >{textos["nav.inicio"]}</a
+      >
+      <a
+        href={`/${lang}/contacto/`}
+        class="hover:text-amarillo-acento transition-colors"
+        >{textos["nav.contacto"]}</a
+      >
+      <a
+        href={`/${lang}/unete/`}
+        class="hover:text-amarillo-acento transition-colors"
+        >{textos["nav.unete"]}</a
+      >
+    </div>
+
+    <div class="flex items-center gap-2 sm:gap-4 z-20">
+      <div class="relative">
+        <button
+          id="btn-idioma"
+          class="flex items-center gap-1.5 px-2 py-1 rounded hover:bg-white/10 transition-colors cursor-pointer"
+        >
+          <img
+            src={idiomaActual.urlBandera}
+            alt={idiomaActual.nombre}
+            class="w-5 h-auto rounded-sm shadow-sm"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="opacity-70"><path d="m6 9 6 6 6-6"></path></svg
+          >
+        </button>
+
+        <div
+          id="menu-idioma"
+          class="absolute right-0 mt-2 w-36 bg-white rounded-md shadow-xl py-1 opacity-0 invisible transition-all duration-200 z-50 transform origin-top-right scale-95"
+        >
+          {
+            idiomasDisponibles.map((idioma) => (
+              <a
+                href={getUrlParaIdioma(idioma.codigo)}
+                class={`flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-gray-100 hover:text-azul-principal transition-colors ${lang === idioma.codigo ? "text-azul-principal font-bold bg-blue-50" : "text-gray-700"}`}
+              >
+                <img
+                  src={idioma.urlBandera}
+                  alt={idioma.nombre}
+                  class="w-5 h-auto rounded-sm shadow-sm"
+                />
+                {idioma.nombre}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <a
+        href="https://sporttia.com"
+        target="_blank"
+        class="hidden md:inline-block bg-amarillo-acento text-azul-oscuro font-bold px-5 py-2 text-base rounded shadow-md hover:bg-yellow-400 hover:scale-105 transition-all whitespace-nowrap uppercase"
+      >
+        {textos["nav.reserva"]}
+      </a>
+
+      <button
+        id="btn-menu"
+        class="md:hidden flex items-center justify-center p-2 rounded text-white hover:bg-white/10 transition-colors cursor-pointer"
+        aria-label="Abrir menú"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><line x1="4" x2="20" y1="12" y2="12"></line><line
+            x1="4"
+            x2="20"
+            y1="6"
+            y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg
+        >
+      </button>
+    </div>
+  </div>
+
+  <div
+    id="menu-movil"
+    class="hidden md:hidden mt-4 pt-4 border-t border-white/10 flex-col gap-5 font-medium pb-4 px-2"
+  >
+    <a
+      href={`/${lang}/`}
+      class="block hover:text-amarillo-acento transition-colors text-lg"
+      >{textos["nav.inicio"]}</a
+    >
+    <a
+      href={`/${lang}/contacto/`}
+      class="block hover:text-amarillo-acento transition-colors text-lg"
+      >{textos["nav.contacto"]}</a
+    >
+    <a
+      href={`/${lang}/unete/`}
+      class="block hover:text-amarillo-acento transition-colors text-lg"
+      >{textos["nav.unete"]}</a
+    >
+
+    <a
+      href="https://sporttia.com"
+      target="_blank"
+      class="mt-2 bg-amarillo-acento text-azul-oscuro font-bold px-4 py-3 rounded text-center shadow-md hover:bg-yellow-400 transition-colors uppercase w-full"
+    >
+      {textos["nav.reserva"]}
+    </a>
+  </div>
+</nav>
+
+<script>
+  const initNavInteractions = () => {
+    // 1. Hamburguesa
+    const btnMenu = document.getElementById("btn-menu");
+    const menuMovil = document.getElementById("menu-movil");
+
+    // 2. Selector de Idiomas
+    const btnIdioma = document.getElementById("btn-idioma");
+    const menuIdioma = document.getElementById("menu-idioma");
+
+    // Lógica Hamburguesa
+    if (btnMenu && menuMovil) {
+      btnMenu.onclick = (e) => {
+        e.stopPropagation(); // Evita que se cierre de golpe
+        menuMovil.classList.toggle("hidden");
+        menuMovil.classList.toggle("flex");
+
+        // Si abrimos la hamburguesa, cerramos el idioma por si acaso
+        if (menuIdioma) {
+          menuIdioma.classList.add("opacity-0", "invisible", "scale-95");
+          menuIdioma.classList.remove("scale-100");
+        }
+      };
+    }
+
+    // Lógica Idiomas (Funciona con clic en PC y en Móvil)
+    if (btnIdioma && menuIdioma) {
+      btnIdioma.onclick = (e) => {
+        e.stopPropagation(); // Evita que se cierre de golpe
+        menuIdioma.classList.toggle("opacity-0");
+        menuIdioma.classList.toggle("invisible");
+        menuIdioma.classList.toggle("scale-95");
+        menuIdioma.classList.toggle("scale-100");
+      };
+    }
+
+    // Truco maestro: Si haces clic en cualquier otra parte de la pantalla, se cierra el menú de idiomas
+    document.addEventListener("click", (e) => {
+      if (
+        menuIdioma &&
+        !menuIdioma.contains(e.target as Node) &&
+        !btnIdioma?.contains(e.target as Node)
+      ) {
+        menuIdioma.classList.add("opacity-0", "invisible", "scale-95");
+        menuIdioma.classList.remove("scale-100");
+      }
+    });
+  };
+
+  initNavInteractions();
+  document.addEventListener("astro:page-load", initNavInteractions);
+</script>

@@ -1,0 +1,41 @@
+---
+// src/components/Reglas.astro
+import { t } from "../i18n/ui.js";
+
+const pathname = Astro.url.pathname;
+const lang = pathname.includes("/en") ? "en" : "es";
+const textos = t[lang];
+
+// Aquí irán las rutas de tus 4 imágenes.
+// Pon las imágenes en la carpeta 'public' de tu proyecto (ej: public/regla1.jpg)
+const reglas = [
+  { img: "/regla1.png", alt: "Regla 1: El Saque" },
+  { img: "/regla2.png", alt: "Regla 2: Puntuación" },
+  { img: "/regla3.png", alt: "Regla 3: Doble Bote" },
+  { img: "/regla4.png", alt: "Regla 4: Zona de No Volea" },
+];
+---
+
+<section class="py-20 bg-azul-principal" id="reglas">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2
+      class="font-titulos text-4xl md:text-5xl text-amarillo-acento text-center mb-12 uppercase tracking-wide"
+    >
+      {textos["reglas.titulo"]}
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {
+        reglas.map((regla) => (
+          <div class="group relative rounded-xl overflow-hidden shadow-2xl transition-transform hover:-translate-y-2 duration-300">
+            <img
+              src={regla.img}
+              alt={regla.alt}
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
