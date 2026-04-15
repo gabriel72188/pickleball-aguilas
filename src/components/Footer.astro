@@ -46,5 +46,23 @@ const es = lang === "es";
       <p>Urbanización Isla del Fraile.</p>
       <p>30880 Águilas, Murcia, España.</p>
     </div>
+
+    <div class="text-sm">
+      <div class="flex gap-4 justify-center text-sm mt-4">
+        <a
+          href={`/${lang}/politica-de-cookies`}
+          class="hover:text-amarillo-acento transition-colors"
+        >
+          {lang === "es" ? "Política de Cookies" : "Cookie Policy"}
+        </a>
+        <span>|</span>
+        <a
+          href={`/${lang}/politica-de-privacidad`}
+          class="hover:text-amarillo-acento transition-colors"
+        >
+          {lang === "es" ? "Política de Privacidad" : "Privacy Policy"}
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
