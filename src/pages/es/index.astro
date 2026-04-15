@@ -1,22 +1,25 @@
 ---
 // src/pages/es/index.astro
-import Layout from '../../layouts/Layout.astro';
-import Navbar from '../../components/Navbar.astro';
-import Hero from '../../components/Hero.astro';
-import Intro from '../../components/Intro.astro';
-import QueEs from '../../components/QueEs.astro';
-import Reglas from '../../components/Reglas.astro';
-import Footer from '../../components/Footer.astro'; // <-- IMPORTADO
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Hero from "../../components/Hero.astro";
+import Intro from "../../components/Intro.astro";
+import QueEs from "../../components/QueEs.astro";
+import Reglas from "../../components/Reglas.astro";
+import Precios from "../../components/Precios.astro";
+import Footer from "../../components/Footer.astro";
 ---
 
 <Layout title="Pickleball Águilas Resort - Isla del Fraile - Inicio" lang="es">
   <Navbar />
-  
+
   <main>
     <Hero />
     <Intro />
     <QueEs />
+    <Precios />
     <Reglas />
   </main>
 
-  <Footer lang="es" /> </Layout>
+  <Footer lang="es" />
+</Layout>
