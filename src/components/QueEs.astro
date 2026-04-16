@@ -5,6 +5,9 @@ import { t } from "../i18n/ui.js";
 const pathname = Astro.url.pathname;
 const lang = pathname.includes("/en") ? "en" : "es";
 const textos = t[lang];
+
+const enlace_que_es =
+  lang === "es" ? "/es/que-es-pickleball" : "/en/what-is-pickleball";
 ---
 
 <section
@@ -51,7 +54,10 @@ const textos = t[lang];
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="flex flex-col items-center text-center group">
+      <a
+        href={enlace_que_es}
+        class="flex flex-col items-center text-center group block cursor-pointer"
+      >
         <div
           class="w-20 h-20 bg-amarillo-acento text-azul-oscuro rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
         >
@@ -69,13 +75,20 @@ const textos = t[lang];
             ></path><circle cx="12" cy="5" r="2"></circle></svg
           >
         </div>
-        <h3 class="font-bold text-xl mb-3 text-white">
+        <h3
+          class="font-bold text-xl mb-3 text-white group-hover:text-amarillo-acento transition-colors"
+        >
           {textos["quees.p1.tit"]}
         </h3>
-        <p class="text-gray-400">{textos["quees.p1.desc"]}</p>
-      </div>
+        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">
+          {textos["quees.p1.desc"]}
+        </p>
+      </a>
 
-      <div class="flex flex-col items-center text-center group">
+      <a
+        href={enlace_que_es}
+        class="flex flex-col items-center text-center group block cursor-pointer"
+      >
         <div
           class="w-20 h-20 bg-amarillo-acento text-azul-oscuro rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
         >
@@ -92,13 +105,20 @@ const textos = t[lang];
               d="M12 6v12"></path><path d="M3 12h18"></path></svg
           >
         </div>
-        <h3 class="font-bold text-xl mb-3 text-white">
+        <h3
+          class="font-bold text-xl mb-3 text-white group-hover:text-amarillo-acento transition-colors"
+        >
           {textos["quees.p2.tit"]}
         </h3>
-        <p class="text-gray-400">{textos["quees.p2.desc"]}</p>
-      </div>
+        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">
+          {textos["quees.p2.desc"]}
+        </p>
+      </a>
 
-      <div class="flex flex-col items-center text-center group">
+      <a
+        href={enlace_que_es}
+        class="flex flex-col items-center text-center group block cursor-pointer"
+      >
         <div
           class="w-20 h-20 bg-amarillo-acento text-azul-oscuro rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
         >
@@ -118,11 +138,15 @@ const textos = t[lang];
               d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg
           >
         </div>
-        <h3 class="font-bold text-xl mb-3 text-white">
+        <h3
+          class="font-bold text-xl mb-3 text-white group-hover:text-amarillo-acento transition-colors"
+        >
           {textos["quees.p3.tit"]}
         </h3>
-        <p class="text-gray-400">{textos["quees.p3.desc"]}</p>
-      </div>
+        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">
+          {textos["quees.p3.desc"]}
+        </p>
+      </a>
     </div>
   </div>
 </section>

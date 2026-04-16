@@ -14,14 +14,22 @@ const lang = "en";
     <Navbar />
 
     <header
-        class="relative bg-azul-oscuro py-20 px-6 flex items-center justify-center text-center"
+        class="relative bg-azul-oscuro py-20 px-6 flex items-center justify-center text-center overflow-hidden"
     >
-        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img
+            src="/imagen-fondo2.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-azul-oscuro/80 to-azul-oscuro/60 z-10"
+        >
+        </div>
         <div class="relative z-20 max-w-4xl mx-auto">
             <h1
                 class="font-titulos text-4xl md:text-5xl text-white uppercase tracking-tighter shadow-sm"
             >
-                Privacy Policy and Legal Notice
+                Política de Privacidad y Aviso Legal
             </h1>
         </div>
     </header>

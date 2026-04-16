@@ -87,7 +87,25 @@ export const t = {
         'precios.b_cambio': 'Cambio de Reserva con 24h',
         'precios.b_kiosko': 'Libre acceso al Kiosko y Baños',
         'precios.b_luz': 'Luz de Alta Luminosidad',
-        'precios.b_bolas': '3 Bolas Profesionales'
+        'precios.b_bolas': '3 Bolas Profesionales',
+
+        // --- PÁGINA: QUÉ ES EL PICKLEBALL ---
+        'que_es_page.head_title': '¿Qué es el Pickleball? - Pickleball Águilas Resort',
+        'que_es_page.hero_badge': 'El deporte de moda',
+        'que_es_page.hero_title': '¿Qué es el Pickleball?',
+
+        'que_es_page.intro_bold': 'Es divertido, es social y es el deporte que está arrasando en todo el mundo.',
+        'que_es_page.p1': 'El pickleball es un deporte de pala que combina elementos del tenis, el pádel, el bádminton y el tenis de mesa. Se juega en una pista con las mismas dimensiones que la de dobles de bádminton, con una red un poco más baja que la de tenis.',
+        'que_es_page.p2': 'La magia del pickleball reside en su curva de aprendizaje: es <strong>increíblemente fácil empezar a jugar</strong> desde el primer día, sin importar tu edad o condición física, pero ofrece una profundidad táctica enorme a medida que mejoras. Se juega con una pala maciza y una bola de plástico perforada, lo que hace que el juego sea rápido, dinámico y con menos impacto físico.',
+
+        // Los 3 círculos de tu imagen
+        'que_es_page.c1': 'Combina tenis de mesa y bádminton',
+        'que_es_page.c2': 'Pista más pequeña y partidos rápidos',
+        'que_es_page.c3': 'Ideal para todas las edades',
+
+        'que_es_page.cta_title': '¿Listo para entrar en la pista?',
+        'que_es_page.cta_subtitle': 'Ven a probar las mejores instalaciones de Águilas. Nosotros te prestamos el material.',
+        'que_es_page.cta_boton': 'RESERVAR MI PISTA AHORA'
     },
     en: {
         // ... textos del navbar ...
@@ -176,6 +194,23 @@ export const t = {
         'precios.b_cambio': 'Reschedule with 24h notice',
         'precios.b_kiosko': 'Free access to Kiosk & Bathrooms',
         'precios.b_luz': 'High Luminosity Lighting',
-        'precios.b_bolas': '3 Professional Balls'
+        'precios.b_bolas': '3 Professional Balls',
+
+        // --- PAGE: WHAT IS PICKLEBALL ---
+        'que_es_page.head_title': 'What is Pickleball? - Pickleball Águilas Resort',
+        'que_es_page.hero_badge': 'The trending sport',
+        'que_es_page.hero_title': 'What is Pickleball?',
+
+        'que_es_page.intro_bold': 'It is fun, social, and the sport that is sweeping the world.',
+        'que_es_page.p1': 'Pickleball is a paddle sport that combines elements of tennis, padel, badminton, and table tennis. It is played on a court with the same dimensions as a doubles badminton court, with a net slightly lower than a tennis net.',
+        'que_es_page.p2': 'The magic of pickleball lies in its learning curve: it is <strong>incredibly easy to start playing</strong> from day one, regardless of your age or physical condition, but offers enormous tactical depth as you improve. It is played with a solid paddle and a perforated plastic ball, making the game fast, dynamic, and with less physical impact.',
+
+        'que_es_page.c1': 'Combines table tennis and badminton',
+        'que_es_page.c2': 'Smaller court and fast-paced matches',
+        'que_es_page.c3': 'Ideal for all ages',
+
+        'que_es_page.cta_title': 'Ready to step on the court?',
+        'que_es_page.cta_subtitle': 'Come and try the best facilities in Águilas. We will lend you the equipment.',
+        'que_es_page.cta_boton': 'BOOK MY COURT NOW'
     }
 };

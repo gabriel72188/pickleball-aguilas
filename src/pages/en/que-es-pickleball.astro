@@ -1,0 +1,158 @@
+---
+// src/pages/es/que-es-pickleball.astro
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import Reglas from "../../components/Reglas.astro";
+import { t } from "../../i18n/ui.js";
+
+const lang = "en";
+const textos = t[lang];
+---
+
+<Layout title={textos["que_es_page.head_title"]} lang={lang}>
+    <Navbar />
+
+    <header
+        class="relative bg-azul-oscuro py-24 px-6 flex items-center justify-center text-center overflow-hidden"
+    >
+        <img
+            src="/imagen-fondo2.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-azul-oscuro/80 to-azul-oscuro/60 z-10"
+        >
+        </div>
+
+        <div class="relative z-20 max-w-4xl mx-auto">
+            <span
+                class="text-amarillo-acento font-bold italic tracking-wider uppercase text-sm mb-4 block"
+            >
+                {textos["que_es_page.hero_badge"]}
+            </span>
+            <h1
+                class="font-titulos text-5xl md:text-6xl text-white uppercase italic skew-x-[-2deg] shadow-sm"
+            >
+                {textos["que_es_page.hero_title"]}
+            </h1>
+        </div>
+    </header>
+
+    <main class="py-12 pb-16 px-6">
+        <p
+            class="font-bold text-2xl text-azul-oscuro text-center mb-10 max-w-4xl mx-auto"
+        >
+            {textos["que_es_page.intro_bold"]}
+        </p>
+        <div
+            class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16"
+        >
+            <div class="flex-1 text-gray-700 text-lg leading-relaxed space-y-6">
+                <p>{textos["que_es_page.p1"]}</p>
+                <p set:html={textos["que_es_page.p2"]} />
+            </div>
+            <div class="flex-shrink-0 w-full md:w-[400px]">
+                <img
+                    src="/imgdeintro.webp"
+                    alt="Pickleball en acción"
+                    class="w-full h-auto rounded-2xl shadow-xl object-cover"
+                />
+            </div>
+        </div>
+    </main>
+
+    <section class="pt-12 pb-16 bg-azul-oscuro text-white px-6">
+        <div
+            class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center"
+        >
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 bg-amarillo-acento rounded-full flex items-center justify-center mb-6 shadow-lg transform hover:scale-110 transition-transform"
+                >
+                    <svg
+                        class="w-10 h-10 text-azul-oscuro"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        ><path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3zm0 0v8m-5 4h10"
+                        ></path></svg
+                    >
+                </div>
+                <h3 class="font-bold text-xl">{textos["que_es_page.c1"]}</h3>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 bg-amarillo-acento rounded-full flex items-center justify-center mb-6 shadow-lg transform hover:scale-110 transition-transform"
+                >
+                    <svg
+                        class="w-10 h-10 text-azul-oscuro"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        ><path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm4 0v12m8-12v12m-8-6h8"
+                        ></path></svg
+                    >
+                </div>
+                <h3 class="font-bold text-xl">{textos["que_es_page.c2"]}</h3>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 bg-amarillo-acento rounded-full flex items-center justify-center mb-6 shadow-lg transform hover:scale-110 transition-transform"
+                >
+                    <svg
+                        class="w-10 h-10 text-azul-oscuro"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        ><path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                        ></path></svg
+                    >
+                </div>
+                <h3 class="font-bold text-xl">{textos["que_es_page.c3"]}</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-0 bg-azul-oscuro">
+        <Reglas lang={lang} />
+    </div>
+
+    <section class="py-16 bg-amarillo-acento text-center px-6">
+        <div class="max-w-2xl mx-auto">
+            <h2
+                class="font-titulos text-4xl text-azul-oscuro mb-6 uppercase italic skew-x-[-2deg]"
+            >
+                {textos["que_es_page.cta_title"]}
+            </h2>
+            <p class="text-azul-oscuro/80 mb-8 font-medium">
+                {textos["que_es_page.cta_subtitle"]}
+            </p>
+            <a
+                href="https://app.sporttia.com/scs/3287/profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-azul-oscuro text-white font-bold py-4 px-10 rounded-full uppercase tracking-wider hover:bg-azul-principal transition-colors shadow-lg hover:scale-105 transform duration-300"
+            >
+                {textos["que_es_page.cta_boton"]}
+            </a>
+        </div>
+    </section>
+
+    <Footer lang={lang} />
+</Layout>
