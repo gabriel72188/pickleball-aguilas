@@ -11,10 +11,16 @@ const textos = t[lang];
 <Layout title={textos["contacto.head_title"]} lang={lang}>
   <Navbar />
 
-  <main
-    class="min-h-[85vh] py-16 px-6 relative overflow-hidden"
-    style="background: linear-gradient(105deg, #2c4a9b 47%, #2e6fb6 53%);"
-  >
+  <main class="min-h-[85vh] bg-azul-oscuro py-16 px-6 relative overflow-hidden">
+    <div
+      class="absolute top-1/2 left-0 w-96 h-96 bg-amarillo-acento rounded-full blur-[120px] opacity-10 -translate-x-1/2 -translate-y-1/2 -z-10"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 right-10 w-64 h-64 border-[1px] border-white/5 rounded-full blur-sm"
+    >
+    </div>
+
     <div class="max-w-7xl mx-auto relative z-10">
       <div class="text-center mb-14">
         <h1
