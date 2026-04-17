@@ -164,7 +164,9 @@ export const t = {
         'work.contact': 'Contáctanos para más información',
         'work.colab_title': 'EMPRESAS',
         'work.colab_subtitle': 'COLABORADORAS',
-        'work.footer_text': '¡COMENTALES QUE VIENES DE NUESTRA PARTE Y OBTENDRÁS DESCUENTOS ESPECIALES!'
+        'work.footer_text': '¡COMENTALES QUE VIENES DE NUESTRA PARTE Y OBTENDRÁS DESCUENTOS ESPECIALES!',
+        'work.intro_h2': '¡ESTÁS EN EL LUGAR INDICADO!',
+        'work.img_alt': 'Trabaja con nosotros'
         //el resto de textos de empresas colaboradoras vienen en el json de empresas, esto para no sobre cargar el ui.js
 
     },
@@ -331,7 +333,9 @@ export const t = {
         'work.contact': 'Contact us for more information',
         'work.colab_title': 'COLLABORATING',
         'work.colab_subtitle': 'COMPANIES',
-        'work.footer_text': 'MENTION THAT YOU COME FROM US AND GET SPECIAL DISCOUNTS!'
+        'work.footer_text': 'MENTION THAT YOU COME FROM US AND GET SPECIAL DISCOUNTS!',
+        'work.intro_h2': 'YOU ARE IN THE RIGHT PLACE!',
+        'work.img_alt': 'Work with us'
         //el resto de textos de empresas colaboradoras vienen en el json de empresas, esto para no sobre cargar el ui.js
 
     }
