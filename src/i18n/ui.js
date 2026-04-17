@@ -1,11 +1,19 @@
 // src/i18n/ui.js
 export const t = {
     es: {
-        // ... textos del navbar ...
+        // --- PÁGINA CONTACTO ---
         'nav.inicio': 'Inicio',
         'nav.contacto': 'Contacto',
         'nav.unete': 'Únete',
         'nav.reserva': '¡RESERVA YA!',
+
+        // --- FOOTER LINKS ---
+        'footer.faq': 'Preguntas Frecuentes',
+        'footer.que_es': '¿Qué es el Pickleball?',
+        'footer.quienes_somos': 'Quiénes Somos',
+        'footer.trabaja': 'Trabaja con Nosotros',
+        'footer.cookies': 'Política de Cookies',
+        'footer.privacidad': 'Política de Privacidad',
 
         // --- TEXTOS DEL HERO ---
         'hero.titulo': 'Pickleball Águilas Resort',
@@ -185,11 +193,19 @@ export const t = {
 
     },
     en: {
-        // ... textos del navbar ...
+        // ... navbar texts ...
         'nav.inicio': 'Home',
         'nav.contacto': 'Contact',
-        'nav.unete': 'BOOK NOW!',
-        'nav.reserva': 'LEARN MORE!',
+        'nav.unete': 'Join Us',
+        'nav.reserva': 'BOOK NOW!',
+
+        // --- FOOTER LINKS ---
+        'footer.faq': 'Frequently Asked Questions',
+        'footer.que_es': 'What is Pickleball?',
+        'footer.quienes_somos': 'About Us',
+        'footer.trabaja': 'Work with Us',
+        'footer.cookies': 'Cookies Policy',
+        'footer.privacidad': 'Privacy Policy',
 
         // --- TEXTOS DEL HERO ---
         'hero.titulo': 'Pickleball Águilas Resort',

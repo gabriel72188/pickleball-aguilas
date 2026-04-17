@@ -2,7 +2,7 @@ export const empresasColaboradoras = [
     {
         nombre: "AGUILAS GOLF",
         logo: "/img-empresas/aguilas-golf.webp",
-        url: "#",
+        url: "https://aguilas.golf/",
         es: {
             descripcion: [
                 "La Suerte Favorece a los Preparados: Practica Tu Juego de Golf en Águilas Hoy.",
@@ -25,7 +25,7 @@ export const empresasColaboradoras = [
     {
         nombre: "AGUILAS HOSTEL",
         logo: "/img-empresas/aguilas-hostel.webp",
-        url: "#",
+        url: "http://www.hostelaguilas.com",
         es: {
             descripcion: [
                 "¡Albergue - Hostel situado en Murcia con ofertas exclusivas, en una ubicación en urbanización de lujo!",
@@ -48,7 +48,7 @@ export const empresasColaboradoras = [
     {
         nombre: "PALAZÓN A&S",
         logo: "/img-empresas/palazon.webp",
-        url: "#",
+        url: "https://palazonasociados.com/",
         es: {
             descripcion: [
                 "Un despacho multidisciplinar formado por profesionales del derecho que ofrece asesoramiento integral tanto a particulares como a empresas.",
@@ -69,7 +69,7 @@ export const empresasColaboradoras = [
     {
         nombre: "BIENHABLAO",
         logo: "/img-empresas/bienhablao.webp",
-        url: "#",
+        url: "https://vinosbienhablao.com/",
         es: {
             descripcion: [
                 "El proyecto mas personal de Pedro Muñoz Carrasco nace con la selección de las variedades autóctonas de la zona del sureste de la península Ibérica, el Levante español se caracteriza por sus vinos de gran color y gran aroma afrutado.",
@@ -88,7 +88,7 @@ export const empresasColaboradoras = [
     {
         nombre: "CAPITÁN BUZO",
         logo: "/img-empresas/capitan-buzo.webp",
-        url: "#",
+        url: "https://www.capitanbuzo.com",
         es: {
             descripcion: [
                 "Capitán Buzo Club es una empresa especializada en formación y experiencias de buceo, que ofrece cursos para todos los niveles, bautismos, salidas y viajes organizados.",
@@ -109,7 +109,7 @@ export const empresasColaboradoras = [
     {
         nombre: "GERMÁN SÁEZ",
         logo: "/img-empresas/german-saez.webp",
-        url: "#",
+        url: "https://www.germansaez.com.es/",
         es: {
             descripcion: [
                 "En Asesoría Germán Sáez, transformamos números en estrategias exitosas.",
@@ -132,7 +132,7 @@ export const empresasColaboradoras = [
     {
         nombre: "2BOKA2 SPAR",
         logo: "/img-empresas/2boka2-spar.webp",
-        url: "#",
+        url: "https://share.google/tvZTuxKsnsSo1aXzI",
         es: {
             descripcion: [
                 "2BOKA2 - SPAR City Titos es un supermercado de proximidad que ofrece una amplia variedad de productos, servicio a domicilio y soluciones para eventos como food truck y catering para fiestas y celebraciones.",
@@ -153,7 +153,7 @@ export const empresasColaboradoras = [
     {
         nombre: "REY DE PALMERAS",
         logo: "/img-empresas/rey-de-palmeras.webp",
-        url: "#",
+        url: "https://www.facebook.com/vicente.garciaparra.5",
         es: {
             descripcion: [
                 "El Rey de las Palmeras es una empresa especializada en poda de palmeras y trabajos en altura con sede en Águilas.",
@@ -174,7 +174,7 @@ export const empresasColaboradoras = [
     {
         nombre: "QUIETUD",
         logo: "/img-empresas/quietud.webp",
-        url: "#",
+        url: "http://instagram.com/quietudaguilas/",
         es: {
             descripcion: [
                 "Quietud - David García Osteopatía Integral es un centro especializado en osteopatía y tratamiento integral del cuerpo, enfocado en aliviar dolores musculares y articulares, mejorar la movilidad y optimizar el rendimiento físico.",
@@ -195,7 +195,7 @@ export const empresasColaboradoras = [
     {
         nombre: "PINTAMAR",
         logo: "/img-empresas/pintamar.webp",
-        url: "#",
+        url: "https://www.instagram.com/pintamardeco/",
         es: {
             descripcion: [
                 "Pintamar Deco es una empresa especializada en pinturas, protección y decoración, con experiencia también en el sector náutico.",
@@ -216,7 +216,7 @@ export const empresasColaboradoras = [
     {
         nombre: "ELENA ROJAS",
         logo: "/img-empresas/elena-rojas.webp",
-        url: "#",
+        url: "https://share.google/YorkT0j2Pddk30XdS",
         es: {
             descripcion: [
                 "Elena Rojas - Peluquería y Estética Unisex es un centro especializado en belleza y cuidado personal, que ofrece servicios de estética como manicura, pedicura, depilación, limpieza facial y maquillaje, además de peluquería con corte, color, recogidos y tratamientos de keratina.",
@@ -235,7 +235,7 @@ export const empresasColaboradoras = [
     {
         nombre: "RPASCORSO DJI",
         logo: "/img-empresas/rpascorso-dji.webp",
-        url: "#",
+        url: "https://rpascorso.com/",
         es: {
             descripcion: [
                 "Somos la escuela Nº 1 en España, desde 2015 formando pilotos de drones y pilotos de aviación civil en más de 15 países en todo el mundo.",
@@ -256,7 +256,7 @@ export const empresasColaboradoras = [
     {
         nombre: "VINTAGE STUDIO",
         logo: "/img-empresas/vintage-studio.webp",
-        url: "#",
+        url: "https://www.vintage-estudiografico.com/",
         es: {
             descripcion: [
                 "Vintage Estudio Gráfico - Andrés Martínez es un estudio especializado en diseño gráfico e imagen corporativa, ofreciendo soluciones creativas y personalizadas para empresas y profesionales.",
@@ -277,7 +277,7 @@ export const empresasColaboradoras = [
     {
         nombre: "SPORTTIA",
         logo: "/img-empresas/sporttia.webp",
-        url: "#",
+        url: "https://www.sporttia.com/es/inicio/",
         es: {
             descripcion: [
                 "Reservas online de pistas o entradas a piscinas.",
@@ -304,7 +304,7 @@ export const empresasColaboradoras = [
     {
         nombre: "TURISMO JOVEN",
         logo: "/img-empresas/turismo-joven.webp",
-        url: "#",
+        url: "http://WWW.TURISMOJOVEN.ES",
         es: {
             descripcion: [
                 "Turismo Joven es una agencia receptiva especializada en programas de inmersión lingüística y campamentos náuticos, ofreciendo experiencias educativas y de ocio para niños y jóvenes.",

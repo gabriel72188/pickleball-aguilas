@@ -5,6 +5,7 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+import { t } from "../i18n/ui.js";
 
 const es = lang === "es";
 ---
@@ -16,7 +17,7 @@ const es = lang === "es";
   </div>
 
   <div
-    class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left items-center"
+    class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left items-start"
   >
     <div class="flex flex-col items-center md:items-start gap-4">
       <a
@@ -47,22 +48,50 @@ const es = lang === "es";
       <p>30880 Águilas, Murcia, España.</p>
     </div>
 
-    <div class="text-sm">
-      <div class="flex gap-4 justify-center text-sm mt-4">
-        <a
-          href={`/${lang}/politica-de-cookies`}
-          class="hover:text-amarillo-acento transition-colors"
-        >
-          {lang === "es" ? "Política de Cookies" : "Cookie Policy"}
-        </a>
-        <span>|</span>
-        <a
-          href={`/${lang}/politica-de-privacidad`}
-          class="hover:text-amarillo-acento transition-colors"
-        >
-          {lang === "es" ? "Política de Privacidad" : "Privacy Policy"}
-        </a>
-      </div>
+    <div class="text-sm border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0 md:pl-8">
+      <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-xs">
+        {es ? "Enlaces" : "Links"}
+      </h5>
+      <ul class="flex flex-col gap-3 items-center md:items-start text-sm">
+        <li>
+          <a href={`/${lang}/preguntas-frecuentes`} class="hover:text-amarillo-acento transition-colors">
+            {t[lang]['footer.faq']}
+          </a>
+        </li>
+        <li>
+          <a href={`/${lang}/que-es-pickleball`} class="hover:text-amarillo-acento transition-colors">
+            {t[lang]['footer.que_es']}
+          </a>
+        </li>
+        <li>
+          <a href={`/${lang}/quienes-somos`} class="hover:text-amarillo-acento transition-colors">
+            {t[lang]['footer.quienes_somos']}
+          </a>
+        </li>
+        <li>
+          <a href={`/${lang}/trabaja-con-nosotros`} class="hover:text-amarillo-acento transition-colors">
+            {t[lang]['footer.trabaja']}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text-sm border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0 md:pl-8">
+      <h5 class="font-semibold text-white mb-4 uppercase tracking-wider text-xs">
+        Legal
+      </h5>
+      <ul class="flex flex-col gap-3 items-center md:items-start text-sm">
+        <li>
+          <a href={`/${lang}/politica-de-cookies`} class="hover:text-amarillo-acento transition-colors">
+            {t[lang]['footer.cookies']}
+          </a>
+        </li>
+        <li>
+          <a href={`/${lang}/politica-de-privacidad`} class="hover:text-amarillo-acento transition-colors">
+            {t[lang]['footer.privacidad']}
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </footer>
