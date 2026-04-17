@@ -151,6 +151,8 @@ export const t = {
         'about.mission_title': 'Nuestra Misión',
         'about.mission_desc1': 'Pues eso... darte buenos momentos, llenos de risas, salud y energía vital, que de eso, vamos sobrados aquí!',
         'about.mission_desc2': 'Nuestro objetivo es llenar tu depósito de felicidad al completo y a un precio mucho más barato que la gasolina y la luz.',
+        'about.img_team_alt': 'Nuestro equipo',
+        'about.img_video_alt': 'Ver vídeo de la pista',
 
         // --- PÁGINA TRABAJA CON NOSOTROS ---
         'work.head_title': 'Trabaja con nosotros - Pickleball Águilas Resort',
@@ -320,6 +322,8 @@ export const t = {
         'about.mission_title': 'Our Mission',
         'about.mission_desc1': 'Well, that... to give you good times, full of laughter, health, and vital energy, which we have plenty of here!',
         'about.mission_desc2': 'Our goal is to fill your happiness tank completely and at a much cheaper price than gas and electricity.',
+        'about.img_team_alt': 'Our team',
+        'about.img_video_alt': 'Watch court video',
 
         // --- WORK WITH US PAGE ---
         'work.head_title': 'Work With Us - Pickleball Águilas Resort',
