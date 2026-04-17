@@ -57,7 +57,7 @@ export const t = {
         'msg.error': 'Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.',
 
         // --- PRECIOS ---
-        'precios.etiqueta': '🎾 LOS PRECIOS',
+        'precios.etiqueta': '🎾🤾‍♂️ LOS PRECIOS',
         'precios.titulo': 'PRECIOS DE PISTAS DE PICKLEBALL',
         'precios.subtitulo': 'El precio para ALQUILAR una PISTA DE PICKLEBALL en Águilas – Isla del Fraile es el más económico de toda la zona. Además realizamos PROMOCIONES y OFERTAS de pickleball al mejor precio garantizado.',
         'precios.por_persona': 'por persona',
@@ -105,7 +105,68 @@ export const t = {
 
         'que_es_page.cta_title': '¿Listo para entrar en la pista?',
         'que_es_page.cta_subtitle': 'Ven a probar las mejores instalaciones de Águilas. Nosotros te prestamos el material.',
-        'que_es_page.cta_boton': 'RESERVAR MI PISTA AHORA'
+        'que_es_page.cta_boton': 'RESERVAR MI PISTA AHORA',
+
+        // --- PÁGINA FAQ ---
+        'faq.head_title': 'Preguntas Frecuentes - Pickleball Águilas Resort',
+        'faq.hero_title': 'FAQ',
+        'faq.badge': '🎾🤾‍♂️ FAQ',
+        'faq.titulo': 'PREGUNTAS GENERALES SOBRE PICKLEBALL',
+        'faq.descripcion': 'Te contestamos a todas las preguntas, dudas, cuestiones o inquietudes que tengas sobre pickleball. Y si no encuentras tu respuesta aquí, ponte en contacto y te la resolvemos en menos de 24h.',
+        'faq.email_titulo': 'Dirección Email',
+        'faq.email_valor': 'pickleballaguilas@gmail.com',
+        'faq.telefono_titulo': 'Teléfono',
+        'faq.telefono_valor': '+34 601 507 505',
+        'faq.q1': '¿Qué equipamiento he de llevar?',
+        'faq.a1': 'La parte de arriba o de abajo es indiferente. Puedes llevar lo que quieras. Cómodo y transpirable eso sí. En cuanto al calzado que sea especial para pádel, pues es importante tenga buen agarre según tu nivel de experiencia de de juego.',
+        'faq.q2': '¿Qué tipos de pago aceptáis?',
+        'faq.a2': 'Tarjeta de crédito y débito y en efectivo. ',
+        'faq.q3': '¿Con cuánta antelación he de llegar?',
+        'faq.a3': 'No hay tiempo estipulado, pero si te recomendamos que de 10 a 15 minutos de antelación, para así calentar un poco y evitar posibles lesiones musculares.',
+        'faq.q4': '¿Cerráis algún día de la semana?',
+        'faq.a4': 'No. Tenemos los 7 días de la semana y los 365 días del año abierto.',
+        'faq.q5': '¿Tenéis la recepción o el kiosko abierto a todas horas?',
+        'faq.a5': 'No. Disponemos de horario de recepción actualmente de 17.00 a 20.00 de lunes a viernes. El resto del tiempo, accedes a las instalaciones deportivas de pádel con códigos pues tenemos automatizadas las entradas y salidas de las pistas de pádel.',
+        'faq.q6': 'Si llueve, ¿pierdo el dinero de mi reserva hecha?',
+        'faq.a6': 'No. En absoluto. Porque tu no tienes la culpa de que llueva (ni nosotros tampoco) 🙂 te devolvemos el dinero pero te pediremos que cambies gratuitamente tu reserva. Así ganamos ambas partes. ',
+        'faq.q7': '¿A partir de qué edad se puede jugar al pickleball?',
+        'faq.a7': 'A partir de los 8 años, es la edad ideal para jugar al pádel los más pequeñ@s de la casa.',
+        'faq.q8': '¿Qué he de hacer para reservar una pista de pickleball?',
+        'faq.a8': 'A través de nuestro motor de reservas podrás escoger el día y hora que mejor te convenga a tí y a tus compañer@s de juego de pádel y realizar el pago online para formalizar la reserva. Recibirás un email con la confirmación.',
+        'faq.q9': '¿Qué he de hacer para reservar una clase de pádel?',
+        'faq.a9': 'Al igual que las reservas de pista de pádel, a través de nuestro motor de reservas podrás escoger el día y hora que mejor te convenga a ti y a tus compañer@s de juego de pádel y realizar el pago online para formalizar la reserva. Recibirás un email con la confirmación.  Si deseas una clase de pádel personalizada como que te busquemos un grupo, escríbenos y te ayudamos.',
+        'faq.q10': '¿Cómo reservar una pista de pádel?',
+        'faq.a10': 'Puedes reservar una pista de pádel por nuestra web en el botón de reserva que encontrarás en el menú. Ahí puedes seleccionar día y hora. Si tienes dudas de cómo reservar una pista de pádel, llámanos o escríbenos por whatsapp que también lo encontrarás en el menú. ',
+        'faq.q11': '¿Cuándo hacéis torneos de pádel?',
+        'faq.a11': 'Disponemos de una programación de pádel que vamos haciendo pública cada vez que tenemos determinada la fecha. Inscríbete con nosotros y así podrás saber antes que nadie, las fechas y sorpresas que realizamos en cada torneo.',
+
+        // --- PÁGINA QUIENES SOMOS ---
+        'about.head_title': 'Quiénes Somos - Pickleball Águilas Resort',
+        'about.hero_title': 'QUIÉNES SOMOS',
+        'about.hero_desc': 'En la gestión de este maravilloso proyecto estamos Carla y Jose o Jose y Carla, el orden da igual, porque le ponemos todo nuestro corazón e ilusión en darte lo mejor de nosotros para que tú disfrutes al máximo en nuestras pistas de pickleball de Águilas.',
+        'about.badge': '🎾 PICKLEBALL ÁGUILAS CLUB',
+        'about.team_title': 'EQUIPAZO',
+        'about.team_desc1': 'Que sí, que hacer deporte nos sienta fenomenal para tener un cuerpo serrano. Pero además, hay que ver lo bien que te lo pasas después comentando la partida con los compis. Por eso nos pusimos a ofrecer Pistas deportivas de Pickleball, porque las risas y el buen rollo están asegurados.',
+        'about.team_desc2': 'ADEMÁS TENEMOS A LOS MEJORES PROFESORES, si lo que quieres es dar clases de pickleball!',
+        'about.mission_title': 'Nuestra Misión',
+        'about.mission_desc1': 'Pues eso... darte buenos momentos, llenos de risas, salud y energía vital, que de eso, vamos sobrados aquí!',
+        'about.mission_desc2': 'Nuestro objetivo es llenar tu depósito de felicidad al completo y a un precio mucho más barato que la gasolina y la luz.',
+
+        // --- PÁGINA TRABAJA CON NOSOTROS ---
+        'work.head_title': 'Trabaja con nosotros - Pickleball Águilas Resort',
+        'work.hero_title': 'TRABAJA CON NOSOTROS',
+        'work.intro_subtitle': '¿Eres una empresa o marca que quiere llegar a más clientes?',
+        'work.intro_p1': 'En nuestras instalaciones recibimos multitud de jugadores locales y turistas. Si quieres que conozcan tu marca, ¡estás en el lugar indicado!',
+        'work.intro_p2': 'Pickleball Isla del Fraile es el lugar perfecto para hacerlo.',
+        'work.intro_p3': 'Ofrecemos diferentes opciones y nos adaptamos a tus necesidades. Esperamos poder contar con tu empresa como colaboradora en nuestro Club y juntos fomentar la práctica del deporte y un estilo de vida saludable.',
+        'work.formas_title': 'MÚLTIPLES FORMAS PARA DAR A CONOCER TU NEGOCIO O EMPRESA',
+        'work.formas_p1': 'Patrocinios, lonas en pistas, publicidad en torneos y mucho más. Aprovecha la oportunidad para llegar a un público dinámico y activo.',
+        'work.contact': 'Contáctanos para más información',
+        'work.colab_title': 'EMPRESAS',
+        'work.colab_subtitle': 'COLABORADORAS',
+        'work.footer_text': '¡COMENTALES QUE VIENES DE NUESTRA PARTE Y OBTENDRÁS DESCUENTOS ESPECIALES!'
+        //el resto de textos de empresas colaboradoras vienen en el json de empresas, esto para no sobre cargar el ui.js
+
     },
     en: {
         // ... textos del navbar ...
@@ -211,6 +272,67 @@ export const t = {
 
         'que_es_page.cta_title': 'Ready to step on the court?',
         'que_es_page.cta_subtitle': 'Come and try the best facilities in Águilas. We will lend you the equipment.',
-        'que_es_page.cta_boton': 'BOOK MY COURT NOW'
+        'que_es_page.cta_boton': 'BOOK MY COURT NOW',
+
+        // --- FAQ PAGE ---
+        'faq.head_title': 'FAQ - Pickleball Águilas Resort',
+        'faq.hero_title': 'FAQ',
+        'faq.badge': '🎾🤾‍♂️ FAQ',
+        'faq.titulo': 'GENERAL QUESTIONS ABOUT PICKLEBALL',
+        'faq.descripcion': 'We answer all your questions, doubts, or concerns about pickleball. If you cannot find your answer here, contact us and we will resolve it in less than 24h.',
+        'faq.email_titulo': 'Email Address',
+        'faq.email_valor': 'pickleballaguilas@gmail.com',
+        'faq.telefono_titulo': 'Phone',
+        'faq.telefono_valor': '+34 601 507 505',
+        'faq.q1': 'What equipment should I bring?',
+        'faq.a1': 'The top or bottom is indifferent. You can wear whatever you want. Comfortable and breathable, yes. As for footwear, it should be special for pickleball, as it is important to have good grip depending on your level of play.',
+        'faq.q2': 'What payment methods do you accept?',
+        'faq.a2': 'Credit and debit cards, and cash.',
+        'faq.q3': 'How early should I arrive?',
+        'faq.a3': 'There is no stipulated time, but we do recommend arriving 10 to 15 minutes early to warm up a bit and avoid possible muscle injuries.',
+        'faq.q4': 'Are you closed any day of the week?',
+        'faq.a4': 'No. We are open 7 days a week, 365 days a year.',
+        'faq.q5': 'Is the reception or kiosk open at all times?',
+        'faq.a5': 'No. Our current reception hours are 17:00 to 20:00, Monday to Friday. The rest of the time, you access the pickleball sports facilities with codes, as our court entrances and exits are automated.',
+        'faq.q6': 'If it rains, do I lose my booking money?',
+        'faq.a6': 'No. Absolutely not. Because it\'s not your fault that it rains (nor ours) 🙂 we refund your money, but we will ask you to reschedule your booking for free. This way, we both win.',
+        'faq.q7': 'What is the minimum age to play pickleball?',
+        'faq.a7': 'From 8 years old is the ideal age for the little ones in the house to play pickleball.',
+        'faq.q8': 'How do I book a pickleball court?',
+        'faq.a8': 'Through our booking engine, you can choose the day and time that best suits you and your playing partners and make the payment online to formalize the booking. You will receive an email with the confirmation.',
+        'faq.q9': 'How do I book a pickleball lesson?',
+        'faq.a9': 'Just like court bookings, through our booking engine you can choose the day and time that best suits you and your playing partners and make the payment online to formalize the booking. You will receive an email confirmation. If you want a personalized pickleball lesson or need us to find a group for you, write to us and we\'ll help you.',
+        'faq.q10': 'How to book a pickleball court?',
+        'faq.a10': 'You can book a pickleball court through our website using the book button in the menu. There you can select a day and time. If you have doubts about how to book a pickleball court, call us or write to us on WhatsApp, which you will also find in the menu.',
+        'faq.q11': 'When do you host pickleball tournaments?',
+        'faq.a11': 'We have a pickleball schedule that we make public every time we have a set date. Sign up with us, and you\'ll be the first to know the dates and surprises we have for each tournament.',
+
+        // --- ABOUT US PAGE ---
+        'about.head_title': 'About Us - Pickleball Águilas Resort',
+        'about.hero_title': 'ABOUT US',
+        'about.hero_desc': 'Managing this wonderful project are Carla and Jose or Jose and Carla, the order doesn\'t matter, because we put all our heart and enthusiasm into giving you our best so you can enjoy our pickleball courts in Águilas to the fullest.',
+        'about.badge': '🎾 PICKLEBALL ÁGUILAS CLUB',
+        'about.team_title': 'GREAT TEAM',
+        'about.team_desc1': 'Yes, playing sports makes us feel great and keeps us fit. But also, you have to see how much fun you have afterwards discussing the match with your buddies. That\'s why we decided to offer Pickleball sports courts, because laughs and good vibes are guaranteed.',
+        'about.team_desc2': 'PLUS WE HAVE THE BEST EXTEACHERS, if you want to take pickleball lessons!',
+        'about.mission_title': 'Our Mission',
+        'about.mission_desc1': 'Well, that... to give you good times, full of laughter, health, and vital energy, which we have plenty of here!',
+        'about.mission_desc2': 'Our goal is to fill your happiness tank completely and at a much cheaper price than gas and electricity.',
+
+        // --- WORK WITH US PAGE ---
+        'work.head_title': 'Work With Us - Pickleball Águilas Resort',
+        'work.hero_title': 'WORK WITH US',
+        'work.intro_subtitle': 'Are you a company or brand that wants to reach more customers?',
+        'work.intro_p1': 'Our facilities receive a multitude of local players and tourists. If you want them to know your brand, you are in the right place!',
+        'work.intro_p2': 'Pickleball Isla del Fraile is the perfect place to do it.',
+        'work.intro_p3': 'We offer different options and adapt to your needs. We hope to count on your company as a collaborator in our Club and together promote the practice of sports and a healthy lifestyle.',
+        'work.formas_title': 'MULTIPLE WAYS TO PROMOTE YOUR BUSINESS OR COMPANY',
+        'work.formas_p1': 'Sponsorships, court banners, tournament advertising, and much more. Take the opportunity to reach a dynamic and active audience.',
+        'work.contact': 'Contact us for more information',
+        'work.colab_title': 'COLLABORATING',
+        'work.colab_subtitle': 'COMPANIES',
+        'work.footer_text': 'MENTION THAT YOU COME FROM US AND GET SPECIAL DISCOUNTS!'
+        //el resto de textos de empresas colaboradoras vienen en el json de empresas, esto para no sobre cargar el ui.js
+
     }
 };

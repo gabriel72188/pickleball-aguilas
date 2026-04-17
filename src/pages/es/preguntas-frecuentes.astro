@@ -1,0 +1,234 @@
+---
+// src/pages/es/preguntas-frecuentes.astro
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import { t } from "../../i18n/ui.js";
+
+const lang = "es";
+const textos = t[lang];
+
+const faqs = [
+    { q: textos["faq.q1"], a: textos["faq.a1"] },
+    { q: textos["faq.q2"], a: textos["faq.a2"] },
+    { q: textos["faq.q3"], a: textos["faq.a3"] },
+    { q: textos["faq.q4"], a: textos["faq.a4"] },
+    { q: textos["faq.q5"], a: textos["faq.a5"] },
+    { q: textos["faq.q6"], a: textos["faq.a6"] },
+    { q: textos["faq.q7"], a: textos["faq.a7"] },
+    { q: textos["faq.q8"], a: textos["faq.a8"] },
+    { q: textos["faq.q9"], a: textos["faq.a9"] },
+    { q: textos["faq.q10"], a: textos["faq.a10"] },
+    { q: textos["faq.q11"], a: textos["faq.a11"] },
+];
+---
+
+<Layout title={textos["faq.head_title"]} lang={lang}>
+    <Navbar />
+
+    <!-- HEADER con imagen de fondo -->
+    <header
+        class="relative bg-azul-oscuro py-24 px-6 flex items-center justify-center text-center overflow-hidden"
+    >
+        <img
+            src="/imagen-fondo2.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-azul-oscuro/80 to-azul-oscuro/60 z-10"
+        >
+        </div>
+        <div class="relative z-20 max-w-4xl mx-auto">
+            <h1
+                class="font-titulos text-5xl md:text-6xl text-white uppercase tracking-tighter shadow-sm"
+            >
+                {textos["faq.hero_title"]}
+            </h1>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL FAQ -->
+    <main class="py-16 px-6">
+        <!-- Título y descripción -->
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <span
+                class="text-amarillo-acento font-bold tracking-wider uppercase text-sm mb-4 block"
+            >
+                {textos["faq.badge"]}
+            </span>
+            <h2
+                class="font-titulos text-3xl md:text-4xl text-azul-oscuro uppercase italic mb-4"
+            >
+                {textos["faq.titulo"]}
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                {textos["faq.descripcion"]}
+            </p>
+        </div>
+
+        <!-- Contacto rápido -->
+        <div
+            class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-8 mb-14"
+        >
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-azul-oscuro/10 rounded-full flex items-center justify-center"
+                >
+                    <svg
+                        class="w-5 h-5 text-azul-oscuro"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        ></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold text-sm text-gray-900">
+                        {textos["faq.email_titulo"]}
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        {textos["faq.email_valor"]}
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-azul-oscuro/10 rounded-full flex items-center justify-center"
+                >
+                    <svg
+                        class="w-5 h-5 text-azul-oscuro"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        ></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold text-sm text-gray-900">
+                        {textos["faq.telefono_titulo"]}
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        {textos["faq.telefono_valor"]}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-start"
+        >
+            <!-- Acordeón de preguntas (Izquierda) -->
+            <div class="w-full lg:w-3/5 space-y-4" id="faq-accordion">
+                {
+                    faqs.map((faq, index) => (
+                        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden shadow-sm transition-shadow">
+                            <button
+                                class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left bg-white transition-colors group"
+                                data-index={index}
+                                aria-expanded="false"
+                            >
+                                <span class="font-semibold text-azul-oscuro transition-colors pr-4">
+                                    {faq.q}
+                                </span>
+                                <svg
+                                    class="faq-icon w-5 h-5 text-amarillo-acento flex-shrink-0 transform transition-transform duration-300"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                            <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="px-6 pb-5 pt-2 text-gray-600 leading-relaxed border-t border-gray-100">
+                                    {faq.a}
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
+            <!-- Imagen (Derecha) -->
+            <div class="w-full lg:w-2/5">
+                <img
+                    src="/faqimg.webp"
+                    alt="Pickleball FAQ"
+                    class="w-full h-full object-cover shadow-lg border-12 border-azul-oscuro"
+                    style="min-height: 600px;"
+                />
+            </div>
+        </div>
+    </main>
+
+    <Footer lang={lang} />
+</Layout>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggles = document.querySelectorAll(".faq-toggle");
+
+        function closeItem(item) {
+            const toggle = item.querySelector(".faq-toggle");
+            const icon = item.querySelector(".faq-icon");
+            const content = item.querySelector(".faq-content");
+            const label = toggle.querySelector("span");
+
+            toggle.classList.remove("bg-azul-oscuro");
+            toggle.classList.add("bg-white");
+            label.classList.remove("text-white");
+            label.classList.add("text-azul-oscuro");
+            icon.classList.remove("rotate-180", "text-amarillo-acento");
+            content.style.maxHeight = "0";
+            toggle.setAttribute("aria-expanded", "false");
+        }
+
+        function openItem(item) {
+            const toggle = item.querySelector(".faq-toggle");
+            const icon = item.querySelector(".faq-icon");
+            const content = item.querySelector(".faq-content");
+            const label = toggle.querySelector("span");
+
+            toggle.classList.add("bg-azul-oscuro");
+            toggle.classList.remove("bg-white");
+            label.classList.add("text-white");
+            label.classList.remove("text-azul-oscuro");
+            icon.classList.add("rotate-180", "text-amarillo-acento");
+            content.style.maxHeight = content.scrollHeight + "px";
+            toggle.setAttribute("aria-expanded", "true");
+        }
+
+        toggles.forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+                const item = toggle.closest(".faq-item");
+                const isOpen = toggle.getAttribute("aria-expanded") === "true";
+
+                // Cerrar todos
+                document.querySelectorAll(".faq-item").forEach(closeItem);
+
+                // Abrir el clickeado si no estaba abierto
+                if (!isOpen) {
+                    openItem(item);
+                }
+            });
+        });
+    });
+</script>
