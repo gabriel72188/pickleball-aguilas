@@ -34,6 +34,7 @@ export const t = {
         'reglas.titulo': '¡CONSEGUIDO! 4 REGLAS BÁSICAS',
 
         // --- PÁGINA CONTACTO ---
+        'contacto.head_title': 'Contacto - Pickleball Águilas Resort',
         'contacto.titulo': 'Contacto',
         'contacto.subtitulo': '¿Tienes dudas o quieres organizar un torneo? Estamos aquí para ayudarte.',
         'contacto.direccion.tit': '📍 Dónde estamos',
@@ -111,6 +112,10 @@ export const t = {
         // --- PÁGINA PRIVACIDAD ---
         'privacy.head_title': 'Política de Privacidad y Aviso Legal - Pickleball Águilas Resort',
         'privacy.hero_title': 'Política de Privacidad y Aviso Legal',
+
+        // --- PÁGINA COOKIES ---
+        'cookies.head_title': 'Política de Cookies - Pickleball Águilas Resort',
+        'cookies.hero_title': 'Política de Cookies',
 
         // --- PÁGINA FAQ ---
         'faq.head_title': 'Preguntas Frecuentes - Pickleball Águilas Resort',
@@ -212,6 +217,7 @@ export const t = {
         'reglas.titulo': 'MASTERED! 4 BASIC RULES',
 
         // --- PÁGINA CONTACTO ---
+        'contacto.head_title': 'Contact - Pickleball Águilas Resort',
         'contacto.titulo': 'Contact Us',
         'contacto.subtitulo': 'Have questions or want to organize a tournament? We are here to help.',
         'contacto.direccion.tit': '📍 Location',
@@ -288,6 +294,10 @@ export const t = {
         // --- PRIVACY PAGE ---
         'privacy.head_title': 'Privacy Policy and Legal Notice - Pickleball Águilas Resort',
         'privacy.hero_title': 'Privacy Policy and Legal Notice',
+
+        // --- COOKIES PAGE ---
+        'cookies.head_title': 'Cookies Policy - Pickleball Águilas Resort',
+        'cookies.hero_title': 'Cookies Policy',
 
         // --- FAQ PAGE ---
         'faq.head_title': 'FAQ - Pickleball Águilas Resort',
