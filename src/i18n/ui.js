@@ -106,6 +106,7 @@ export const t = {
         'que_es_page.cta_title': '¿Listo para entrar en la pista?',
         'que_es_page.cta_subtitle': 'Ven a probar las mejores instalaciones de Águilas. Nosotros te prestamos el material.',
         'que_es_page.cta_boton': 'RESERVAR MI PISTA AHORA',
+        'que_es_page.img_alt': 'Pickleball en acción',
 
         // --- PÁGINA FAQ ---
         'faq.head_title': 'Preguntas Frecuentes - Pickleball Águilas Resort',
@@ -277,6 +278,7 @@ export const t = {
         'que_es_page.cta_title': 'Ready to step on the court?',
         'que_es_page.cta_subtitle': 'Come and try the best facilities in Águilas. We will lend you the equipment.',
         'que_es_page.cta_boton': 'BOOK MY COURT NOW',
+        'que_es_page.img_alt': 'Pickleball in action',
 
         // --- FAQ PAGE ---
         'faq.head_title': 'FAQ - Pickleball Águilas Resort',
