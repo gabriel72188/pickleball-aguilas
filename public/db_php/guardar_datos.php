@@ -1,7 +1,7 @@
 <?php
 // public/guardar_datos.php
 
-require_once 'config.db.php';
+require_once __DIR__ . '/config.db.php';
 
 try {
     $pdo = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4", DB_USER, DB_PASS);
@@ -23,20 +23,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt = $pdo->prepare("INSERT INTO interesados (nombre, correo, telefono, privacidad) VALUES (?, ?, ?, ?)");
             $stmt->execute([$nombre, $correo, $telefono, $privacidad]);
 
-            header("Location: /$idioma_origen/unete/?estado=exito");
+            header("Location: /$idioma_origen/contacto/?estado=exito");
             exit;
 
         } catch (PDOException $e) {
             if ($e->getCode() == 23000) { // Error 23000 = Correo duplicado
-                header("Location: /$idioma_origen/unete/?estado=duplicado");
+                header("Location: /$idioma_origen/contacto/?estado=duplicado");
                 exit;
             } else {
-                header("Location: /$idioma_origen/unete/?estado=error");
+                header("Location: /$idioma_origen/contacto/?estado=error");
                 exit;
             }
         }
     } else {
-        header("Location: /$idioma_origen/unete/?estado=invalido");
+        header("Location: /$idioma_origen/contacto/?estado=invalido");
         exit;
     }
 } else {

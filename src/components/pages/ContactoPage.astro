@@ -10,73 +10,265 @@ const textos = t[lang];
 
 <Layout title={textos["contacto.head_title"]} lang={lang}>
   <Navbar />
-  
-  <main class="min-h-[85vh] bg-azul-oscuro py-16 px-6 relative overflow-hidden">
-    
-    <div class="absolute top-1/2 left-0 w-96 h-96 bg-amarillo-acento rounded-full blur-[120px] opacity-10 -translate-x-1/2 -translate-y-1/2 -z-10"></div>
-    <div class="absolute bottom-0 right-10 w-64 h-64 border-[1px] border-white/5 rounded-full blur-sm"></div>
 
-    <div class="max-w-6xl mx-auto relative z-10">
-      
-      <div class="text-center mb-16">
-        <h1 class="font-titulos text-5xl md:text-6xl text-amarillo-acento mb-4 uppercase tracking-wide">
-          {textos['contacto.titulo']}
+  <main
+    class="min-h-[85vh] py-16 px-6 relative overflow-hidden"
+    style="background: linear-gradient(105deg, #2c4a9b 47%, #2e6fb6 53%);"
+  >
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-14">
+        <h1
+          class="font-titulos text-5xl md:text-6xl text-amarillo-acento mb-4 uppercase tracking-wide"
+        >
+          {textos["contacto.titulo"]}
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto font-light">
-          {textos['contacto.subtitulo']}
+          {textos["contacto.subtitulo"]}
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-2xl shadow-[0_25px_80px_-15px_rgba(234,179,8,0.15)] overflow-hidden border border-white/5">
-        
-        <div class="p-10 md:p-14 lg:p-16 flex flex-col justify-center bg-white">
-          
-          <h3 class="font-titulos text-3xl mb-12 text-azul-principal uppercase leading-tight tracking-tight">
-            {textos['contacto.tagline']}
-          </h3>
+      <!-- Two column grid: form (left) | info + map (right) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <!-- LEFT: Signup Form -->
+        <div
+          class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 border border-gray-100"
+        >
+          <div class="mb-8">
+            <h2
+              class="font-titulos text-3xl text-azul-principal mb-2 uppercase tracking-tighter"
+            >
+              {textos["unete.titulo"]}
+            </h2>
+            <p class="text-gray-500 text-sm">
+              {textos["unete.subtitulo"]}
+            </p>
+          </div>
 
-          <div class="space-y-10">
-            <div class="group">
-              <h4 class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2">
-                {textos['contacto.direccion.tit']}
-              </h4>
-              <p class="text-lg text-azul-oscuro font-medium leading-relaxed">{textos['contacto.direccion.val']}</p>
+          <!-- Status messages -->
+          <div
+            id="msg-exito"
+            class="hidden mb-6 p-4 bg-green-50 text-green-800 border border-green-200 rounded-lg text-center font-medium"
+          >
+            {textos["msg.exito"]}
+          </div>
+          <div
+            id="msg-duplicado"
+            class="hidden mb-6 p-4 bg-yellow-50 text-yellow-800 border border-yellow-200 rounded-lg text-center font-medium"
+          >
+            {textos["msg.duplicado"]}
+          </div>
+          <div
+            id="msg-error"
+            class="hidden mb-6 p-4 bg-red-50 text-red-800 border border-red-200 rounded-lg text-center font-medium"
+          >
+            {textos["msg.error"]}
+          </div>
+
+          <form
+            action="/db_php/guardar_datos.php"
+            method="POST"
+            class="space-y-5"
+          >
+            <!-- Honeypot anti-spam -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <label for="apellido_falso">No rellenes este campo</label>
+              <input
+                type="text"
+                id="apellido_falso"
+                name="apellido_falso"
+                tabindex="-1"
+                autocomplete="off"
+              />
             </div>
 
-            <div class="group">
-              <h4 class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2">
-                {textos['contacto.app.tit']}
-              </h4>
-              <p class="text-lg text-azul-principal font-bold bg-blue-50 inline-block px-5 py-3 rounded-lg border border-blue-100 shadow-sm">
-                {textos['contacto.app.val']}
-              </p>
+            <div>
+              <label
+                for="nombre"
+                class="block text-sm font-bold text-gray-700 uppercase tracking-wider mb-2"
+              >
+                {textos["form.nombre"]}
+              </label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-azul-principal focus:ring-2 focus:ring-azul-principal/20 outline-none transition-all bg-gray-50 focus:bg-white"
+                placeholder={lang === "es"
+                  ? "Ej. Juan Gómez"
+                  : "E.g. Juan Gomez"}
+              />
             </div>
 
-            <div class="group">
-              <h4 class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2">
-                {textos['contacto.siguenos']}
-              </h4>
-              <a href="https://instagram.com/pickleball_aguilas" target="_blank" class="inline-flex items-center gap-2 text-xl font-bold text-gray-700 hover:text-azul-principal transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                @pickleball_aguilas
-              </a>
+            <div>
+              <label
+                for="correo"
+                class="block text-sm font-bold text-gray-700 uppercase tracking-wider mb-2"
+              >
+                {textos["form.correo"]}
+              </label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-azul-principal focus:ring-2 focus:ring-azul-principal/20 outline-none transition-all bg-gray-50 focus:bg-white"
+                placeholder="email@ejemplo.com"
+              />
+            </div>
+
+            <div>
+              <label
+                for="telefono"
+                class="block text-sm font-bold text-gray-700 uppercase tracking-wider mb-2"
+              >
+                {textos["form.telefono"]}
+              </label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-azul-principal focus:ring-2 focus:ring-azul-principal/20 outline-none transition-all bg-gray-50 focus:bg-white"
+                placeholder="+34 600 000 000"
+              />
+            </div>
+
+            <div class="flex items-start gap-3 pt-1">
+              <input
+                type="checkbox"
+                id="privacidad"
+                name="privacidad"
+                required
+                class="mt-1 w-5 h-5 accent-azul-principal cursor-pointer shrink-0"
+              />
+              <label
+                for="privacidad"
+                class="text-sm text-gray-500 cursor-pointer leading-snug"
+              >
+                {textos["form.privacidad"]}
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-amarillo-acento text-azul-oscuro font-titulos text-xl py-4 rounded-lg shadow-lg hover:bg-yellow-400 hover:-translate-y-1 transition-all mt-2 uppercase tracking-wide"
+            >
+              {textos["form.boton"]}
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT: Contact info + map -->
+        <div class="flex flex-col gap-6">
+          <!-- Info card -->
+          <div
+            class="bg-white rounded-2xl shadow-[0_25px_80px_-15px_rgba(234,179,8,0.15)] p-8 md:p-10 border border-white/5"
+          >
+            <h3
+              class="font-titulos text-2xl mb-8 text-azul-principal uppercase leading-tight tracking-tight"
+            >
+              {textos["contacto.tagline"]}
+            </h3>
+
+            <div class="space-y-8">
+              <div>
+                <h4
+                  class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+                >
+                  {textos["contacto.direccion.tit"]}
+                </h4>
+                <p
+                  class="text-base text-azul-oscuro font-medium leading-relaxed"
+                >
+                  {textos["contacto.direccion.val"]}
+                </p>
+              </div>
+
+              <div>
+                <h4
+                  class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+                >
+                  {textos["contacto.app.tit"]}
+                </h4>
+                <p
+                  class="text-base text-azul-principal font-bold bg-blue-50 inline-block px-5 py-3 rounded-lg border border-blue-100 shadow-sm"
+                >
+                  {textos["contacto.app.val"]}
+                </p>
+              </div>
+
+              <div>
+                <h4
+                  class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+                >
+                  {textos["contacto.siguenos"]}
+                </h4>
+                <a
+                  href="https://instagram.com/pickleball_aguilas"
+                  target="_blank"
+                  class="inline-flex items-center gap-2 text-lg font-bold text-gray-700 hover:text-azul-principal transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"
+                    ></rect><path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"
+                    ></line></svg
+                  >
+                  @pickleball_aguilas
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="min-h-[400px] lg:min-h-full relative bg-gray-200">
-          <iframe 
-            src="https://maps.google.com/maps?q=Urbanizaci%C3%B3n%20Isla%20del%20Fraile,%20Aguilas,%20Murcia&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-            class="absolute inset-0 w-full h-full border-0" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <!-- Map -->
+          <div
+            class="rounded-2xl overflow-hidden shadow-lg min-h-[300px] relative bg-gray-200 flex-1"
+          >
+            <iframe
+              src="https://maps.google.com/maps?q=Urbanizaci%C3%B3n%20Isla%20del%20Fraile,%20Aguilas,%20Murcia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              class="absolute inset-0 w-full h-full border-0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
-
       </div>
     </div>
   </main>
 
   <Footer lang={lang} />
 </Layout>
+
+<script>
+  const manejarEstadoFormulario = () => {
+    const params = new URLSearchParams(window.location.search);
+    const estado = params.get("estado");
+
+    if (!estado) return;
+
+    if (estado === "exito") {
+      document.getElementById("msg-exito")?.classList.remove("hidden");
+    } else if (estado === "duplicado") {
+      document.getElementById("msg-duplicado")?.classList.remove("hidden");
+    } else if (estado === "error" || estado === "invalido") {
+      document.getElementById("msg-error")?.classList.remove("hidden");
+    }
+
+    window.history.replaceState({}, document.title, window.location.pathname);
+  };
+
+  manejarEstadoFormulario();
+  document.addEventListener("astro:page-load", manejarEstadoFormulario);
+</script>

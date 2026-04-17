@@ -23,4 +23,5 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-public/config.db.php
+# DB credentials — never commit
+public/db_php/config.db.php
