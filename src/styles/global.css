@@ -5,6 +5,7 @@
 
 /* 2. LUEGO TAILWIND */
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* 3. LUEGO NUESTROS COLORES Y VARIABLES */
 @theme {

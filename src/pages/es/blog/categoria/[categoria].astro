@@ -1,0 +1,22 @@
+---
+// src/pages/es/blog/categoria/[categoria].astro
+import { getCollection } from "astro:content";
+import BlogCategoriaPage from "../../../../components/blog/BlogCategoriaPage.astro";
+
+export async function getStaticPaths() {
+    const categorias = ["Torneos de Pickleball", "Oferta", "Info", "Clases"];
+    return categorias.map((cat) => ({
+        params: { categoria: cat.toLowerCase().replace(/\s+/g, "-") },
+        props: { nombreOriginal: cat },
+    }));
+}
+
+const { nombreOriginal } = Astro.props;
+
+const posts = await getCollection("blog", ({ data, id }) =>
+    id.startsWith("es/") && data.draft !== true && data.category === nombreOriginal
+);
+const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BlogCategoriaPage lang="es" nombreOriginal={nombreOriginal} posts={sorted} />

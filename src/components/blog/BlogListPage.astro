@@ -1,0 +1,169 @@
+---
+// src/i18n/ui.js additions needed — add these keys to ui.js
+// This file is the Blog List Page component
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../Navbar.astro";
+import Footer from "../Footer.astro";
+
+interface Props {
+    lang: "es" | "en";
+    page: any; // Astro paginate() page object
+}
+
+const { lang, page } = Astro.props;
+
+const isEs = lang === "es";
+
+// Translations inline (blog-specific strings)
+const ui = {
+    es: {
+        title: (n: number) => `Blog de Pickleball - Página ${n}`,
+        h1_first: "Últimas Noticias",
+        h1_page: (n: number) => `Noticias - Página ${n}`,
+        no_posts: "No hay publicaciones todavía.",
+        prev: "← Recientes",
+        next: "Anteriores →",
+        page_of: (cur: number, last: number) => `Página ${cur} de ${last}`,
+        categories_title: "Categorías",
+        contact_title: "¿Tienes Alguna Pregunta?",
+        contact_body: "Contáctanos, no lo dudes. Siempre, siempre, pero siempre, estamos encantados de atenderte.",
+        back_blog: "← Volver al Blog",
+        cats: [
+            { label: "Torneos de Pickleball", slug: "torneos-de-pickleball" },
+            { label: "Oferta", slug: "oferta" },
+            { label: "Info", slug: "info" },
+            { label: "Clases", slug: "clases" },
+        ],
+    },
+    en: {
+        title: (n: number) => `Pickleball Blog - Page ${n}`,
+        h1_first: "Latest News",
+        h1_page: (n: number) => `News - Page ${n}`,
+        no_posts: "No posts yet.",
+        prev: "← Newer",
+        next: "Older →",
+        page_of: (cur: number, last: number) => `Page ${cur} of ${last}`,
+        categories_title: "Categories",
+        contact_title: "Have a Question?",
+        contact_body: "Contact us, don't hesitate. We are always happy to help you.",
+        back_blog: "← Back to Blog",
+        cats: [
+            { label: "Pickleball Tournaments", slug: "torneos-de-pickleball" },
+            { label: "Offer", slug: "oferta" },
+            { label: "Info", slug: "info" },
+            { label: "Classes", slug: "clases" },
+        ],
+    },
+};
+
+const tx = ui[lang];
+const esPrimeraPagina = page.currentPage === 1;
+const postDestacado = esPrimeraPagina ? page.data[0] : null;
+const postsRestantes = esPrimeraPagina ? page.data.slice(1) : page.data;
+const blogBase = `/${lang}/blog`;
+---
+
+<Layout title={tx.title(page.currentPage)} lang={lang}>
+    <Navbar />
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <h1 class="font-titulos text-4xl text-azul-oscuro mb-8 uppercase italic skew-x-[-2deg]">
+            {esPrimeraPagina ? tx.h1_first : tx.h1_page(page.currentPage)}
+        </h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                {postDestacado && (
+                    <article class="mb-12">
+                        <a href={`${blogBase}/${postDestacado.id.replace(lang + '/', '')}`}>
+                            <img
+                                src={postDestacado.data.image || "/placeholder-image.jpg"}
+                                alt={postDestacado.data.title}
+                                class="w-full h-80 object-cover rounded-xl mb-6 shadow-md hover:opacity-90 transition-opacity"
+                            />
+                            <span class="text-sm font-bold text-amarillo-acento uppercase tracking-wider">
+                                {postDestacado.data.category}
+                            </span>
+                            <h2 class="text-3xl font-bold text-azul-oscuro mt-2 mb-4 hover:text-azul-principal transition-colors">
+                                {postDestacado.data.title}
+                            </h2>
+                        </a>
+                        <p class="text-gray-600 line-clamp-3">
+                            {postDestacado.data.description}
+                        </p>
+                    </article>
+                )}
+
+                <div class="space-y-8">
+                    {postsRestantes.map((post: any) => (
+                        <article class="flex gap-6 items-center border-t pt-8">
+                            {post.data.image && (
+                                <img
+                                    src={post.data.image}
+                                    alt={post.data.title}
+                                    class="w-32 h-32 object-cover rounded-lg shrink-0"
+                                />
+                            )}
+                            <div>
+                                <span class="text-xs font-bold text-amarillo-acento uppercase tracking-wider">
+                                    {post.data.category}
+                                </span>
+                                <h3 class="text-xl font-bold text-azul-oscuro mt-1 hover:text-azul-principal">
+                                    <a href={`${blogBase}/${post.id.replace(lang + '/', '')}`}>{post.data.title}</a>
+                                </h3>
+                            </div>
+                        </article>
+                    ))}
+
+                    {page.data.length === 0 && (
+                        <p class="text-gray-500">{tx.no_posts}</p>
+                    )}
+                </div>
+
+                {page.lastPage > 1 && (
+                    <div class="mt-12 flex justify-between items-center border-t pt-8">
+                        {page.url.prev
+                            ? <a href={page.url.prev} class="px-6 py-3 bg-azul-oscuro text-white font-bold rounded-full hover:bg-azul-principal transition-colors shadow-md">{tx.prev}</a>
+                            : <div />
+                        }
+                        <span class="text-gray-500 font-medium text-sm">
+                            {tx.page_of(page.currentPage, page.lastPage)}
+                        </span>
+                        {page.url.next
+                            ? <a href={page.url.next} class="px-6 py-3 bg-azul-oscuro text-white font-bold rounded-full hover:bg-azul-principal transition-colors shadow-md">{tx.next}</a>
+                            : <div />
+                        }
+                    </div>
+                )}
+            </div>
+
+            <aside class="space-y-8">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-xl text-azul-oscuro mb-4">{tx.categories_title}</h3>
+                    <ul class="space-y-3">
+                        {tx.cats.map((cat) => (
+                            <li>
+                                <a
+                                    href={`${blogBase}/categoria/${cat.slug}`}
+                                    class="text-gray-600 hover:text-amarillo-acento flex items-center gap-2"
+                                >
+                                    <span>🎾</span> {cat.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div class="bg-[#3A3A3A] p-6 rounded-xl text-white">
+                    <h3 class="font-bold text-xl mb-4">{tx.contact_title}</h3>
+                    <p class="text-sm text-gray-300 mb-6">{tx.contact_body}</p>
+                    <a href={`/${lang}/contacto`} class="text-amarillo-acento font-bold hover:underline">
+                        {isEs ? "Ir al Contacto →" : "Go to Contact →"}
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <Footer lang={lang} />
+</Layout>

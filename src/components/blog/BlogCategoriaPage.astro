@@ -1,0 +1,90 @@
+---
+// src/components/pages/blog/BlogCategoriaPage.astro
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../Navbar.astro";
+import Footer from "../Footer.astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    lang: "es" | "en";
+    nombreOriginal: string;
+    posts: CollectionEntry<"blog">[];
+}
+
+const { lang, nombreOriginal, posts } = Astro.props;
+
+const blogBase = `/${lang}/blog`;
+
+const ui = {
+    es: {
+        title: (cat: string) => `Categoría: ${cat} - Pickleball Águilas`,
+        back: "← Volver al Blog",
+        heading: "Categoría:",
+        empty_1: (cat: string) => `Aún no hemos publicado artículos en la categoría `,
+        empty_2: "¡Vuelve pronto para descubrir novedades!",
+    },
+    en: {
+        title: (cat: string) => `Category: ${cat} - Pickleball Águilas`,
+        back: "← Back to Blog",
+        heading: "Category:",
+        empty_1: (cat: string) => `We haven't published any articles in the category `,
+        empty_2: "Check back soon for new content!",
+    },
+};
+
+const tx = ui[lang];
+---
+
+<Layout title={tx.title(nombreOriginal)} lang={lang}>
+    <Navbar />
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <div class="mb-12 border-b pb-6">
+            <a
+                href={blogBase}
+                class="text-sm font-bold text-gray-500 hover:text-azul-principal uppercase tracking-wider mb-2 inline-block"
+            >
+                {tx.back}
+            </a>
+            <h1 class="font-titulos text-4xl text-azul-oscuro uppercase italic skew-x-[-2deg]">
+                {tx.heading} <span class="text-amarillo-acento">{nombreOriginal}</span>
+            </h1>
+        </div>
+
+        {posts.length > 0 ? (
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {posts.map((post) => (
+                    <article class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <a href={`${blogBase}/${post.id.replace(lang + '/', '')}`}>
+                            <img
+                                src={post.data.image || "/placeholder-image.jpg"}
+                                alt={post.data.title}
+                                class="w-full h-48 object-cover hover:opacity-90 transition-opacity"
+                            />
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-amarillo-acento uppercase tracking-wider">
+                                    {post.data.category}
+                                </span>
+                                <h2 class="text-xl font-bold text-azul-oscuro mt-2 mb-3 leading-tight hover:text-azul-principal transition-colors">
+                                    {post.data.title}
+                                </h2>
+                                <p class="text-gray-600 text-sm line-clamp-3">
+                                    {post.data.description}
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                ))}
+            </div>
+        ) : (
+            <div class="bg-gray-50 p-10 rounded-xl text-center border border-gray-100">
+                <p class="text-gray-500 text-lg">
+                    {tx.empty_1(nombreOriginal)}<strong>{nombreOriginal}</strong>.
+                </p>
+                <p class="text-gray-400 mt-2">{tx.empty_2}</p>
+            </div>
+        )}
+    </main>
+
+    <Footer lang={lang} />
+</Layout>

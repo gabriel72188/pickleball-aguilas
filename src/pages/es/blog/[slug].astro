@@ -1,0 +1,17 @@
+---
+// src/pages/es/blog/[slug].astro
+import { getCollection, render } from "astro:content";
+import BlogPostPage from "../../../components/blog/BlogPostPage.astro";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+    return posts
+        .filter((post) => post.id.startsWith("es/"))
+        .map((post) => ({ params: { slug: post.id.replace("es/", "") }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPostPage lang="es" post={post} Content={Content} />

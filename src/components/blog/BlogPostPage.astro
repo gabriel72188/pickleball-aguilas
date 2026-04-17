@@ -1,0 +1,66 @@
+---
+// src/components/pages/blog/BlogPostPage.astro
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../Navbar.astro";
+import Footer from "../Footer.astro";
+import ShareButtons from "../ShareButtons.astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    lang: "es" | "en";
+    post: CollectionEntry<"blog">;
+    Content: any;
+}
+
+const { lang, post, Content } = Astro.props;
+
+const publishedLabel = lang === "es" ? "Publicado el:" : "Published on:";
+
+const dateLocale = lang === "es" ? "es-ES" : "en-US";
+const formattedDate = post.data.pubDate.toLocaleDateString(dateLocale, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+});
+---
+
+<Layout
+    title={`${post.data.title} - Pickleball Águilas`}
+    lang={lang}
+    description={post.data.description}
+    image={post.data.image}
+>
+    <Navbar />
+
+    <header class="bg-azul-oscuro py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto mt-10">
+            <span class="text-amarillo-acento font-bold uppercase tracking-widest text-sm mb-4 block">
+                {post.data.category}
+            </span>
+            <h1 class="font-titulos text-4xl md:text-5xl text-white uppercase italic skew-x-[-2deg]">
+                {post.data.title}
+            </h1>
+            <p class="text-gray-300 mt-6 font-medium">
+                {publishedLabel} {formattedDate}
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        {post.data.image && (
+            <img
+                src={post.data.image}
+                alt={post.data.title}
+                class="w-full h-auto max-h-[500px] object-cover rounded-xl mb-12 shadow-lg"
+            />
+        )}
+
+        <article class="text-gray-700 text-lg leading-relaxed space-y-6 prose prose-lg prose-blue max-w-none">
+            <Content />
+        </article>
+
+        <ShareButtons title={post.data.title} />
+    </main>
+
+    <Footer lang={lang} />
+</Layout>
