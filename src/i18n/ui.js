@@ -45,6 +45,7 @@ export const t = {
         'contacto.siguenos': 'Síguenos en redes:',
 
         // --- PÁGINA ÚNETE ---
+        'unete.head_title': 'Únete - Pickleball Águilas Resort',
         'unete.titulo': 'Únete al Equipo',
         'unete.subtitulo': 'Déjanos tus datos y sé el primero en enterarte de torneos, ofertas y la apertura oficial.',
         'form.nombre': 'Nombre completo',
@@ -228,6 +229,7 @@ export const t = {
         'contacto.siguenos': 'Follow us:',
 
         // --- PÁGINA ÚNETE ---
+        'unete.head_title': 'Join Us - Pickleball Águilas Resort',
         'unete.titulo': 'Join the Team',
         'unete.subtitulo': 'Leave your details and be the first to know about tournaments, offers, and our official opening.',
         'form.nombre': 'Full name',
