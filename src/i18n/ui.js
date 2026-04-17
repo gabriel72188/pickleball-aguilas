@@ -110,8 +110,9 @@ export const t = {
 
         // --- PÁGINA FAQ ---
         'faq.head_title': 'Preguntas Frecuentes - Pickleball Águilas Resort',
-        'faq.hero_title': 'FAQ',
-        'faq.badge': '🎾🤾‍♂️ FAQ',
+        'faq.hero_title': 'PREGUNTAS FRECUENTES',
+        'faq.badge': '¿TIENES DUDAS?',
+        'faq.img_alt': 'Preguntas frecuentes sobre Pickleball',
         'faq.titulo': 'PREGUNTAS GENERALES SOBRE PICKLEBALL',
         'faq.descripcion': 'Te contestamos a todas las preguntas, dudas, cuestiones o inquietudes que tengas sobre pickleball. Y si no encuentras tu respuesta aquí, ponte en contacto y te la resolvemos en menos de 24h.',
         'faq.email_titulo': 'Dirección Email',
@@ -282,8 +283,9 @@ export const t = {
 
         // --- FAQ PAGE ---
         'faq.head_title': 'FAQ - Pickleball Águilas Resort',
-        'faq.hero_title': 'FAQ',
-        'faq.badge': '🎾🤾‍♂️ FAQ',
+        'faq.hero_title': 'FREQUENTLY ASKED QUESTIONS',
+        'faq.badge': 'HAVE DOUBTS?',
+        'faq.img_alt': 'Pickleball FAQ',
         'faq.titulo': 'GENERAL QUESTIONS ABOUT PICKLEBALL',
         'faq.descripcion': 'We answer all your questions, doubts, or concerns about pickleball. If you cannot find your answer here, contact us and we will resolve it in less than 24h.',
         'faq.email_titulo': 'Email Address',
