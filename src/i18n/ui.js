@@ -108,6 +108,10 @@ export const t = {
         'que_es_page.cta_boton': 'RESERVAR MI PISTA AHORA',
         'que_es_page.img_alt': 'Pickleball en acción',
 
+        // --- PÁGINA PRIVACIDAD ---
+        'privacy.head_title': 'Política de Privacidad y Aviso Legal - Pickleball Águilas Resort',
+        'privacy.hero_title': 'Política de Privacidad y Aviso Legal',
+
         // --- PÁGINA FAQ ---
         'faq.head_title': 'Preguntas Frecuentes - Pickleball Águilas Resort',
         'faq.hero_title': 'PREGUNTAS FRECUENTES',
@@ -280,6 +284,10 @@ export const t = {
         'que_es_page.cta_subtitle': 'Come and try the best facilities in Águilas. We will lend you the equipment.',
         'que_es_page.cta_boton': 'BOOK MY COURT NOW',
         'que_es_page.img_alt': 'Pickleball in action',
+
+        // --- PRIVACY PAGE ---
+        'privacy.head_title': 'Privacy Policy and Legal Notice - Pickleball Águilas Resort',
+        'privacy.hero_title': 'Privacy Policy and Legal Notice',
 
         // --- FAQ PAGE ---
         'faq.head_title': 'FAQ - Pickleball Águilas Resort',

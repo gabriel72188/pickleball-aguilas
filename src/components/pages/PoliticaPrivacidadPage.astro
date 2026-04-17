@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../Navbar.astro";
+import Footer from "../Footer.astro";
+import { t } from "../../i18n/ui.js";
+
+const { lang } = Astro.props;
+const textos = t[lang];
+---
+
+<Layout
+    title={textos["privacy.head_title"]}
+    lang={lang}
+>
+    <Navbar />
+
+    <header
+        class="relative bg-azul-oscuro py-20 px-6 flex items-center justify-center text-center overflow-hidden"
+    >
+        <img
+            src="/imagen-fondo2.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-azul-oscuro/80 to-azul-oscuro/60 z-10"
+        ></div>
+        <div class="relative z-20 max-w-4xl mx-auto">
+            <h1
+                class="font-titulos text-4xl md:text-5xl text-white uppercase tracking-tighter shadow-sm"
+            >
+                {textos["privacy.hero_title"]}
+            </h1>
+        </div>
+    </header>
+
+    <main
+        class="py-16 px-6 max-w-4xl mx-auto text-gray-700 space-y-12 leading-relaxed"
+    >
+        <slot />
+    </main>
+
+    <Footer lang={lang} />
+</Layout>
