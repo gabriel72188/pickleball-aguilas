@@ -20,6 +20,15 @@ export const empresasColaboradoras = [
                 "In short, playing golf is not just a sport, but a lifestyle combining sport, entertainment, challenge, and relaxation."
             ],
             btnText: "BOOK NOW!"
+        },
+        de: {
+            descripcion: [
+                "Das Glück begünstigt die Vorbereiteten: Üben Sie heute Ihr Golfspiel in Águilas.",
+                "Verschaffen Sie sich einen Vorteil, indem Sie Ihren Schwung in unserer Golfakademie verbessern.",
+                "Das Glück begünstigt die Vorbereiteten: Üben Sie heute Ihr Golfspiel in der Akademie der Isla del Fraile.",
+                "Kurz gesagt, Golf zu spielen ist nicht nur ein Sport, sondern eine Lebensweise, die Sport, Unterhaltung, Herausforderung und Entspannung vereint."
+            ],
+            btnText: "JETZT BUCHEN!"
         }
     },
     {
@@ -43,6 +52,15 @@ export const empresasColaboradoras = [
                 "Room Rental Águilas Hostel 7 days a week, 365 days a year. Want More? Contact us!"
             ],
             btnText: "BOOK NOW!"
+        },
+        de: {
+            descripcion: [
+                "Hostel in Murcia mit exklusiven Angeboten, in einer luxuriösen Wohnlage!",
+                "Suchen und buchen Sie günstige Hostels online. Nächste Station: Die richtige Unterkunft in Murcia für Sie.",
+                "Große Auswahl in einem ERSTKLASSIGEN HOSTEL.",
+                "Zimmervermietung Águilas Hostel 7 Tage die Woche, 365 Tage im Jahr. Möchten Sie mehr? Kontaktieren Sie uns!"
+            ],
+            btnText: "JETZT BUCHEN!"
         }
     },
     {
@@ -64,6 +82,14 @@ export const empresasColaboradoras = [
                 "Always guaranteeing satisfactory results backed by years of experience in civil, social, criminal, and private international law."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Eine multidisziplinäre Kanzlei aus Juristen, die umfassende Beratung für Privatpersonen und Unternehmen bietet.",
+                "Derzeit verfügt die Kanzlei über zwei Büros in Murcia und Águilas, wo sie ihren Mandanten Rechtsdienstleistungen und persönliche Betreuung anbietet.",
+                "Stets für zufriedenstellende Ergebnisse, gestützt auf jahrelange Erfahrung im Zivil-, Sozial-, Straf- und internationalen Privatrecht."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -83,6 +109,13 @@ export const empresasColaboradoras = [
                 "Monastrell, as the predominant variety in vineyards of this area, offers an upright vine with thick and short shoots, internodes of medium length and slightly branched; the leaf has a pentagonal blade, with three marked lobes."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Das persönlichste Projekt von Pedro Muñoz Carrasco entstand mit der Auswahl einheimischer Rebsorten aus dem Südosten der Iberischen Halbinsel. Der spanische Levanten-Bereich zeichnet sich durch seine Weine mit intensiver Farbe und fruchtigem Aroma aus.",
+                "Die Monastrell als vorherrschende Rebsorte der Weinberge in dieser Region bietet eine aufrechte Rebe mit dicken und kurzen Ranken, mittellagen Internodien und wenig verzweigt; das Blatt hat ein fünfeckiges Blatt mit drei markierten Lappen."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -104,6 +137,14 @@ export const empresasColaboradoras = [
                 "A different proposal for your pickleball clients, combining sport, adventure, and nature."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Capitán Buzo Club ist ein Unternehmen, das auf Tauchausbildung und -erlebnisse spezialisiert ist und Kurse für alle Niveaus, Schnuppertauchen, Ausflüge und organisierte Reisen anbietet.",
+                "Sie arbeiten mit höchster Professionalität und Sicherheit und ermöglichen es, die Unterwasserwelt auf aufregende und zugängliche Weise zu entdecken.",
+                "Ein andersartiges Angebot für Ihre Pickleball-Kunden, das Sport, Abenteuer und Natur verbindet."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -127,6 +168,15 @@ export const empresasColaboradoras = [
                 "With us, your accounting will reflect clarity and efficiency."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Bei der Steuerberatung Germán Sáez verwandeln wir Zahlen in erfolgreiche Strategien.",
+                "Von der Buchhaltung und Kostenrechnung bis hin zur detaillierten Abschreibungsanalyse.",
+                "Unsere Erfahrung umfasst die Körperschaftsteuer, das Handels- und Zentralregister und gewährleistet eine optimale und präzise Verwaltung.",
+                "Mit uns spiegelt Ihre Buchhaltung Klarheit und Effizienz wider."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -148,6 +198,14 @@ export const empresasColaboradoras = [
                 "An ideal partner to complement the experience of your pickleball players, both in their daily routine and when organizing events and tournaments."
             ],
             btnText: "BOOK NOW!"
+        },
+        de: {
+            descripcion: [
+                "2BOKA2 - SPAR City Titos ist ein Nahversorgungsmarkt mit einer breiten Produktpalette, Lieferservice und Lösungen für Veranstaltungen wie Food Trucks und Catering für Partys und Feiern.",
+                "Zeichnet sich durch Nähe, Bequemlichkeit und Qualität aus.",
+                "Ein idealer Partner, um das Erlebnis Ihrer Pickleball-Spieler zu ergänzen, sowohl im Alltag als auch bei der Organisation von Events und Turnieren."
+            ],
+            btnText: "JETZT BUCHEN!"
         }
     },
     {
@@ -169,6 +227,14 @@ export const empresasColaboradoras = [
                 "We take care of the maintenance and care of palm trees, ensuring their health and aesthetics, as well as carrying out high-altitude work in various environments. Your palm tree in the best hands!"
             ],
             btnText: "MORE INFO!"
+        },
+        de: {
+            descripcion: [
+                "El Rey de las Palmeras ist ein Unternehmen, das sich auf Palmenschnitt und Höhenarbeiten in Águilas spezialisiert hat.",
+                "Wir verfügen über ein hochqualifiziertes professionelles Team und geeignete Ausrüstung, um einen sicheren, effizienten und qualitativ hochwertigen Service zu gewährleisten.",
+                "Wir kümmern uns um die Pflege und Wartung von Palmen und sorgen für ihre Gesundheit und Ästhetik, sowie Höhenarbeiten in verschiedenen Umgebungen. Ihre Palme in den besten Händen!"
+            ],
+            btnText: "MEHR INFO!"
         }
     },
     {
@@ -190,6 +256,14 @@ export const empresasColaboradoras = [
                 "An ideal partner for your pickleball clients, helping them take care of themselves, prevent overloads, and stay in the best conditions to perform at their best on the court."
             ],
             btnText: "LEARN MORE!"
+        },
+        de: {
+            descripcion: [
+                "Quietud - David García Ganzheitliche Osteopathie ist ein Zentrum für Osteopathie und ganzheitliche Körperbehandlung, das sich auf die Linderung von Muskel- und Gelenkschmerzen, die Verbesserung der Mobilität und die Optimierung der körperlichen Leistung konzentriert.",
+                "Durch einen personalisierten Ansatz werden sowohl Prävention als auch Verletzungsrehabilitation behandelt.",
+                "Ein idealer Partner für Ihre Pickleball-Kunden, der ihnen hilft, auf sich zu achten, Überlastungen zu vermeiden und in bester Verfassung für maximale Leistung auf dem Platz zu bleiben."
+            ],
+            btnText: "MEHR ERFAHREN!"
         }
     },
     {
@@ -211,6 +285,14 @@ export const empresasColaboradoras = [
                 "A great partner for your pickleball clients, providing solutions for both the care and improvement of their spaces and renovation or maintenance projects."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Pintamar Deco ist ein auf Farben, Schutz und Dekoration spezialisiertes Unternehmen mit Erfahrung auch im Nautikbereich.",
+                "Bietet professionelle Beratung und individuelle Lösungen für Wohnungen, Unternehmen und Boote und kombiniert Qualität, Fachwissen und dauerhafte Oberflächen.",
+                "Ein großartiger Partner für Ihre Pickleball-Kunden, der Lösungen sowohl für die Pflege und Verbesserung ihrer Räume als auch für Renovierungs- oder Wartungsprojekte bietet."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -230,6 +312,13 @@ export const empresasColaboradoras = [
                 "A perfect partner for your pickleball clients, helping them care for their image and well-being for both their day-to-day and special events and occasions."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Elena Rojas - Unisex-Friseur und Ästhetik ist ein spezialisiertes Zentrum für Schönheit und Körperpflege, das ästhetische Dienstleistungen wie Maniküre, Pediküre, Haarentfernung, Gesichtsreinigung und Make-up sowie Friseurleistungen mit Schnitt, Farbe, Hochsteckfrisuren und Keratin-Behandlungen anbietet.",
+                "Ein perfekter Partner für Ihre Pickleball-Kunden, der ihnen hilft, ihr Image und Wohlbefinden für den Alltag sowie für besondere Ereignisse zu pflegen."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -251,6 +340,14 @@ export const empresasColaboradoras = [
                 "Always with you to help you take off in the world of precision agriculture!"
             ],
             btnText: "MORE INFO!"
+        },
+        de: {
+            descripcion: [
+                "Wir sind die Nummer-1-Schule in Spanien, die seit 2015 Drohnenpiloten und Zivilluftfahrtpiloten in über 15 Ländern weltweit ausbildet.",
+                "Wir präsentieren unsere 'SPANISCH HERGESTELLTEN DROHNEN' sowie etwas Wesentliches für jeden Landwirt: EINEN SCHNELLEN KUNDENDIENST.",
+                "Immer mit Ihnen, um Ihnen beim Abflug in die Welt der Präzisionslandwirtschaft zu helfen!"
+            ],
+            btnText: "MEHR INFO!"
         }
     },
     {
@@ -272,6 +369,14 @@ export const empresasColaboradoras = [
                 "An ideal partner for your pickleball clients, helping them enhance their personal brand, business, or events with a professional and attractive image."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Vintage Grafikstudio - Andrés Martínez ist ein auf Grafikdesign und Corporate Branding spezialisiertes Studio, das kreative und individuelle Lösungen für Unternehmen und Fachleute anbietet.",
+                "Fertigt Fahrzeugbeschriftungen, Schilder, Leuchtbuchstaben, Berufskleidung, Folierungen, Banner, Visitenkarten, Broschüren und alle Arten von Werbematerial.",
+                "Ein idealer Partner für Ihre Pickleball-Kunden, der ihnen hilft, ihre persönliche Marke, ihr Unternehmen oder ihre Veranstaltungen mit einem professionellen und attraktiven Image zu stärken."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -299,6 +404,17 @@ export const empresasColaboradoras = [
                 "Eliminates crowds for registrations and spreads your events."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Online-Reservierungen für Plätze oder Schwimmbadbadezugänge.",
+                "Reduziert die Anzahl der Anrufe von Benutzern zur Buchung.",
+                "Online-Gebührenzahlung per Kreditkarte oder Geldbörse.",
+                "Vermeidet Barzahlungen.",
+                "Online-Anmeldung für Aktivitäten oder Sportschulen.",
+                "Eliminiert Menschenansammlungen bei Anmeldungen und verbreitet Ihre Veranstaltungen."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     },
     {
@@ -320,6 +436,14 @@ export const empresasColaboradoras = [
                 "An excellent partner for your pickleball clients, providing their families with educational and sports options for the little ones, especially during holiday periods."
             ],
             btnText: "INFO HERE!"
+        },
+        de: {
+            descripcion: [
+                "Turismo Joven ist eine auf Sprachimmersionsprogramme und nautische Camps spezialisierte Inbound-Agentur, die Bildungs- und Freizeiterlebnisse für Kinder und Jugendliche anbietet.",
+                "Kombiniert Lernen, Sport und Spaß in sicheren, von einem professionellen Team organisierten Umgebungen.",
+                "Ein ausgezeichneter Partner für Ihre Pickleball-Kunden, der ihren Familien Bildungs- und Sportoptionen für die Kleinsten bietet, besonders in der Urlaubszeit."
+            ],
+            btnText: "HIER INFO ANFORDERN!"
         }
     }
 ];

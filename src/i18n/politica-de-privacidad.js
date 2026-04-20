@@ -1010,5 +1010,147 @@ export const privacidadTextos = {
                     </p>
                 </div>
             </section>
+        </div>`,
+    de: `<div>
+            <h2 class="text-3xl font-titulos text-azul-oscuro mb-8 uppercase border-b-2 border-amarillo-acento pb-2 inline-block">DATENSCHUTZRICHTLINIE</h2>
+
+            <section class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Informationen zum Webseitenbetreiber</h3>
+                    <p>Eintragung im Handelsregister mit Nr.:……………………………….</p>
+                    <p>Mitglied von ……………………. mit Nr. …………….</p>
+                    <p>Autorisierte Stelle ………………………….</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Datenschutzbeauftragter</h3>
+                    <p>Der Eigentümer ist verantwortlich für die personenbezogenen Daten, die durch das Surfen und die Nutzung dieser Website gemäß den Anforderungen der VERORDNUNG (EU) 2016/679 zum Schutz personenbezogener Daten natürlicher Personen sowie gemäß dem Gesetz 34/2002 vom 11. Juli über Dienste der Informationsgesellschaft und des elektronischen Handels (LSSI-CE) erhoben werden.</p>
+                    <p class="mt-2">Durch die Nutzung dieser Website gehen wir davon aus, dass Sie die Informationen zur Verarbeitung Ihrer personenbezogenen Daten gelesen und verstanden haben.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Datenschutzrichtlinie</h3>
+                    <p>Der Verantwortliche wendet den Grundsatz der aktiven Verantwortung bei der Verarbeitung personenbezogener Daten an und fördert die kontinuierliche Verbesserung des Datenschutzsystems, wobei er stets gewährleistet:</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                        <li>Achtung der Freiheiten und Grundrechte natürlicher Personen</li>
+                        <li>Dass die Daten rechtmäßig, fair und transparent verarbeitet werden</li>
+                        <li>Dass die verarbeiteten Daten korrekt, angemessen, relevant und auf das Notwendige beschränkt sind</li>
+                        <li>Dass die Zwecke, für die sie erhoben werden, ausdrücklich und rechtmäßig sind</li>
+                    </ul>
+                    <p class="mt-2">Zweck dieses Dokuments ist es, die Benutzer darüber zu informieren, was wir mit ihren personenbezogenen Daten tun, wie sie erhoben werden, wofür sie verwendet werden und welche Rechte ihnen zustehen.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Erhobene Daten, Zweck und Rechtsgrundlage</h3>
+                    <p>Die verarbeiteten personenbezogenen Daten sind diejenigen, die von den Benutzern über die auf dieser Website verfügbaren Formulare bereitgestellt werden und sind das Minimum, um:</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                        <li>Ihnen Informationen über unsere Produkte/Dienstleistungen zu senden.</li>
+                        <li>Anfragen zu beantworten.</li>
+                        <li>Bestellungen zu bearbeiten sowie die entsprechenden Rechnungen zu erstellen, über den Bestellstatus zu informieren, Reklamationen zu bearbeiten und jede andere Verwaltung, die sich aus der Erbringung des Dienstes über diese Website ergibt.</li>
+                    </ul>
+                    <p class="mt-2">Diese Zwecke basieren auf den gesetzlichen Grundsätzen der Datenverarbeitung: Vertragserfüllung, Erfüllung gesetzlicher Pflichten, berechtigtes Interesse und Einwilligung der Benutzer.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Webformulare</h3>
+                    <p>Personenbezogene Daten, die über das Kontaktformular erhoben werden, werden zur Beantwortung von Anfragen verwendet.</p>
+                    <p class="mt-2">Personenbezogene Daten aus dem Bestellformular dienen der korrekten Verwaltung Ihrer Bestellungen.</p>
+                    <p class="mt-2">Die Datenverarbeitung wird durch Ihre ausdrückliche Einwilligung legitimiert.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Empfänger der Daten</h3>
+                    <p>Die über die Webformulare erhaltenen personenbezogenen Daten werden auf elektronischen Medien gespeichert, die vom Verantwortlichen kontrolliert und überwacht werden.</p>
+                    <p class="mt-2">Ihre personenbezogenen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben oder für die korrekte Erbringung des Dienstes erforderlich (Zahlungsdienstleister, Versanddienstleister).</p>
+
+                    <div class="bg-gray-50 p-4 rounded-lg mt-3 text-sm">
+                        <p><strong>Redsys Servicios de Procesamiento, S.L. ("Redsys")</strong>, mit Sitz in Madrid, Calle Francisco Sancha 12, und CIF-Nr. B-85955367, die die geltenden Datenschutzvorschriften vollständig einhält. Datenschutzrichtlinie: <a href="https://www.redsys.es/legal/20180223_politica_de_privacidad_web_publica_redsys.pdf" target="_blank" rel="noopener noreferrer" class="text-azul-principal hover:underline break-all">https://www.redsys.es/legal/20180223_politica_de_privacidad_web_publica_redsys.pdf</a></p>
+                        <p class="mt-3"><strong>PayPal (Europe) S.à.r.l. et Cie, S.C.A.</strong> (R.C.S. Luxembourg B 118 349). Datenschutzrichtlinie: <a href="https://www.paypal.com/es/webapps/mpp/ua/privacy-full?locale.x=es_ES#1" target="_blank" rel="noopener noreferrer" class="text-azul-principal hover:underline break-all">https://www.paypal.com/es/webapps/mpp/ua/privacy-full?locale.x=es_ES#1</a></p>
+                    </div>
+
+                    <p class="mt-3">In Fällen, in denen keine gesetzliche Grundlage vorliegt, erfolgt eine Weitergabe nur mit Ihrer ausdrücklichen Einwilligung.</p>
+                    <p class="mt-2">Strenge Auswahlkriterien für Auftragsverarbeiter und vertragliche Verpflichtungen gewährleisten den Datenschutz.</p>
+                    <p class="mt-2">Bei internationalen Datenübermittlungen stellt TABURETE HOSTEL, SL sicher, dass diese gemäß den geltenden Datenschutzgesetzen erfolgen.</p>
+                    <p class="mt-2">Weitere Informationen erhalten Sie unter: <a href="mailto:pickleballaguilas@gmail.com" class="text-azul-principal hover:underline font-medium">pickleballaguilas@gmail.com</a></p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Technische und organisatorische Datenschutzmaßnahmen</h3>
+                    <p>Die Medien verfügen über die notwendigen technischen und organisatorischen Maßnahmen, die die Vertraulichkeit und Aufbewahrung der über die Website gesammelten personenbezogenen Daten gewährleisten.</p>
+                    <p class="mt-2">Die über die Website erhobenen Daten werden mittels HTML-Protokoll mit gültigem SSL-Zertifikat verarbeitet.</p>
+                    <p class="mt-2">Das an der Datenverarbeitung beteiligte Personal ist qualifiziert, geschult und dieser Datenschutzrichtlinie verpflichtet.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Datenaufbewahrung</h3>
+                    <p>Die über das Kontaktformular erhobenen personenbezogenen Daten werden so lange aufbewahrt, wie es zur Bearbeitung der Anfrage erforderlich ist.</p>
+                    <p class="mt-2">Die über das Bestellformular erhobenen personenbezogenen Daten werden aufbewahrt, solange eine vertragliche und/oder geschäftliche Beziehung mit Ihnen besteht oder bis Sie Ihr Recht auf Löschung ausüben.</p>
+                    <p class="mt-2">Nach Ende der Vertragsbeziehung bewahren wir die Informationen ordnungsgemäß gesperrt auf, während sie für die Ausübung oder Verteidigung von Ansprüchen erforderlich sein könnten.</p>
+                    <p class="mt-2">Wenn Sie dem Erhalt kommerzieller Informationen ausdrücklich zugestimmt haben, bewahren wir Ihre Kontaktdaten auf, bis Sie uns Ihre Entscheidung mitteilen, diese zu stornieren.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Automatisierte Entscheidungen (einschließlich Profiling)</h3>
+                    <p>In der Regel treffen wir keine automatisierten Entscheidungen, aber wenn wir dies tun, werden wir dies deutlich machen. TABURETE HOSTEL, SL CIF/NIF B73996001 enthält Abschnitte zur Personalisierung von Diensten, um personalisierte Werbung auf der Website anzuzeigen.</p>
+                    <p class="mt-2">TABURETE HOSTEL, SL erkennt die Möglichkeit des Profilings zur Verbesserung des Produktangebots oder zur Personalisierung kommerzieller Angebote an.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Widerspruch gegen Datenverarbeitung zu Werbezwecken</h3>
+                    <p>Wenn Sie Ihre Einwilligung zur Nutzung Ihrer Daten zu Werbezwecken gegeben haben und keine weitere Werbung mehr erhalten möchten, können Sie die erteilte Einwilligung jederzeit widerrufen, indem Sie eine E-Mail an <a href="mailto:pickleballaguilas@gmail.com" class="text-azul-principal hover:underline font-medium">pickleballaguilas@gmail.com</a> senden.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Änderungen der Datenschutzrichtlinie</h3>
+                    <p>Wir können die in dieser Datenschutz- und Cookie-Richtlinie enthaltenen Informationen ändern, wenn wir dies für angemessen halten. In diesem Fall werden wir Sie auf verschiedene Weise über die Plattform benachrichtigen (z.B. über ein Banner, ein Pop-up oder eine Push-Benachrichtigung). Wir empfehlen Ihnen, diese Datenschutzrichtlinie von Zeit zu Zeit zu überprüfen.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="pt-8 border-t border-gray-200">
+            <h2 class="text-3xl font-titulos text-azul-oscuro mb-8 uppercase border-b-2 border-amarillo-acento pb-2 inline-block">IMPRESSUM</h2>
+
+            <section class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Geistiges und gewerbliches Eigentum</h3>
+                    <p>Das Design des Portals und seine Quellcodes sowie die Logos, Marken und anderen Unterscheidungszeichen gehören TABURETE HOSTEL, SL und sind durch die entsprechenden Rechte an geistigem und gewerblichem Eigentum geschützt.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Verantwortung für die Inhalte</h3>
+                    <p>TABURETE HOSTEL, SL CIF/NIF B73996001 ist nicht verantwortlich für die Legalität anderer Drittanbieter-Websites, von denen aus auf das Portal zugegriffen werden kann.</p>
+                    <p class="mt-2">TABURETE HOSTEL, SL CIF/NIF B73996001 ist nicht verantwortlich für die Nutzung der auf dem Portal veröffentlichten Informationen durch Dritte.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Reproduktion von Inhalten</h3>
+                    <p>Gemäß dem Urheberrechtsgesetz sind die Reproduktion, Verbreitung und öffentliche Wiedergabe der Inhalte dieser Website zu kommerziellen Zwecken ohne Genehmigung von TABURETE HOSTEL, SL ausdrücklich untersagt.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Anwendbares Recht</h3>
+                    <p>TABURETE HOSTEL, SL CIF/NIF B73996001 behält sich das Recht vor, zivil- oder strafrechtliche Maßnahmen einzuleiten, die für die missbräuchliche Nutzung der Website und ihrer Inhalte oder für die Verletzung dieser Bedingungen als notwendig erachtet werden.</p>
+                    <p class="mt-2">Die Beziehung zwischen dem Benutzer und TABURETE HOSTEL, SL unterliegt den geltenden nationalen Vorschriften.</p>
+                    <p class="mt-2">Wir informieren Sie auch, dass Ihnen ein kostenloses außergerichtliches Streitbeilegungsverfahren zur Verfügung steht: die Online-Streitbeilegungsplattform der Europäischen Union, zugänglich unter: <a href="https://ec.europa.eu/consumers/odr/main/?event=main.home2.show" target="_blank" rel="noopener noreferrer" class="text-azul-principal hover:underline break-all">https://ec.europa.eu/consumers/odr/main/?event=main.home2.show</a>.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Cookies</h3>
+                    <p>Wenn auf der Website „Cookie"-Technologie verwendet wird, finden Sie einen speziellen Abschnitt, der Sie über deren Existenz und Nutzungsrichtlinie informiert. Besuchen Sie den Abschnitt <a href="/de/politica-de-cookies" class="text-azul-principal hover:underline font-medium">"Cookie-Richtlinie"</a>.</p>
+                    <p class="mt-2">Andernfalls werden keine Navigations-Cookies verwendet.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Personenbezogene Daten von Minderjährigen</h3>
+                    <p>Diese Website richtet sich nicht an minderjährige Benutzer. Wenn Sie minderjährig sind, versuchen Sie bitte nicht, sich als Benutzer zu registrieren. Wenn wir feststellen, dass wir versehentlich personenbezogene Daten eines Minderjährigen erhalten haben, werden wir diese so schnell wie möglich löschen.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Ausübung der Datenschutzrechte</h3>
+                    <p>Gemäß den geltenden Datenschutzvorschriften kann der Benutzer die Rechte auf Auskunft, Berichtigung, Einschränkung der Verarbeitung, Löschung, Übertragbarkeit und Widerspruch ausüben, indem er seinen Antrag an die angegebene Postanschrift oder an die E-Mail <a href="mailto:pickleballaguilas@gmail.com" class="text-azul-principal hover:underline font-medium">pickleballaguilas@gmail.com</a> richtet.</p>
+                    <p class="mt-2">Zur Ausübung dieser Rechte müssen Sie sich mit Ihrem Ausweis (DNI/Reisepass) identifizieren.</p>
+                    <p class="mt-2">Bei Beschwerden können Sie sich an die gleiche E-Mail-Adresse wenden.</p>
+                </div>
+            </section>
         </div>`
 };

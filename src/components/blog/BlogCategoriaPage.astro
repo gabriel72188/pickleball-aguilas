@@ -6,7 +6,7 @@ import Footer from "../Footer.astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-    lang: "es" | "en";
+    lang: "es" | "en" | "de";
     nombreOriginal: string;
     posts: CollectionEntry<"blog">[];
 }
@@ -29,6 +29,13 @@ const ui = {
         heading: "Category:",
         empty_1: (cat: string) => `We haven't published any articles in the category `,
         empty_2: "Check back soon for new content!",
+    },
+    de: {
+        title: (cat: string) => `Kategorie: ${cat} - Pickleball Águilas`,
+        back: "← Zurück zum Blog",
+        heading: "Kategorie:",
+        empty_1: (cat: string) => `Wir haben noch keine Artikel in der Kategorie `,
+        empty_2: "Schauen Sie bald wieder vorbei für neue Inhalte!",
     },
 };
 

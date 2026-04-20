@@ -6,7 +6,7 @@ import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
 
 interface Props {
-    lang: "es" | "en";
+    lang: "es" | "en" | "de";
     page: any; // Astro paginate() page object
 }
 
@@ -28,6 +28,7 @@ const ui = {
         contact_title: "¿Tienes Alguna Pregunta?",
         contact_body: "Contáctanos, no lo dudes. Siempre, siempre, pero siempre, estamos encantados de atenderte.",
         back_blog: "← Volver al Blog",
+        contact_link: "Ir al Contacto →",
         cats: [
             { label: "Torneos de Pickleball", slug: "torneos-de-pickleball" },
             { label: "Oferta", slug: "oferta" },
@@ -47,11 +48,32 @@ const ui = {
         contact_title: "Have a Question?",
         contact_body: "Contact us, don't hesitate. We are always happy to help you.",
         back_blog: "← Back to Blog",
+        contact_link: "Go to Contact →",
         cats: [
             { label: "Pickleball Tournaments", slug: "torneos-de-pickleball" },
             { label: "Offer", slug: "oferta" },
             { label: "Info", slug: "info" },
             { label: "Classes", slug: "clases" },
+        ],
+    },
+    de: {
+        title: (n: number) => `Pickleball Blog - Seite ${n}`,
+        h1_first: "Neueste Nachrichten",
+        h1_page: (n: number) => `Nachrichten - Seite ${n}`,
+        no_posts: "Noch keine Beiträge vorhanden.",
+        prev: "← Neuere",
+        next: "Ältere →",
+        page_of: (cur: number, last: number) => `Seite ${cur} von ${last}`,
+        categories_title: "Kategorien",
+        contact_title: "Haben Sie eine Frage?",
+        contact_body: "Kontaktieren Sie uns, zögern Sie nicht. Wir helfen Ihnen immer gerne.",
+        back_blog: "← Zurück zum Blog",
+        contact_link: "Zum Kontakt →",
+        cats: [
+            { label: "Pickleball-Turniere", slug: "torneos-de-pickleball" },
+            { label: "Angebote", slug: "oferta" },
+            { label: "Info", slug: "info" },
+            { label: "Kurse", slug: "clases" },
         ],
     },
 };
@@ -158,7 +180,7 @@ const blogBase = `/${lang}/blog`;
                     <h3 class="font-bold text-xl mb-4">{tx.contact_title}</h3>
                     <p class="text-sm text-gray-300 mb-6">{tx.contact_body}</p>
                     <a href={`/${lang}/contacto`} class="text-amarillo-acento font-bold hover:underline">
-                        {isEs ? "Ir al Contacto →" : "Go to Contact →"}
+                        {tx.contact_link}
                     </a>
                 </div>
             </aside>

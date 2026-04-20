@@ -1001,5 +1001,120 @@ export const cookiesTextos = {
                     </tbody>
                 </table>
             </div>
+        </section>`,
+    de: `<section>
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-4">Was sind Cookies?</h2>
+            <p>Im Englischen bedeutet „Cookie" Keks, aber im Bereich des Websurfens ist ein „Cookie" etwas ganz anderes.</p>
+            <p class="mt-4">Wenn Sie unsere Website aufrufen, wird eine kleine Textmenge, die als „Cookie" bezeichnet wird, im Browser Ihres Geräts gespeichert. Dieser Text enthält verschiedene Informationen über Ihr Surfen, Ihre Gewohnheiten, Präferenzen, Inhaltspersonalisierungen usw.</p>
+            <p class="mt-4">Es gibt andere Technologien, die auf ähnliche Weise funktionieren und ebenfalls zur Erfassung von Daten über Ihre Surfaktivitäten verwendet werden. Wir nennen all diese Technologien zusammen „Cookies".</p>
+            <p class="mt-4">Die spezifischen Verwendungszwecke, für die wir diese Technologien einsetzen, sind in diesem Dokument beschrieben.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-4">Wofür werden Cookies auf dieser Website verwendet?</h2>
+            <p>Cookies sind ein wesentlicher Bestandteil der Funktionsweise unserer Website. Das Hauptziel unserer Cookies ist es, Ihr Surferlebnis zu verbessern. Zum Beispiel, um sich Ihre Präferenzen (Sprache, Land usw.) während des Surfens und bei zukünftigen Besuchen zu merken. Die in den Cookies gesammelten Informationen ermöglichen uns auch, die Website zu verbessern, sie Ihren Interessen als Benutzer anzupassen, Ihre Suchen zu beschleunigen usw.</p>
+            <p class="mt-4">In bestimmten Fällen, wenn wir Ihre vorherige informierte Zustimmung erhalten haben, können wir Cookies für andere Zwecke verwenden, zum Beispiel um Informationen zu erhalten, die es uns ermöglichen, Ihnen Werbung basierend auf der Analyse Ihrer Surfgewohnheiten zu zeigen.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-4">Wofür werden Cookies auf dieser Website NICHT verwendet?</h2>
+            <p>In den Cookies, die wir verwenden, werden keine sensiblen persönlichen Identifikationsinformationen wie Ihr Name, Ihre Adresse, Ihr Passwort usw. gespeichert.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-4">Wer verwendet die in den Cookies gespeicherten Informationen?</h2>
+            <p>Die in den Cookies unserer Website gespeicherten Informationen werden ausschließlich von uns verwendet, mit Ausnahme der unten als „Drittanbieter-Cookies" identifizierten Cookies, die von externen Unternehmen verwendet und verwaltet werden, die uns Dienste bereitstellen, die das Benutzererlebnis verbessern. Zum Beispiel werden die Statistiken über die Anzahl der Besuche, die beliebtesten Inhalte usw. in der Regel von GOOGLE ANALYTICS verwaltet.</p>
+            <p class="mt-4">Drittanbieter-Cookies werden auch häufig verwendet, um die über die Website durchgeführten Zahlungsvorgänge zu gewährleisten.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-4">Wie kann ich die Verwendung von Cookies auf dieser Website vermeiden?</h2>
+            <p>Wenn Sie die Verwendung von Cookies vermeiden möchten, können Sie ihre Verwendung ABLEHNEN oder die Cookies KONFIGURIEREN, die Sie vermeiden und die Sie zulassen möchten (in diesem Dokument geben wir Ihnen erweiterte Informationen zu jedem Cookie-Typ, seinem Zweck, Empfänger, Zeitlichkeit usw.).</p>
+            <p class="mt-4">Wenn Sie sie akzeptiert haben, werden wir Sie nicht erneut fragen, es sei denn, Sie löschen die Cookies auf Ihrem Gerät wie im folgenden Abschnitt angegeben.</p>
+            <p class="mt-4">Wenn Sie die Einwilligung widerrufen möchten, müssen Sie die Cookies löschen und sie neu konfigurieren.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-4">Wie deaktiviere und lösche ich die Verwendung von Cookies?</h2>
+            <p>Um die Cookies dieser Website (und die von Drittanbietern verwendeten) einzuschränken, zu blockieren oder zu löschen, können Sie dies jederzeit tun, indem Sie die Einstellungen Ihres Browsers ändern. Beachten Sie, dass diese Einstellung in jedem Browser unterschiedlich ist, obwohl die Cookie-Einstellungen in der Regel im Menü „Einstellungen", „Werkzeuge", „Optionen" und dann unter „Datenschutz und Sicherheit" oder „Browserdaten löschen" usw. zu finden sind.</p>
+            <p class="mt-4">Weitere Einzelheiten zur Konfiguration von Cookies in jedem Browser finden Sie im Menü „Hilfe" des Browsers.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-4">Welche Arten von Cookies werden auf dieser Website verwendet?</h2>
+            <p>Jede Website verwendet eigene Cookies. Auf unserer Website verwenden wir die folgenden:</p>
+
+            <div class="mt-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">NACH DER VERWALTUNGSINSTANZ</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Eigene Cookies:</strong> sind solche, die vom Computer oder der Domain des Herausgebers selbst an das Endgerät des Benutzers gesendet werden.</li>
+                    <li><strong>Drittanbieter-Cookies:</strong> sind solche, die an das Endgerät des Benutzers von einem Computer oder einer Domain gesendet werden, die nicht vom Herausgeber verwaltet wird.</li>
+                </ul>
+                <p class="mt-4 text-sm text-gray-600">Wenn Cookies von einem vom Herausgeber verwalteten Computer bereitgestellt werden, aber die gesammelten Informationen von einem Dritten verwaltet werden, können sie nicht als eigene Cookies betrachtet werden, wenn der Dritte sie für eigene Zwecke verwendet.</p>
+            </div>
+
+            <div class="mt-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">NACH IHREM ZWECK</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Technische Cookies:</strong> sind für die Navigation und das reibungslose Funktionieren unserer Website notwendig.</li>
+                    <li><strong>Analyse-Cookies:</strong> ermöglichen die Quantifizierung der Benutzeranzahl und die statistische Analyse der Nutzung.</li>
+                    <li><strong>Präferenz- oder Personalisierungs-Cookies:</strong> ermöglichen es, Informationen zu speichern, damit der Benutzer mit bestimmten Merkmalen auf den Dienst zugreift.</li>
+                    <li><strong>Verhaltensbasierte Werbung:</strong> ermöglichen die Analyse Ihrer Internet-Surfgewohnheiten, um Ihnen relevante Werbung zu zeigen.</li>
+                </ul>
+            </div>
+
+            <div class="mt-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">NACH DEM ZEITRAUM, IN DEM SIE AKTIV BLEIBEN</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Sitzungs-Cookies:</strong> sind dazu bestimmt, Daten zu erfassen und zu speichern, während der Benutzer auf eine Website zugreift. Sie verschwinden am Ende der Sitzung.</li>
+                    <li><strong>Persistente Cookies:</strong> sind solche, bei denen die Daten im Terminal gespeichert bleiben und während eines festgelegten Zeitraums aufgerufen und verarbeitet werden können.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold text-azul-oscuro mb-6">Einzelheiten zu den auf dieser Website verwendeten Cookies:</h2>
+
+            <div class="mb-8 overflow-x-auto">
+                <table class="w-full text-sm text-left border-collapse border border-gray-300">
+                    <thead class="bg-gray-100 text-gray-700">
+                        <tr><th colspan="4" class="border border-gray-300 px-4 py-3 text-base">Technische Cookies (wesentlich)</th></tr>
+                        <tr>
+                            <th class="border border-gray-300 px-4 py-2 w-1/4">Cookies</th>
+                            <th class="border border-gray-300 px-4 py-2 w-1/2">Zweck</th>
+                            <th class="border border-gray-300 px-4 py-2">Dauer</th>
+                            <th class="border border-gray-300 px-4 py-2">Verwaltung</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600">
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Benutzeridentifikation</td><td class="border border-gray-300 px-4 py-2">Zur Identifizierung des Benutzers, enthält technische Sitzungsdaten, Verbindungs-Timeout usw.</td><td class="border border-gray-300 px-4 py-2">Sitzung</td><td class="border border-gray-300 px-4 py-2">Eigen</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Navigationsstatus</td><td class="border border-gray-300 px-4 py-2">Zur Identifizierung des Navigationsstatus: erste Seite, erster Zugriff usw.</td><td class="border border-gray-300 px-4 py-2">Sitzung</td><td class="border border-gray-300 px-4 py-2">Eigen</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Benutzerauswahl</td><td class="border border-gray-300 px-4 py-2">Zum Speichern der ausgewählten Werte: Sprache, Währung, Produkte, Größe usw.</td><td class="border border-gray-300 px-4 py-2">Sitzung</td><td class="border border-gray-300 px-4 py-2">Eigen</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Favoriten</td><td class="border border-gray-300 px-4 py-2">Ermöglichen das Speichern der Lieblingsauswahl oder der letzten Auswahl</td><td class="border border-gray-300 px-4 py-2">Persistent</td><td class="border border-gray-300 px-4 py-2">Eigen</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Warenkorb</td><td class="border border-gray-300 px-4 py-2">Speichert Informationen über den Warenkorb und die Benutzer-ID-Daten.</td><td class="border border-gray-300 px-4 py-2">Sitzung</td><td class="border border-gray-300 px-4 py-2">Eigen</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Protokolle</td><td class="border border-gray-300 px-4 py-2">Verwaltung von Domänenwechseln zwischen sicher (https) und nicht sicher (http)</td><td class="border border-gray-300 px-4 py-2">Sitzung</td><td class="border border-gray-300 px-4 py-2">Eigen</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Kaufgerät</td><td class="border border-gray-300 px-4 py-2">Garantien für Käufe. Enthalten keine sensiblen Informationen wie Kartendaten.</td><td class="border border-gray-300 px-4 py-2">Persistent</td><td class="border border-gray-300 px-4 py-2">Drittanbieter</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left border-collapse border border-gray-300">
+                    <thead class="bg-gray-100 text-gray-700">
+                        <tr><th colspan="4" class="border border-gray-300 px-4 py-3 text-base">Analyse-Cookies</th></tr>
+                        <tr>
+                            <th class="border border-gray-300 px-4 py-2 w-1/4">Cookies</th>
+                            <th class="border border-gray-300 px-4 py-2 w-1/2">Zweck</th>
+                            <th class="border border-gray-300 px-4 py-2">Dauer</th>
+                            <th class="border border-gray-300 px-4 py-2">Verwaltung</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600">
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Google Analytics</td><td class="border border-gray-300 px-4 py-2">Ermöglicht die Verfolgung über Google Analytics zur Erfassung von Zugangsinformationen der Benutzer auf die Website.</td><td class="border border-gray-300 px-4 py-2">Persistent</td><td class="border border-gray-300 px-4 py-2">Drittanbieter</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Optimizely</td><td class="border border-gray-300 px-4 py-2">Ermöglicht die Optimierung des Erscheinungsbildes und des Surferlebnisses des Benutzers.</td><td class="border border-gray-300 px-4 py-2">Persistent</td><td class="border border-gray-300 px-4 py-2">Drittanbieter</td></tr>
+                        <tr><td class="border border-gray-300 px-4 py-2 font-medium">Kaufgerät</td><td class="border border-gray-300 px-4 py-2">Identifizierung des Geräts für Einkäufe auf der Website für spätere Analysen.</td><td class="border border-gray-300 px-4 py-2">Persistent</td><td class="border border-gray-300 px-4 py-2">Drittanbieter</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </section>`
 };

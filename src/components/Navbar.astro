@@ -3,8 +3,8 @@
 import { t } from "../i18n/ui.js";
 
 const pathname = Astro.url.pathname;
-const lang = pathname.includes("/en") ? "en" : "es";
-const textos = t[lang];
+const lang = pathname.includes("/en") ? "en" : pathname.includes("/de") ? "de" : "es";
+const textos = t[lang] || t["es"];
 
 const idiomasDisponibles = [
   {
@@ -16,6 +16,11 @@ const idiomasDisponibles = [
     codigo: "en",
     urlBandera: "https://flagcdn.com/w20/gb.png",
     nombre: "English",
+  },
+  {
+    codigo: "de",
+    urlBandera: "https://flagcdn.com/w20/de.png",
+    nombre: "Deutsch",
   },
 ];
 
