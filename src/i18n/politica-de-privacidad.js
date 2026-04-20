@@ -224,9 +224,9 @@ export const privacidadTextos = {
                         Puede obtener más información sobre el tratamiento de
                         los datos personales de nuestra organización
                         solicitándola en el mail: <a
-                            href="mailto:EQUIPAZO@TABURETEHOSTEL.COM"
+                            href="mailto:pickleballaguilas@gmail.com"
                             class="text-azul-principal hover:underline font-medium"
-                            >EQUIPAZO@TABURETEHOSTEL.COM</a
+                            >pickleballaguilas@gmail.com</a
                         > o accediendo a través del siguiente enlace: <a
                             href="https://www.accesousuario.com/protecciondedatos/rgpd/informacion_consentimientoAPI.php?codEmpresa=75680"
                             target="_blank"
@@ -325,9 +325,9 @@ export const privacidadTextos = {
                         publicidad, puedes revocar el consentimiento prestado en
                         cualquier momento y a través del envío de un correo
                         electrónico al mail del responsable <a
-                            href="mailto:EQUIPAZO@TABURETEHOSTEL.COM"
+                            href="mailto:pickleballaguilas@gmail.com"
                             class="text-azul-principal hover:underline font-medium"
-                            >EQUIPAZO@TABURETEHOSTEL.COM</a
+                            >pickleballaguilas@gmail.com</a
                         >.
                     </p>
                 </div>
@@ -495,9 +495,9 @@ export const privacidadTextos = {
                         supresión, portabilidad y oposición al tratamiento de
                         sus datos dirigiendo su petición a la dirección postal
                         indicada o al correo electrónico <a
-                            href="mailto:EQUIPAZO@TABURETEHOSTEL.COM"
+                            href="mailto:pickleballaguilas@gmail.com"
                             class="text-azul-principal hover:underline font-medium"
-                            >EQUIPAZO@TABURETEHOSTEL.COM</a
+                            >pickleballaguilas@gmail.com</a
                         >.
                     </p>
                     <p class="mt-2">
@@ -733,9 +733,9 @@ export const privacidadTextos = {
                         You can obtain more information about the processing of
                         personal data from our organization by requesting it at
                         the email: <a
-                            href="mailto:EQUIPAZO@TABURETEHOSTEL.COM"
+                            href="mailto:pickleballaguilas@gmail.com"
                             class="text-azul-principal hover:underline font-medium"
-                            >EQUIPAZO@TABURETEHOSTEL.COM</a
+                            >pickleballaguilas@gmail.com</a
                         > or by accessing through the following link: <a
                             href="https://www.accesousuario.com/protecciondedatos/rgpd/informacion_consentimientoAPI.php?codEmpresa=75680"
                             target="_blank"
@@ -833,9 +833,9 @@ export const privacidadTextos = {
                         receiving advertising, you can revoke the consent
                         granted at any time by sending an email to the
                         controller's email <a
-                            href="mailto:EQUIPAZO@TABURETEHOSTEL.COM"
+                            href="mailto:pickleballaguilas@gmail.com"
                             class="text-azul-principal hover:underline font-medium"
-                            >EQUIPAZO@TABURETEHOSTEL.COM</a
+                            >pickleballaguilas@gmail.com</a
                         >.
                     </p>
                 </div>
@@ -996,9 +996,9 @@ export const privacidadTextos = {
                         objection to the processing of their data by directing
                         their request to the indicated postal address or to the
                         email <a
-                            href="mailto:EQUIPAZO@TABURETEHOSTEL.COM"
+                            href="mailto:pickleballaguilas@gmail.com"
                             class="text-azul-principal hover:underline font-medium"
-                            >EQUIPAZO@TABURETEHOSTEL.COM</a
+                            >pickleballaguilas@gmail.com</a
                         >.
                     </p>
                     <p class="mt-2">
