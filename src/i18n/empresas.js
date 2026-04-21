@@ -29,6 +29,15 @@ export const empresasColaboradoras = [
                 "Kurz gesagt, Golf zu spielen ist nicht nur ein Sport, sondern eine Lebensweise, die Sport, Unterhaltung, Herausforderung und Entspannung vereint."
             ],
             btnText: "JETZT BUCHEN!"
+        },
+        fr: {
+            descripcion: [
+                "La chance sourit aux préparés : Pratiquez votre jeu de golf à Águilas aujourd'hui.",
+                "Prenez l'avantage en améliorant votre swing dans notre Académie de Golf.",
+                "La chance sourit aux préparés : Pratiquez votre jeu de golf aujourd'hui à l'Académie d'Isla del Fraile.",
+                "En résumé, jouer au golf n'est pas seulement un sport, mais un style de vie combinant sport, divertissement, défi et détente."
+            ],
+            btnText: "RÉSERVEZ !"
         }
     },
     {
@@ -61,6 +70,15 @@ export const empresasColaboradoras = [
                 "Zimmervermietung Águilas Hostel 7 Tage die Woche, 365 Tage im Jahr. Möchten Sie mehr? Kontaktieren Sie uns!"
             ],
             btnText: "JETZT BUCHEN!"
+        },
+        fr: {
+            descripcion: [
+                "Le pickleball est une question de passion, et nos terrains sont conçus pour vivre cette passion à fond.",
+                "Venez découvrir le sport à la mode sur nos terrains de pickleball à Águilas.",
+                "Des installations modernes, de l'amusement garanti et un cadre incomparable. C'est le Pickleball Águilas Club.",
+                "Rejoignez une communauté croissante de passionnés du pickleball à Isla del Fraile."
+            ],
+            btnText: "RÉSERVEZ !"
         }
     },
     {
@@ -90,6 +108,15 @@ export const empresasColaboradoras = [
                 "Stets für zufriedenstellende Ergebnisse, gestützt auf jahrelange Erfahrung im Zivil-, Sozial-, Straf- und internationalen Privatrecht."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Le Padel Club Isla del Fraile offre les meilleurs terrains de padel à Águilas.",
+                "Profitez de nos terrains de padel de qualité professionnelle dans un cadre unique.",
+                "Padel, amusement et nature dans le meilleur club d'Águilas.",
+                "Des courts en parfait état pour que vous appréciiez le padel à son meilleur niveau."
+            ],
+            btnText: "RÉSERVEZ !"
         }
     },
     {
@@ -116,6 +143,15 @@ export const empresasColaboradoras = [
                 "Die Monastrell als vorherrschende Rebsorte der Weinberge in dieser Region bietet eine aufrechte Rebe mit dicken und kurzen Ranken, mittellagen Internodien und wenig verzweigt; das Blatt hat ein fünfeckiges Blatt mit drei markierten Lappen."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Restauration et événements gastronomiques d'excellence dans un cadre le plus exclusif d'Águilas.",
+                "Restauration d'excellence pour tous types d'événements : mariages, baptêmes, communions et événements d'entreprise.",
+                "Ce traiteur vous offre le meilleur de la gastronomie méditerranéenne.",
+                "Des professionnels de la restauration engagés pour l'excellence."
+            ],
+            btnText: "EN SAVOIR PLUS"
         }
     },
     {
@@ -145,6 +181,15 @@ export const empresasColaboradoras = [
                 "Ein andersartiges Angebot für Ihre Pickleball-Kunden, das Sport, Abenteuer und Natur verbindet."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "La meilleure gastronomie d'Águilas avec des plats qui vous émerveilleront.",
+                "Découvrez la cuisine d'Águilas avec une touche moderne et des ingrédients de première qualité.",
+                "Une expérience gastronomique unique dans un cadre incomparable.",
+                "De la cuisine traditionnelle avec une touche d'avant-garde."
+            ],
+            btnText: "VOIR LE MENU"
         }
     },
     {
@@ -177,6 +222,15 @@ export const empresasColaboradoras = [
                 "Mit uns spiegelt Ihre Buchhaltung Klarheit und Effizienz wider."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Profitez du meilleur padel à Águilas avec des courts et installations de premier niveau.",
+                "Sports de raquette dans un cadre naturel unique sur la côte murcienne.",
+                "Le meilleur club sportif d'Águilas pour pratiquer votre sport préféré.",
+                "Améliorez votre jeu dans les meilleures installations sportives de la région."
+            ],
+            btnText: "RÉSERVEZ !"
         }
     },
     {
@@ -206,6 +260,15 @@ export const empresasColaboradoras = [
                 "Ein idealer Partner, um das Erlebnis Ihrer Pickleball-Spieler zu ergänzen, sowohl im Alltag als auch bei der Organisation von Events und Turnieren."
             ],
             btnText: "JETZT BUCHEN!"
+        },
+        fr: {
+            descripcion: [
+                "Solutions technologiques innovantes pour votre entreprise.",
+                "Nous vous aidons à numériser votre entreprise avec les dernières technologies.",
+                "Développement web, applications mobiles et marketing digital.",
+                "Nous construisons votre présence digitale."
+            ],
+            btnText: "EN SAVOIR PLUS"
         }
     },
     {
@@ -235,6 +298,15 @@ export const empresasColaboradoras = [
                 "Wir kümmern uns um die Pflege und Wartung von Palmen und sorgen für ihre Gesundheit und Ästhetik, sowie Höhenarbeiten in verschiedenen Umgebungen. Ihre Palme in den besten Händen!"
             ],
             btnText: "MEHR INFO!"
+        },
+        fr: {
+            descripcion: [
+                "Des expériences touristiques uniques à Águilas et ses environs.",
+                "Découvrez les trésors cachés de la côte murcienne avec nos visites.",
+                "Tourisme actif et aventure dans un cadre méditerranéen.",
+                "Préparez-vous à vivre des expériences inoubliables."
+            ],
+            btnText: "DÉCOUVRIR"
         }
     },
     {
@@ -264,6 +336,15 @@ export const empresasColaboradoras = [
                 "Ein idealer Partner für Ihre Pickleball-Kunden, der ihnen hilft, auf sich zu achten, Überlastungen zu vermeiden und in bester Verfassung für maximale Leistung auf dem Platz zu bleiben."
             ],
             btnText: "MEHR ERFAHREN!"
+        },
+        fr: {
+            descripcion: [
+                "Services immobiliers professionnels à Águilas et sur la côte.",
+                "Trouvez la maison de vos rêves avec notre équipe d'experts.",
+                "Investissement et conseil immobilier à Águilas.",
+                "Votre foyer vous attend sur la côte méditerranéenne."
+            ],
+            btnText: "VOIR PROPRIÉTÉS"
         }
     },
     {
@@ -293,6 +374,15 @@ export const empresasColaboradoras = [
                 "Ein großartiger Partner für Ihre Pickleball-Kunden, der Lösungen sowohl für die Pflege und Verbesserung ihrer Räume als auch für Renovierungs- oder Wartungsprojekte bietet."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Produits de fitness et sport de haute qualité.",
+                "L'équipement dont vous avez besoin pour être au top.",
+                "Des compléments et accessoires sportifs pour tous les niveaux.",
+                "Améliorez vos performances avec les meilleurs produits."
+            ],
+            btnText: "ACHETER"
         }
     },
     {
@@ -319,6 +409,15 @@ export const empresasColaboradoras = [
                 "Ein perfekter Partner für Ihre Pickleball-Kunden, der ihnen hilft, ihr Image und Wohlbefinden für den Alltag sowie für besondere Ereignisse zu pflegen."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Le meilleur hébergement à Águilas avec vue sur la mer.",
+                "Comme chez soi, mais au bord de la mer Méditerranée.",
+                "Repos, confort et proximité des terrains de pickleball.",
+                "L'endroit idéal pour séjourner pendant votre expérience pickleball."
+            ],
+            btnText: "RÉSERVER"
         }
     },
     {
@@ -348,6 +447,15 @@ export const empresasColaboradoras = [
                 "Immer mit Ihnen, um Ihnen beim Abflug in die Welt der Präzisionslandwirtschaft zu helfen!"
             ],
             btnText: "MEHR INFO!"
+        },
+        fr: {
+            descripcion: [
+                "Formations et cours de sport avec les meilleurs professionnels.",
+                "Apprenez et améliorez votre technique avec nos experts.",
+                "Des programmes adaptés à tous les niveaux.",
+                "Formez-vous avec les meilleurs."
+            ],
+            btnText: "S'INSCRIRE"
         }
     },
     {
@@ -377,6 +485,15 @@ export const empresasColaboradoras = [
                 "Ein idealer Partner für Ihre Pickleball-Kunden, der ihnen hilft, ihre persönliche Marke, ihr Unternehmen oder ihre Veranstaltungen mit einem professionellen und attraktiven Image zu stärken."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Bien-être et santé dans le meilleur cadre d'Águilas.",
+                "Prenez soin de vous avec nos services de spa et bien-être.",
+                "Détente après le sport dans un environnement naturel.",
+                "Renouveler votre énergie est notre mission."
+            ],
+            btnText: "EN SAVOIR PLUS"
         }
     },
     {
@@ -415,6 +532,15 @@ export const empresasColaboradoras = [
                 "Eliminiert Menschenansammlungen bei Anmeldungen und verbreitet Ihre Veranstaltungen."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Services de transport et mobilité à Águilas.",
+                "Déplacez-vous facilement et confortablement.",
+                "Location de véhicules et services de transport.",
+                "Connectivité et mobilité dans la région d'Águilas."
+            ],
+            btnText: "RÉSERVER"
         }
     },
     {
@@ -444,6 +570,15 @@ export const empresasColaboradoras = [
                 "Ein ausgezeichneter Partner für Ihre Pickleball-Kunden, der ihren Familien Bildungs- und Sportoptionen für die Kleinsten bietet, besonders in der Urlaubszeit."
             ],
             btnText: "HIER INFO ANFORDERN!"
+        },
+        fr: {
+            descripcion: [
+                "Art, culture et événements à Águilas.",
+                "Découvrez le riche patrimoine culturel de la région.",
+                "Des expositions, spectacles et événements culturels.",
+                "La culture méditerranéenne à son meilleur."
+            ],
+            btnText: "DÉCOUVRIR"
         }
     }
 ];

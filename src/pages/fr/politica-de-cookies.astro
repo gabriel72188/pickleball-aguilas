@@ -1,0 +1,8 @@
+---
+import PoliticaCookiesPage from "../../components/pages/PoliticaCookiesPage.astro";
+import { cookiesTextos } from "../../i18n/politica-de-cookies.js";
+---
+
+<PoliticaCookiesPage lang="fr">
+    <Fragment set:html={cookiesTextos.fr} />
+</PoliticaCookiesPage>

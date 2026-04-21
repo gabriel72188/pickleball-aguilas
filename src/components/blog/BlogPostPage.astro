@@ -7,16 +7,16 @@ import ShareButtons from "../ShareButtons.astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-    lang: "es" | "en" | "de";
+    lang: "es" | "en" | "de" | "fr";
     post: CollectionEntry<"blog">;
     Content: any;
 }
 
 const { lang, post, Content } = Astro.props;
 
-const publishedLabels = { es: "Publicado el:", en: "Published on:", de: "Veröffentlicht am:" };
+const publishedLabels = { es: "Publicado el:", en: "Published on:", de: "Veröffentlicht am:", fr: "Publié le :" };
 const publishedLabel = publishedLabels[lang];
-const dateLocales = { es: "es-ES", en: "en-US", de: "de-DE" };
+const dateLocales = { es: "es-ES", en: "en-US", de: "de-DE", fr: "fr-FR" };
 const dateLocale = dateLocales[lang];
 const formattedDate = post.data.pubDate.toLocaleDateString(dateLocale, {
     year: "numeric",

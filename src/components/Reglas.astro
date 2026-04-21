@@ -3,7 +3,7 @@
 import { t } from "../i18n/ui.js";
 
 const pathname = Astro.url.pathname;
-const lang = pathname.includes("/en") ? "en" : "es";
+const lang = pathname.includes("/en") ? "en" : pathname.includes("/de") ? "de" : pathname.includes("/fr") ? "fr" : "es";
 const textos = t[lang];
 
 // Aquí irán las rutas de tus 4 imágenes.

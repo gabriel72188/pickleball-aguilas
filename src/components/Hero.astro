@@ -4,7 +4,7 @@ import { t } from "../i18n/ui.js";
 
 // 1. Detectamos el idioma actual mirando la URL
 const pathname = Astro.url.pathname;
-const lang = pathname.includes("/en") ? "en" : "es";
+const lang = pathname.includes("/en") ? "en" : pathname.includes("/de") ? "de" : pathname.includes("/fr") ? "fr" : "es";
 
 // 2. Cargamos los textos del idioma correcto
 const textos = t[lang];

@@ -6,7 +6,7 @@ import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
 
 interface Props {
-    lang: "es" | "en" | "de";
+    lang: "es" | "en" | "de" | "fr";
     page: any; // Astro paginate() page object
 }
 
@@ -74,6 +74,26 @@ const ui = {
             { label: "Angebote", slug: "oferta" },
             { label: "Info", slug: "info" },
             { label: "Kurse", slug: "clases" },
+        ],
+    },
+    fr: {
+        title: (n: number) => `Blog Pickleball - Page ${n}`,
+        h1_first: "Dernières Nouvelles",
+        h1_page: (n: number) => `Nouvelles - Page ${n}`,
+        no_posts: "Pas d'articles pour le moment.",
+        prev: "← Plus récents",
+        next: "Plus anciens →",
+        page_of: (cur: number, last: number) => `Page ${cur} sur ${last}`,
+        categories_title: "Catégories",
+        contact_title: "Vous avez une question ?",
+        contact_body: "Contactez-nous, n'hésitez pas. Nous sommes toujours ravis de vous aider.",
+        back_blog: "← Retour au Blog",
+        contact_link: "Aller au Contact →",
+        cats: [
+            { label: "Tournois de Pickleball", slug: "torneos-de-pickleball" },
+            { label: "Offres", slug: "oferta" },
+            { label: "Info", slug: "info" },
+            { label: "Cours", slug: "clases" },
         ],
     },
 };

@@ -3,11 +3,11 @@
 import { t } from "../i18n/ui.js";
 
 const pathname = Astro.url.pathname;
-const lang = pathname.includes("/en") ? "en" : "es";
+const lang = pathname.includes("/en") ? "en" : pathname.includes("/de") ? "de" : pathname.includes("/fr") ? "fr" : "es";
 const textos = t[lang];
 
-const enlace_que_es =
-  lang === "es" ? "/es/que-es-pickleball" : "/en/what-is-pickleball";
+const enlaceQueEs = { es: "/es/que-es-pickleball", en: "/en/que-es-pickleball", de: "/de/que-es-pickleball", fr: "/fr/que-es-pickleball" };
+const enlace_que_es = enlaceQueEs[lang];
 ---
 
 <section
