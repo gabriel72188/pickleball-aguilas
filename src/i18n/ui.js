@@ -277,6 +277,30 @@ export const t = {
         'serv.tourney_p5': 'Disponemos de un espacio único para reuniones y convenciones de pickleball en un parque rodeado de naturaleza de 2.500 m2.',
         'serv.tourney_button': '¡CONTÁCTANOS!',
 
+        // reglasfaciles.astro
+        "reglas.intro_title": "¿Por qué el Pickleball engancha tanto?",
+        "reglas.intro_desc": "El éxito de este deporte reside en su simplicidad. No necesitas semanas de clases para empezar a divertirte ni tener un estado físico de atleta de élite. Si memorizas estas 4 reglas fundamentales, estarás listo para jugar tu primer partido y parecer un experto desde el minuto uno.",
+
+        "reglas.head_title": "Reglas Básicas de Pickleball - Pickleball Águilas",
+        "reglas.hero_title": "Reglas Básicas del ",
+        "reglas.hero_highlight": "Pickleball",
+        "reglas.hero_subtitle": "Aprende a jugar en 5 minutos. Sin complicaciones.",
+
+        "reglas.rule1_title": "Regla 1: El Saque",
+        "reglas.rule1_desc": "• El golpe debe ser bajo la cintura.\n• La pala sube al golpear.\n• El saque cruza al campo oponente.",
+
+        "reglas.rule2_title": "Regla 2: Puntuación solo al saque",
+        "reglas.rule2_desc": "• Solo el equipo o jugador que saca gana puntos.\n• El servidor continúa sacando mientras anote puntos.\n• Si el receptor gana la jugada, no anota, y el saque cambia.",
+
+        "reglas.rule3_title": "Regla 3: El Doble Bote",
+        "reglas.rule3_desc": "• El servicio debe botar una vez.\n• La devolución del servicio debe botar una vez.\n• Después de los dos botes, se puede volear.",
+
+        "reglas.rule4_title": "Regla 4: La zona de no volea (La cocina)",
+        "reglas.rule4_desc": "• No puedes golpear la bola de volea (sin bote) si pisas o estás dentro de la cocina.\n• El pie debe estar detrás de la línea de la cocina al hacer contacto con una volea.\n• Sí puedes entrar a la cocina si la bola ya ha botado.",
+
+        "reglas.outro_title": "¿Todo claro? ¡Es hora de la práctica!",
+        "reglas.outro_desc": "La teoría está muy bien, pero el sonido de la pala golpeando la bola solo se disfruta en la pista. Ven a visitarnos a Isla del Fraile, alquilamos material para principiantes y te ayudamos a dar tus primeros pasos.",
+        "reglas.outro_btn1": "¡RESERVA AHORA!",
     },
     en: {
         // ... navbar texts ...
@@ -554,6 +578,32 @@ export const t = {
         'serv.tourney_p5': 'We have a unique space for meetings and pickleball conventions in a park surrounded by 2,500 m2 of nature.',
         'serv.tourney_button': 'CONTACT US!',
 
+        //reglas faciles
+        "reglas.intro_title": "Why is Pickleball so addictive?",
+        "reglas.intro_desc": "The success of this sport lies in its simplicity. You don't need weeks of lessons to start having fun, nor do you need the fitness level of an elite athlete. If you memorize these 4 fundamental rules, you'll be ready to play your first match and look like an expert from minute one.",
+
+        "reglas.head_title": "Basic Pickleball Rules - Pickleball Águilas",
+        "reglas.hero_title": "Basic Rules of ",
+        "reglas.hero_highlight": "Pickleball",
+        "reglas.hero_subtitle": "Learn to play in 5 minutes. No complications.",
+
+        "reglas.rule1_title": "Rule 1: The Serve",
+        "reglas.rule1_desc": "• The hit must be below the waist.\n• The paddle moves upward upon contact.\n• The serve crosses to the opponent's court.",
+
+        "reglas.rule2_title": "Rule 2: Scoring only on serve",
+        "reglas.rule2_desc": "• Only the serving team or player can score points.\n• The server continues to serve as long as they score points.\n• If the receiver wins the rally, they do not score, and the serve switches.",
+
+        "reglas.rule3_title": "Rule 3: The Double Bounce",
+        "reglas.rule3_desc": "• The serve must bounce once.\n• The return of serve must bounce once.\n• After the two bounces, you can volley.",
+
+        "reglas.rule4_title": "Rule 4: The Non-Volley Zone (The Kitchen)",
+        "reglas.rule4_desc": "• You cannot volley the ball (hit without bouncing) if you step or are standing inside the kitchen.\n• Your foot must be behind the kitchen line when making contact with a volley.\n• You can enter the kitchen if the ball has already bounced.",
+
+        "reglas.outro_title": "Is everything clear? It's time to practice!",
+        "reglas.outro_desc": "Theory is great, but the sound of the paddle hitting the ball can only be enjoyed on the court. Come visit us at Isla del Fraile, we rent equipment for beginners and help you take your first steps.",
+        "reglas.outro_btn1": "BOOK NOW!",
+        "reglas.outro_btn2": "Back to Home",
+
     },
     de: {
         // --- NAVIGATION ---
@@ -824,6 +874,32 @@ export const t = {
         'serv.tourney_p5': 'Wir verfügen über einen einzigartigen Raum für Meetings und Pickleball-Konferenzen in einem Park mit 2.500 m² Natur.',
         'serv.tourney_button': 'KONTAKTIEREN SIE UNS!',
 
+        //reglas faciles
+        "reglas.intro_title": "Warum macht Pickleball so süchtig?",
+        "reglas.intro_desc": "Der Erfolg dieses Sports liegt in seiner Einfachheit. Man braucht keine wochenlangen Kurse, um Spaß zu haben, oder die Fitness eines Spitzensportlers. Wenn du dir diese 4 Grundregeln merkst, bist du bereit für dein erstes Spiel und siehst von der ersten Minute an wie ein Experte aus.",
+
+        "reglas.head_title": "Pickleball Grundregeln - Pickleball Águilas",
+        "reglas.hero_title": "Grundregeln des ",
+        "reglas.hero_highlight": "Pickleball",
+        "reglas.hero_subtitle": "Lerne in 5 Minuten zu spielen. Ohne Komplikationen.",
+
+        "reglas.rule1_title": "Regel 1: Der Aufschlag",
+        "reglas.rule1_desc": "• Der Schlag muss unterhalb der Taille erfolgen.\n• Der Schläger bewegt sich beim Schlag nach oben.\n• Der Aufschlag erfolgt diagonal ins gegnerische Feld.",
+
+        "reglas.rule2_title": "Regel 2: Punkte nur bei eigenem Aufschlag",
+        "reglas.rule2_desc": "• Nur das aufschlagende Team oder der Spieler gewinnt Punkte.\n• Der Aufschläger schlägt weiter auf, solange er Punkte erzielt.\n• Wenn der Rückschläger den Ballwechsel gewinnt, punktet er nicht, und das Aufschlagsrecht wechselt.",
+
+        "reglas.rule3_title": "Regel 3: Das doppelte Aufspringen",
+        "reglas.rule3_desc": "• Der Aufschlag muss einmal aufspringen.\n• Der Rückschlag muss einmal aufspringen.\n• Nach den zwei Aufsprüngen darf der Ball aus der Luft (Volley) geschlagen werden.",
+
+        "reglas.rule4_title": "Regel 4: Die Non-Volley-Zone (Die Küche)",
+        "reglas.rule4_desc": "• Du darfst den Ball nicht aus der Luft (Volley) schlagen, wenn du in der Küche stehst oder diese betrittst.\n• Der Fuß muss hinter der Küchenlinie sein, wenn du einen Volley spielst.\n• Du darfst die Küche betreten, wenn der Ball bereits aufgesprungen ist.",
+
+        "reglas.outro_title": "Alles klar? Zeit für die Praxis!",
+        "reglas.outro_desc": "Die Theorie ist gut, aber das Geräusch des Schlägers, der den Ball trifft, genießt man nur auf dem Platz. Besuche uns auf der Isla del Fraile, wir verleihen Ausrüstung für Anfänger und helfen dir bei deinen ersten Schritten.",
+        "reglas.outro_btn1": "JETZT BUCHEN!",
+        "reglas.outro_btn2": "Zurück zur Startseite",
+
     },
     fr: {
         // --- NAVIGATION ---
@@ -1093,6 +1169,32 @@ export const t = {
         'serv.tourney_p4': 'Nous offrons un cadre unique dans la belle ville d\'Águilas, Murcia, à côté de la célèbre Isla del Fraile, entourée d\'une nature magnifique et d\'une faune marine spectaculaire.',
         'serv.tourney_p5': 'Nous disposons d\'un espace unique pour des réunions et conventions de pickleball dans un parc de 2 500 m² de nature.',
         'serv.tourney_button': 'CONTACTEZ-NOUS !',
+
+        //reglas faciles
+        "reglas.intro_title": "Pourquoi le Pickleball est-il si addictif ?",
+        "reglas.intro_desc": "Le succès de ce sport réside dans sa simplicité. Vous n'avez pas besoin de semaines de cours pour commencer à vous amuser, ni d'être un athlète d'élite. Si vous mémorisez ces 4 règles fondamentales, vous serez prêt à jouer votre premier match et à avoir l'air d'un expert dès la première minute.",
+
+        "reglas.head_title": "Règles de base du Pickleball - Pickleball Águilas",
+        "reglas.hero_title": "Règles de base du ",
+        "reglas.hero_highlight": "Pickleball",
+        "reglas.hero_subtitle": "Apprenez à jouer en 5 minutes. Sans complications.",
+
+        "reglas.rule1_title": "Règle 1 : Le Service",
+        "reglas.rule1_desc": "• La frappe doit se faire en dessous de la taille.\n• La raquette monte lors de la frappe.\n• Le service croise vers le terrain adverse.",
+
+        "reglas.rule2_title": "Règle 2 : Point uniquement au service",
+        "reglas.rule2_desc": "• Seul l'équipe ou le joueur qui sert gagne des points.\n• Le serveur continue de servir tant qu'il marque des points.\n• Si le receveur gagne l'échange, il ne marque pas, et le service change.",
+
+        "reglas.rule3_title": "Règle 3 : Le Double Rebond",
+        "reglas.rule3_desc": "• Le service doit rebondir une fois.\n• Le retour de service doit rebondir une fois.\n• Après les deux rebonds, on peut jouer à la volée.",
+
+        "reglas.rule4_title": "Règle 4 : La zone de non-volée (La cuisine)",
+        "reglas.rule4_desc": "• Vous ne pouvez pas frapper la balle de volée (sans rebond) si vous marchez ou êtes dans la cuisine.\n• Le pied doit être derrière la ligne de la cuisine au moment du contact d'une volée.\n• Vous pouvez entrer dans la cuisine si la balle a déjà rebondi.",
+
+        "reglas.outro_title": "Tout est clair ? Il est temps de pratiquer !",
+        "reglas.outro_desc": "La théorie c'est bien, mais le son de la raquette frappant la balle ne s'apprécie que sur le terrain. Venez nous rendre visite à Isla del Fraile, nous louons du matériel pour les débutants et nous vous aidons à faire vos premiers pas.",
+        "reglas.outro_btn1": "RÉSERVEZ MAINTENANT !",
+        "reglas.outro_btn2": "Retour à l'accueil",
 
     }
 };
