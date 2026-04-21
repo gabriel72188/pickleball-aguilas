@@ -2,7 +2,7 @@
 title: "Reglas del Pickleball: Aprende a jugar en 5 minutos"
 description: "No dejes que las reglas te frenen. Guía rápida para entender el sistema de puntos, la zona de no volea y el saque en el Pickleball Águilas."
 pubDate: 2026-04-18
-image: "/pista-pickleball.jpg"
+image: "/blog-img/reglas-pickleball.webp"
 category: "Info"
 draft: false
 ---

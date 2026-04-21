@@ -2,7 +2,7 @@
 title: "Qu'est-ce que le Pickleball ? Le guide ultime pour Águilas"
 description: "Vous ne connaissez pas encore le sport qui conquiert le monde ? Nous vous expliquons ce qu'est le pickleball et pourquoi il est parfait pour tous les âges à Águilas."
 pubDate: 2026-04-17
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/que-es-pickleball.webp"
 category: "Info"
 draft: false
 ---

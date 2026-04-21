@@ -2,7 +2,7 @@
 title: "5 Beneficios del Pickleball para tu Salud Física y Mental"
 description: "Descubre por qué el pickleball es el mejor aliado para tu corazón, tus articulaciones y tu bienestar emocional. El deporte más social de Águilas."
 pubDate: 2026-04-20
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/salud-pickleball.webp"
 category: "Info"
 draft: false
 ---

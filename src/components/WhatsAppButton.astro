@@ -3,10 +3,22 @@
 const { lang } = Astro.props;
 
 const texto =
-    lang === "es" ? "Hola, ¿cómo puedo ayudarte?" : "Hi, how can I help you?";
-const numero = "34000000000";
+    lang === "es"
+        ? "Hola, ¿cómo puedo ayudarte?"
+        : lang === "en"
+          ? "Hi, how can I help you?"
+          : lang === "de"
+            ? "Hallo, wie kann ich Ihnen helfen?"
+            : "Bonjour, comment puis-je vous aider?";
+const numero = "34601507505";
 const mensaje =
-    lang === "es" ? "Hola, necesito ayuda..." : "Hello, I need help...";
+    lang === "es"
+        ? "Hola, necesito ayuda..."
+        : lang === "en"
+          ? "Hello, I need help..."
+          : lang === "de"
+            ? "Hallo, ich brauche Hilfe..."
+            : "Bonjour, j'ai besoin d'aide...";
 
 const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 ---

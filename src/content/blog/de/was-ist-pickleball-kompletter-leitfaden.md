@@ -2,7 +2,7 @@
 title: "Was ist Pickleball? Der ultimative Leitfaden für Águilas"
 description: "Kennen Sie den Sport, der die Welt erobert, noch nicht? Wir erklären, was Pickleball ist und warum es perfekt für alle Altersgruppen in Águilas und Isla del Fraile ist."
 pubDate: 2026-04-17
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/que-es-pickleball.webp"   
 category: "Info"
 draft: false
 ---

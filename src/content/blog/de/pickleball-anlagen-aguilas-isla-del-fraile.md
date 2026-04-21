@@ -2,7 +2,7 @@
 title: "Pickleball-Anlagen in Águilas Isla del Fraile"
 description: "Entdecken Sie unsere erstklassigen Pickleball-Anlagen in Águilas, in der privilegierten Umgebung der Isla del Fraile."
 pubDate: 2026-04-13
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/instalaciones-pickleball.webp"
 category: "Info"
 draft: false
 ---

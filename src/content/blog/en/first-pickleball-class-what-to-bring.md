@@ -2,7 +2,7 @@
 title: "Your First Time at the Club: What to Expect and What to Bring"
 description: "Coming to your first class or match? We answer your questions: footwear, clothing, rental paddles, and what the community is like at Pickleball Águilas."
 pubDate: 2026-04-22
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/equipamiento-pickleball.webp" 
 category: "Info"
 draft: false
 ---

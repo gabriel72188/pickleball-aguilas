@@ -2,7 +2,7 @@
 title: "Gesundheitsvorteile von Pickleball"
 description: "Entdecken Sie, warum Pickleball der perfekte Sport ist, um in Form zu bleiben, Stress abzubauen und neue Freunde zu finden."
 pubDate: 2026-04-15
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/salud-pickleball.webp"
 category: "Info"
 draft: false
 ---

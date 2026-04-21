@@ -2,7 +2,7 @@
 title: "Pickleball Águilas: Deporte y Vistas en Isla del Fraile"
 description: "Conoce nuestras exclusivas instalaciones. Jugar al Pickleball en Isla del Fraile es una experiencia única que combina salud, deporte y el mejor clima de Águilas."
 pubDate: 2026-04-19
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/instalaciones-pickleball.webp"
 category: "Info"
 draft: false
 ---

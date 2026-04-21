@@ -2,7 +2,7 @@
 title: "Règles de base du Pickleball pour débutants"
 description: "Apprenez les règles fondamentales du pickleball pour pouvoir jouer dès la première minute."
 pubDate: 2026-04-16
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/reglas-pickleball.webp"
 category: "Info"
 draft: false
 ---

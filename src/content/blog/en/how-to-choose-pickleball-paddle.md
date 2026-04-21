@@ -2,7 +2,7 @@
 title: "Buyer's Guide: How to Choose Your First Pickleball Paddle"
 description: "Confused with so many models? We help you choose your first pickleball paddle according to your level and playing style. Advice from our experts at Pickleball Águilas."
 pubDate: 2026-04-21
-image: "/pista-pickleball.jpg"
+image: "/blog-img/pala-pickleball.webp"
 category: "Info"
 draft: false
 ---

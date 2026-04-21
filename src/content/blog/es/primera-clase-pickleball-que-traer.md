@@ -2,7 +2,7 @@
 title: "Tu primera vez en el Club: Qué esperar y qué traer"
 description: "¿Vienes a tu primera clase o partido? Resolvemos tus dudas: calzado, ropa, palas de alquiler y cómo es la comunidad en Pickleball Águilas."
 pubDate: 2026-04-22
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/equipamiento-pickleball.webp"
 category: "Info"
 draft: false
 ---

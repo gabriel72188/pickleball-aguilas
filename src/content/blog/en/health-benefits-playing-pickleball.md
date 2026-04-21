@@ -2,7 +2,7 @@
 title: "5 Benefits of Pickleball for Your Physical and Mental Health"
 description: "Discover why pickleball is the best ally for your heart, joints, and emotional well-being. The most social sport in Águilas."
 pubDate: 2026-04-20
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/salud-pickleball.webp"    
 category: "Info"
 draft: false
 ---

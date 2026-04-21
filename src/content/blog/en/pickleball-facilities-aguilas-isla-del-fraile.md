@@ -2,7 +2,7 @@
 title: "Pickleball Águilas: Sport and Views at Isla del Fraile"
 description: "Discover our exclusive facilities. Playing Pickleball at Isla del Fraile is a unique experience that combines health, sport, and the best climate in Águilas."
 pubDate: 2026-04-19
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/instalaciones-pickleball.webp"
 category: "Info"
 draft: false
 ---

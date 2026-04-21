@@ -2,7 +2,7 @@
 title: "Pickleball Rules: Learn to Play in 5 Minutes"
 description: "Don't let the rules hold you back. A quick guide to understanding the scoring system, the non-volley zone, and serving at Pickleball Águilas."
 pubDate: 2026-04-18
-image: "/pista-pickleball.jpg"
+image: "/blog-img/reglas-pickleball.webp"
 category: "Info"
 draft: false
 ---

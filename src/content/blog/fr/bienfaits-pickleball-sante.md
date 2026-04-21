@@ -2,7 +2,7 @@
 title: "Les bienfaits du Pickleball pour la santé"
 description: "Découvrez pourquoi le pickleball est le sport parfait pour rester en forme, réduire le stress et rencontrer de nouvelles personnes."
 pubDate: 2026-04-15
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/salud-pickleball.webp"
 category: "Info"
 draft: false
 ---

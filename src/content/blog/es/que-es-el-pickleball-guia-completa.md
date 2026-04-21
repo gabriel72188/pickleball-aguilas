@@ -2,7 +2,7 @@
 title: "¿Qué es el Pickleball? La guía definitiva para Águilas"
 description: "¿Aún no conoces el deporte que arrasa en el mundo? Te explicamos qué es el pickleball y por qué es perfecto para todas las edades en Águilas e Isla del Fraile."
 pubDate: 2026-04-17
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/que-es-pickleball.webp"
 category: "Info"
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Comment choisir sa raquette de Pickleball"
 description: "Guide complet pour choisir la raquette de pickleball parfaite selon le matériau, le poids et votre niveau de jeu."
 pubDate: 2026-04-14
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/pala-pickleball.webp"
 category: "Info"
 draft: false
 ---

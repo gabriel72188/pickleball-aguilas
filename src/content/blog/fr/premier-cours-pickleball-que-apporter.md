@@ -2,7 +2,7 @@
 title: "Premier cours de Pickleball : que faut-il apporter ?"
 description: "Tout ce que vous devez savoir et apporter pour votre premier cours de pickleball."
 pubDate: 2026-04-12
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/equipamiento-pickleball.webp"
 category: "Clases"
 draft: false
 ---

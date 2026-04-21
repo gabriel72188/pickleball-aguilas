@@ -2,7 +2,7 @@
 title: "Guía de Compra: Cómo elegir tu primera pala de Pickleball"
 description: "¿Confundido con tantos modelos? Te ayudamos a elegir tu primera pala de pickleball según tu nivel y estilo de juego. Consejos de nuestros expertos."
 pubDate: 2026-04-21
-image: "/pista-pickleball.jpg"
+image: "/blog-img/pala-pickleball.webp"
 category: "Info"
 draft: false
 ---

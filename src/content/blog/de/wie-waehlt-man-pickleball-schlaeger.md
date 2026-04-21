@@ -2,7 +2,7 @@
 title: "Wie wählt man den richtigen Pickleball-Schläger"
 description: "Kompletter Leitfaden zur Auswahl des perfekten Pickleball-Schlägers nach Material, Gewicht, Griffgröße und Spielniveau."
 pubDate: 2026-04-14
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/pala-pickleball.webp" 
 category: "Info"
 draft: false
 ---

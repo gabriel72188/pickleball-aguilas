@@ -2,7 +2,7 @@
 title: "Erste Pickleball-Stunde: Was mitbringen?"
 description: "Alles, was Sie für Ihre erste Pickleball-Stunde wissen und mitbringen müssen. Praktische Tipps für Anfänger."
 pubDate: 2026-04-12
-image: "/imagen-fondo2.jpg"
+image: "/blog-img/equipamiento-pickleball.webp"
 category: "Clases"
 draft: false
 ---
