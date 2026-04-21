@@ -4,6 +4,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
+import LatestPosts from "../LatestPosts.astro";
 
 interface Props {
     lang: "es" | "en" | "de" | "fr";
@@ -26,7 +27,8 @@ const ui = {
         page_of: (cur: number, last: number) => `Página ${cur} de ${last}`,
         categories_title: "Categorías",
         contact_title: "¿Tienes Alguna Pregunta?",
-        contact_body: "Contáctanos, no lo dudes. Siempre, siempre, pero siempre, estamos encantados de atenderte.",
+        contact_body:
+            "Contáctanos, no lo dudes. Siempre, siempre, pero siempre, estamos encantados de atenderte.",
         back_blog: "← Volver al Blog",
         contact_link: "Ir al Contacto →",
         cats: [
@@ -46,7 +48,8 @@ const ui = {
         page_of: (cur: number, last: number) => `Page ${cur} of ${last}`,
         categories_title: "Categories",
         contact_title: "Have a Question?",
-        contact_body: "Contact us, don't hesitate. We are always happy to help you.",
+        contact_body:
+            "Contact us, don't hesitate. We are always happy to help you.",
         back_blog: "← Back to Blog",
         contact_link: "Go to Contact →",
         cats: [
@@ -66,7 +69,8 @@ const ui = {
         page_of: (cur: number, last: number) => `Seite ${cur} von ${last}`,
         categories_title: "Kategorien",
         contact_title: "Haben Sie eine Frage?",
-        contact_body: "Kontaktieren Sie uns, zögern Sie nicht. Wir helfen Ihnen immer gerne.",
+        contact_body:
+            "Kontaktieren Sie uns, zögern Sie nicht. Wir helfen Ihnen immer gerne.",
         back_blog: "← Zurück zum Blog",
         contact_link: "Zum Kontakt →",
         cats: [
@@ -86,7 +90,8 @@ const ui = {
         page_of: (cur: number, last: number) => `Page ${cur} sur ${last}`,
         categories_title: "Catégories",
         contact_title: "Vous avez une question ?",
-        contact_body: "Contactez-nous, n'hésitez pas. Nous sommes toujours ravis de vous aider.",
+        contact_body:
+            "Contactez-nous, n'hésitez pas. Nous sommes toujours ravis de vous aider.",
         back_blog: "← Retour au Blog",
         contact_link: "Aller au Contact →",
         cats: [
@@ -109,97 +114,135 @@ const blogBase = `/${lang}/blog`;
     <Navbar />
 
     <main class="max-w-6xl mx-auto px-6 py-12">
-        <h1 class="font-titulos text-4xl text-azul-oscuro mb-8 uppercase italic skew-x-[-2deg]">
+        <h1
+            class="font-titulos text-4xl text-azul-oscuro mb-8 uppercase italic skew-x-[-2deg]"
+        >
             {esPrimeraPagina ? tx.h1_first : tx.h1_page(page.currentPage)}
         </h1>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div class="lg:col-span-2">
-                {postDestacado && (
-                    <article class="mb-12">
-                        <a href={`${blogBase}/${postDestacado.id.replace(lang + '/', '')}`}>
-                            <img
-                                src={postDestacado.data.image || "/placeholder-image.jpg"}
-                                alt={postDestacado.data.title}
-                                class="w-full h-80 object-cover rounded-xl mb-6 shadow-md hover:opacity-90 transition-opacity"
-                            />
-                            <span class="text-sm font-bold text-amarillo-acento uppercase tracking-wider">
-                                {postDestacado.data.category}
-                            </span>
-                            <h2 class="text-3xl font-bold text-azul-oscuro mt-2 mb-4 hover:text-azul-principal transition-colors">
-                                {postDestacado.data.title}
-                            </h2>
-                        </a>
-                        <p class="text-gray-600 line-clamp-3">
-                            {postDestacado.data.description}
-                        </p>
-                    </article>
-                )}
+                {
+                    postDestacado && (
+                        <article class="mb-12">
+                            <a
+                                href={`${blogBase}/${postDestacado.id.replace(lang + "/", "")}`}
+                            >
+                                <img
+                                    src={
+                                        postDestacado.data.image ||
+                                        "/placeholder-image.jpg"
+                                    }
+                                    alt={postDestacado.data.title}
+                                    class="w-full h-80 object-cover rounded-xl mb-6 shadow-md hover:opacity-90 transition-opacity"
+                                />
+                                <span class="text-sm font-bold text-amarillo-acento uppercase tracking-wider">
+                                    {postDestacado.data.category}
+                                </span>
+                                <h2 class="text-3xl font-bold text-azul-oscuro mt-2 mb-4 hover:text-azul-principal transition-colors">
+                                    {postDestacado.data.title}
+                                </h2>
+                            </a>
+                            <p class="text-gray-600 line-clamp-3">
+                                {postDestacado.data.description}
+                            </p>
+                        </article>
+                    )
+                }
 
                 <div class="space-y-8">
-                    {postsRestantes.map((post: any) => (
-                        <article class="flex gap-6 items-center border-t pt-8">
-                            {post.data.image && (
-                                <img
-                                    src={post.data.image}
-                                    alt={post.data.title}
-                                    class="w-32 h-32 object-cover rounded-lg shrink-0"
-                                />
-                            )}
-                            <div>
-                                <span class="text-xs font-bold text-amarillo-acento uppercase tracking-wider">
-                                    {post.data.category}
-                                </span>
-                                <h3 class="text-xl font-bold text-azul-oscuro mt-1 hover:text-azul-principal">
-                                    <a href={`${blogBase}/${post.id.replace(lang + '/', '')}`}>{post.data.title}</a>
-                                </h3>
-                            </div>
-                        </article>
-                    ))}
+                    {
+                        postsRestantes.map((post: any) => (
+                            <article class="flex gap-6 items-center border-t pt-8">
+                                {post.data.image && (
+                                    <img
+                                        src={post.data.image}
+                                        alt={post.data.title}
+                                        class="w-32 h-32 object-cover rounded-lg shrink-0"
+                                    />
+                                )}
+                                <div>
+                                    <span class="text-xs font-bold text-amarillo-acento uppercase tracking-wider">
+                                        {post.data.category}
+                                    </span>
+                                    <h3 class="text-xl font-bold text-azul-oscuro mt-1 hover:text-azul-principal">
+                                        <a
+                                            href={`${blogBase}/${post.id.replace(lang + "/", "")}`}
+                                        >
+                                            {post.data.title}
+                                        </a>
+                                    </h3>
+                                </div>
+                            </article>
+                        ))
+                    }
 
-                    {page.data.length === 0 && (
-                        <p class="text-gray-500">{tx.no_posts}</p>
-                    )}
+                    {
+                        page.data.length === 0 && (
+                            <p class="text-gray-500">{tx.no_posts}</p>
+                        )
+                    }
                 </div>
 
-                {page.lastPage > 1 && (
-                    <div class="mt-12 flex justify-between items-center border-t pt-8">
-                        {page.url.prev
-                            ? <a href={page.url.prev} class="px-6 py-3 bg-azul-oscuro text-white font-bold rounded-full hover:bg-azul-principal transition-colors shadow-md">{tx.prev}</a>
-                            : <div />
-                        }
-                        <span class="text-gray-500 font-medium text-sm">
-                            {tx.page_of(page.currentPage, page.lastPage)}
-                        </span>
-                        {page.url.next
-                            ? <a href={page.url.next} class="px-6 py-3 bg-azul-oscuro text-white font-bold rounded-full hover:bg-azul-principal transition-colors shadow-md">{tx.next}</a>
-                            : <div />
-                        }
-                    </div>
-                )}
+                {
+                    page.lastPage > 1 && (
+                        <div class="mt-12 flex justify-between items-center border-t pt-8">
+                            {page.url.prev ? (
+                                <a
+                                    href={page.url.prev}
+                                    class="px-6 py-3 bg-azul-oscuro text-white font-bold rounded-full hover:bg-azul-principal transition-colors shadow-md"
+                                >
+                                    {tx.prev}
+                                </a>
+                            ) : (
+                                <div />
+                            )}
+                            <span class="text-gray-500 font-medium text-sm">
+                                {tx.page_of(page.currentPage, page.lastPage)}
+                            </span>
+                            {page.url.next ? (
+                                <a
+                                    href={page.url.next}
+                                    class="px-6 py-3 bg-azul-oscuro text-white font-bold rounded-full hover:bg-azul-principal transition-colors shadow-md"
+                                >
+                                    {tx.next}
+                                </a>
+                            ) : (
+                                <div />
+                            )}
+                        </div>
+                    )
+                }
             </div>
 
             <aside class="space-y-8">
                 <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                    <h3 class="font-bold text-xl text-azul-oscuro mb-4">{tx.categories_title}</h3>
+                    <h3 class="font-bold text-xl text-azul-oscuro mb-4">
+                        {tx.categories_title}
+                    </h3>
                     <ul class="space-y-3">
-                        {tx.cats.map((cat) => (
-                            <li>
-                                <a
-                                    href={`${blogBase}/categoria/${cat.slug}`}
-                                    class="text-gray-600 hover:text-amarillo-acento flex items-center gap-2"
-                                >
-                                    <span>🎾</span> {cat.label}
-                                </a>
-                            </li>
-                        ))}
+                        {
+                            tx.cats.map((cat) => (
+                                <li>
+                                    <a
+                                        href={`${blogBase}/categoria/${cat.slug}`}
+                                        class="text-gray-600 hover:text-amarillo-acento flex items-center gap-2"
+                                    >
+                                        <span>🎾</span> {cat.label}
+                                    </a>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
 
                 <div class="bg-[#3A3A3A] p-6 rounded-xl text-white">
                     <h3 class="font-bold text-xl mb-4">{tx.contact_title}</h3>
                     <p class="text-sm text-gray-300 mb-6">{tx.contact_body}</p>
-                    <a href={`/${lang}/contacto`} class="text-amarillo-acento font-bold hover:underline">
+                    <a
+                        href={`/${lang}/contacto`}
+                        class="text-amarillo-acento font-bold hover:underline"
+                    >
                         {tx.contact_link}
                     </a>
                 </div>
@@ -207,5 +250,6 @@ const blogBase = `/${lang}/blog`;
         </div>
     </main>
 
+    <LatestPosts lang={lang} />
     <Footer lang={lang} />
 </Layout>

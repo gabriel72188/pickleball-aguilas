@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
+import LatestPosts from "../LatestPosts.astro";
 import { t } from "../../i18n/ui.js";
 
 const { lang } = Astro.props;
@@ -254,6 +255,7 @@ const textos = t[lang];
     </div>
   </main>
 
+  <LatestPosts lang={lang} />
   <Footer lang={lang} />
 </Layout>
 

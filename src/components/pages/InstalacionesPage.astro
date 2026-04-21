@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
+import LatestPosts from "../LatestPosts.astro";
 import { t } from "../../i18n/ui.js";
 
 const { lang } = Astro.props;
@@ -48,8 +49,22 @@ const card6 = "/imgdeintro2.webp";
     <main class="py-16 md:py-24 px-6 overflow-hidden bg-white">
         <!-- SECCIÓN INTRO SERVICIOS -->
         <section class="max-w-4xl mx-auto text-center py-8 mb-16">
-            <span class="text-amarillo-acento text-sm font-bold uppercase tracking-wider mb-4 cursor-pointer flex items-center justify-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+            <span
+                class="text-amarillo-acento text-sm font-bold uppercase tracking-wider mb-4 cursor-pointer flex items-center justify-center gap-2"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><circle cx="12" cy="12" r="10"></circle><path
+                        d="M12 6v6l4 2"></path></svg
+                >
                 {textos["inst.intro_badge"]}
             </span>
             <h2 class="font-titulos text-4xl text-black uppercase italic mb-8">
@@ -60,7 +75,9 @@ const card6 = "/imgdeintro2.webp";
             </p>
             <p class="text-gray-500 text-sm max-w-2xl mx-auto font-light">
                 {textos["inst.intro_p2_start"]}
-                <span class="text-amarillo-acento font-bold">{textos["inst.intro_p2_club"]}</span>
+                <span class="text-amarillo-acento font-bold"
+                    >{textos["inst.intro_p2_club"]}</span
+                >
             </p>
         </section>
 
@@ -68,108 +85,275 @@ const card6 = "/imgdeintro2.webp";
         <section class="max-w-6xl mx-auto mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card1} alt={textos["inst.card1_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-black p-6 text-white min-h-[220px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card1}
+                        alt={textos["inst.card1_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-black p-6 text-white min-h-[220px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1z"></path><line x1="12" y1="2" x2="12" y2="22"></line></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1z"
+                                    ></path><line x1="12" y1="2" x2="12" y2="22"
+                                    ></line></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-none">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-none"
+                            >
                                 {textos["inst.card1_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["inst.card1_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card2} alt={textos["inst.card2_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card2}
+                        alt={textos["inst.card2_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><circle cx="12" cy="12" r="10"
+                                    ></circle><polyline
+                                        points="12 6 12 12 16 14"
+                                    ></polyline></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["inst.card2_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["inst.card2_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card3} alt={textos["inst.card3_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card3}
+                        alt={textos["inst.card3_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path d="M12 2v20"></path><path
+                                        d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                                    ></path></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-none">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-none"
+                            >
                                 {textos["inst.card3_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["inst.card3_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card4} alt={textos["inst.card4_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card4}
+                        alt={textos["inst.card4_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><circle cx="12" cy="8" r="7"
+                                    ></circle><polyline
+                                        points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                                    ></polyline></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["inst.card4_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["inst.card4_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card5} alt={textos["inst.card5_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card5}
+                        alt={textos["inst.card5_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path
+                                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                                    ></path><circle cx="9" cy="7" r="4"
+                                    ></circle><path
+                                        d="M23 21v-2a4 4 0 0 0-3-3.87"
+                                    ></path><path d="M16 3.13a4 4 0 0 1 0 7.75"
+                                    ></path></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["inst.card5_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["inst.card5_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card6} alt={textos["inst.card6_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card6}
+                        alt={textos["inst.card6_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[220px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path d="M22 12h-4l-3 9L9 3l-3 9H2"
+                                    ></path></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["inst.card6_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["inst.card6_desc"]}
                         </p>
                     </div>
@@ -182,17 +366,64 @@ const card6 = "/imgdeintro2.webp";
             <div class="flex flex-col md:flex-row gap-12 items-start">
                 <!-- Izquierda: Video/Imagen vertical -->
                 <div class="w-full md:w-1/2 relative group">
-                    <img src={imagenAerial} alt={textos["inst.hero_title"]} class="w-full h-auto max-h-[800px] object-cover rounded shadow-lg filter brightness-90 group-hover:brightness-100 transition-all duration-300" />
-                    
+                    <img
+                        src={imagenAerial}
+                        alt={textos["inst.hero_title"]}
+                        class="w-full h-auto max-h-[800px] object-cover rounded shadow-lg filter brightness-90 group-hover:brightness-100 transition-all duration-300"
+                    />
+
                     <!-- Simulación de interfaz de video -->
-                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white text-xs z-10 opacity-70">
+                    <div
+                        class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white text-xs z-10 opacity-70"
+                    >
                         <div class="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                ><rect x="6" y="4" width="4" height="16"
+                                ></rect><rect x="14" y="4" width="4" height="16"
+                                ></rect></svg
+                            >
                             <span>0:13 / 0:31</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                ><polygon
+                                    points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"
+                                ></polygon><path
+                                    d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+                                ></path></svg
+                            >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                ><path
+                                    d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+                                ></path></svg
+                            >
                         </div>
                     </div>
                 </div>
@@ -200,26 +431,38 @@ const card6 = "/imgdeintro2.webp";
                 <!-- Derecha: Textos -->
                 <div class="w-full md:w-1/2 space-y-6">
                     <div>
-                        <h2 class="font-titulos text-4xl text-black italic uppercase leading-none mt-4 md:mt-0">
+                        <h2
+                            class="font-titulos text-4xl text-black italic uppercase leading-none mt-4 md:mt-0"
+                        >
                             {textos["inst.club_title"]}
                         </h2>
-                        <h3 class="font-titulos text-3xl text-amarillo-acento italic uppercase">
+                        <h3
+                            class="font-titulos text-3xl text-amarillo-acento italic uppercase"
+                        >
                             {textos["inst.club_subtitle"]}
                         </h3>
                     </div>
-                    
-                    <div class="space-y-4 text-[13px] text-gray-500 font-light leading-relaxed">
+
+                    <div
+                        class="space-y-4 text-[13px] text-gray-500 font-light leading-relaxed"
+                    >
                         <p>
                             {textos["inst.club_p1_part1"]}
-                            <span class="text-amarillo-acento font-medium">{textos["inst.club_p1_courts"]}</span>
+                            <span class="text-amarillo-acento font-medium"
+                                >{textos["inst.club_p1_courts"]}</span
+                            >
                             {textos["inst.club_p1_part2"]}
                         </p>
                         <p>
                             {textos["inst.club_p2_part1"]}
-                            <span class="text-amarillo-acento font-medium">{textos["inst.club_p2_play"]}</span>
+                            <span class="text-amarillo-acento font-medium"
+                                >{textos["inst.club_p2_play"]}</span
+                            >
                         </p>
                         <p>
-                            <span class="text-amarillo-acento font-medium">{textos["inst.club_p3_club"]}</span>
+                            <span class="text-amarillo-acento font-medium"
+                                >{textos["inst.club_p3_club"]}</span
+                            >
                             {textos["inst.club_p3_part2"]}
                         </p>
                         <p>
@@ -228,19 +471,28 @@ const card6 = "/imgdeintro2.webp";
                         <p>{textos["inst.club_p5"]}</p>
                         <p>
                             {textos["inst.club_p6_part1"]}
-                            <span class="text-amarillo-acento font-medium">{textos["inst.club_p6_club"]}</span>
+                            <span class="text-amarillo-acento font-medium"
+                                >{textos["inst.club_p6_club"]}</span
+                            >
                             {textos["inst.club_p6_part2"]}
                         </p>
                         <p>{textos["inst.club_p7"]}</p>
                     </div>
-                    
+
                     <p class="font-titulos text-xl text-black font-medium mt-8">
                         {textos["inst.club_p8_part1"]}
-                        <span class="text-amarillo-acento">{textos["inst.club_p8_highlight"]}</span>
+                        <span class="text-amarillo-acento"
+                            >{textos["inst.club_p8_highlight"]}</span
+                        >
                     </p>
-                    
-                    <a href="https://app.sporttia.com/scs/3287/profile" target="_blank" rel="noopener noreferrer" class="inline-block bg-amarillo-acento text-black font-extrabold px-10 py-4 mt-6 text-sm hover:scale-105 hover:bg-yellow-400 transition-all uppercase rounded-sm shadow-md">
-                        {textos["nav.reserva"] || 'RESERVA AHORA!'}
+
+                    <a
+                        href="https://app.sporttia.com/scs/3287/profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-block bg-amarillo-acento text-black font-extrabold px-10 py-4 mt-6 text-sm hover:scale-105 hover:bg-yellow-400 transition-all uppercase rounded-sm shadow-md"
+                    >
+                        {textos["nav.reserva"] || "RESERVA AHORA!"}
                     </a>
                 </div>
             </div>
@@ -248,29 +500,41 @@ const card6 = "/imgdeintro2.webp";
 
         <!-- SECCIÓN GRUPOS -->
         <section class="max-w-4xl mx-auto px-6 pb-24 text-center">
-            <h2 class="font-titulos text-3xl md:text-4xl text-black uppercase italic border-b border-gray-200 pb-6 mb-8 inline-block max-w-2xl">
+            <h2
+                class="font-titulos text-3xl md:text-4xl text-black uppercase italic border-b border-gray-200 pb-6 mb-8 inline-block max-w-2xl"
+            >
                 {textos["inst.groups_title"]}
             </h2>
-            
-            <div class="space-y-4 text-xs text-gray-500 font-light text-center max-w-4xl mx-auto mb-12">
+
+            <div
+                class="space-y-4 text-xs text-gray-500 font-light text-center max-w-4xl mx-auto mb-12"
+            >
                 <p set:html={textos["inst.groups_p1_text"]} />
                 <p>{textos["inst.groups_p2"]}</p>
                 <p>{textos["inst.groups_p3"]}</p>
             </div>
-            
-            <h3 class="font-titulos text-2xl text-amarillo-acento uppercase italic mb-6">
+
+            <h3
+                class="font-titulos text-2xl text-amarillo-acento uppercase italic mb-6"
+            >
                 {textos["inst.groups_sub"]}
             </h3>
-            
-            <p class="text-[13px] text-gray-500 font-light max-w-3xl mx-auto mb-8">
+
+            <p
+                class="text-[13px] text-gray-500 font-light max-w-3xl mx-auto mb-8"
+            >
                 {textos["inst.groups_contact"]}
             </p>
-            
-            <a href={`/${lang}/contacto/`} class="inline-block bg-amarillo-acento text-black font-extrabold px-12 py-3 rounded-full hover:scale-105 hover:bg-yellow-400 transition-all uppercase text-sm mt-4 shadow-lg">
+
+            <a
+                href={`/${lang}/contacto/`}
+                class="inline-block bg-amarillo-acento text-black font-extrabold px-12 py-3 rounded-full hover:scale-105 hover:bg-yellow-400 transition-all uppercase text-sm mt-4 shadow-lg"
+            >
                 {textos["inst.groups_button"]}
             </a>
         </section>
     </main>
 
+    <LatestPosts lang={lang} />
     <Footer lang={lang} />
 </Layout>

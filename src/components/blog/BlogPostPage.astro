@@ -3,6 +3,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
+import LatestPosts from "../LatestPosts.astro";
 import ShareButtons from "../ShareButtons.astro";
 import type { CollectionEntry } from "astro:content";
 
@@ -14,7 +15,12 @@ interface Props {
 
 const { lang, post, Content } = Astro.props;
 
-const publishedLabels = { es: "Publicado el:", en: "Published on:", de: "Veröffentlicht am:", fr: "Publié le :" };
+const publishedLabels = {
+    es: "Publicado el:",
+    en: "Published on:",
+    de: "Veröffentlicht am:",
+    fr: "Publié le :",
+};
 const publishedLabel = publishedLabels[lang];
 const dateLocales = { es: "es-ES", en: "en-US", de: "de-DE", fr: "fr-FR" };
 const dateLocale = dateLocales[lang];
@@ -35,33 +41,43 @@ const formattedDate = post.data.pubDate.toLocaleDateString(dateLocale, {
 
     <header class="bg-azul-oscuro py-16 px-6 text-center">
         <div class="max-w-4xl mx-auto mt-10">
-            <span class="text-amarillo-acento font-bold uppercase tracking-widest text-sm mb-4 block">
+            <span
+                class="text-amarillo-acento font-bold uppercase tracking-widest text-sm mb-4 block"
+            >
                 {post.data.category}
             </span>
-            <h1 class="font-titulos text-4xl md:text-5xl text-white uppercase italic skew-x-[-2deg]">
+            <h1
+                class="font-titulos text-4xl md:text-5xl text-white uppercase italic skew-x-[-2deg]"
+            >
                 {post.data.title}
             </h1>
             <p class="text-gray-300 mt-6 font-medium">
-                {publishedLabel} {formattedDate}
+                {publishedLabel}
+                {formattedDate}
             </p>
         </div>
     </header>
 
     <main class="max-w-4xl mx-auto px-6 py-16">
-        {post.data.image && (
-            <img
-                src={post.data.image}
-                alt={post.data.title}
-                class="w-full h-auto max-h-[500px] object-cover rounded-xl mb-12 shadow-lg"
-            />
-        )}
+        {
+            post.data.image && (
+                <img
+                    src={post.data.image}
+                    alt={post.data.title}
+                    class="w-full h-auto max-h-[500px] object-cover rounded-xl mb-12 shadow-lg"
+                />
+            )
+        }
 
-        <article class="text-gray-700 text-lg leading-relaxed space-y-6 prose prose-lg prose-blue max-w-none">
+        <article
+            class="text-gray-700 text-lg leading-relaxed space-y-6 prose prose-lg prose-blue max-w-none"
+        >
             <Content />
         </article>
 
         <ShareButtons title={post.data.title} />
     </main>
 
+    <LatestPosts lang={lang} />
     <Footer lang={lang} />
 </Layout>

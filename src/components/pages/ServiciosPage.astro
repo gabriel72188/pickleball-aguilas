@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
+import LatestPosts from "../LatestPosts.astro";
 import { t } from "../../i18n/ui.js";
 
 const { lang } = Astro.props;
@@ -10,7 +11,7 @@ const textos = t[lang];
 // Imágenes base (se pueden parametrizar)
 const imagenHeader = "/imagen-fondo2.jpg";
 const card1 = "/imgdeintro2.webp";
-const card2 = "/imgdeintro.webp"; 
+const card2 = "/imgdeintro.webp";
 const card3 = "/jose-carla.webp";
 const card4 = "/jose-carla.webp";
 const card5 = "/imgdeintro.webp";
@@ -48,8 +49,22 @@ const imagenBanner = "/imgdeintro.webp";
     <main class="py-16 md:py-24 px-6 overflow-hidden bg-white">
         <!-- SECCIÓN INTRO SERVICIOS -->
         <section class="max-w-4xl mx-auto text-center py-8 mb-16">
-            <span class="text-amarillo-acento text-sm font-bold uppercase tracking-wider mb-4 cursor-pointer flex items-center justify-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+            <span
+                class="text-amarillo-acento text-sm font-bold uppercase tracking-wider mb-4 cursor-pointer flex items-center justify-center gap-2"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><circle cx="12" cy="12" r="10"></circle><path
+                        d="M12 6v6l4 2"></path></svg
+                >
                 {textos["serv.intro_badge"]}
             </span>
             <h2 class="font-titulos text-4xl text-black uppercase italic mb-8">
@@ -64,108 +79,285 @@ const imagenBanner = "/imgdeintro.webp";
         <section class="max-w-6xl mx-auto mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1: Kiosko -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card1} alt={textos["serv.card1_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card1}
+                        alt={textos["serv.card1_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path d="M18 8h1a4 4 0 0 1 0 8h-1"
+                                    ></path><path
+                                        d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"
+                                    ></path><line x1="6" y1="1" x2="6" y2="4"
+                                    ></line><line x1="10" y1="1" x2="10" y2="4"
+                                    ></line><line x1="14" y1="1" x2="14" y2="4"
+                                    ></line></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-none">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-none"
+                            >
                                 {textos["serv.card1_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["serv.card1_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 2: Bebidas y Snacks -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card2} alt={textos["serv.card2_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card2}
+                        alt={textos["serv.card2_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path
+                                        d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"
+                                    ></path></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["serv.card2_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["serv.card2_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 3: Tienda de Pickleball -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card3} alt={textos["serv.card3_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card3}
+                        alt={textos["serv.card3_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><circle cx="9" cy="21" r="1"
+                                    ></circle><circle cx="20" cy="21" r="1"
+                                    ></circle><path
+                                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                                    ></path></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-none">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-none"
+                            >
                                 {textos["serv.card3_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["serv.card3_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 4: Grips -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card4} alt={textos["serv.card4_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card4}
+                        alt={textos["serv.card4_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line><line x1="4.93" y1="19.07" x2="19.07" y2="4.93"></line></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><line x1="12" y1="2" x2="12" y2="22"
+                                    ></line><line x1="2" y1="12" x2="22" y2="12"
+                                    ></line><line
+                                        x1="4.93"
+                                        y1="4.93"
+                                        x2="19.07"
+                                        y2="19.07"></line><line
+                                        x1="4.93"
+                                        y1="19.07"
+                                        x2="19.07"
+                                        y2="4.93"></line></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["serv.card4_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["serv.card4_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 5: Bolas -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card5} alt={textos["serv.card5_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card5}
+                        alt={textos["serv.card5_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><circle cx="12" cy="12" r="10"
+                                    ></circle><path
+                                        d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                                    ></path><path d="M2 12h20"></path></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["serv.card5_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["serv.card5_desc"]}
                         </p>
                     </div>
                 </div>
 
                 <!-- Card 6: Alquiler de Palas -->
-                <div class="flex flex-col shadow-lg overflow-hidden shrink-0 group">
-                    <img src={card6} alt={textos["serv.card6_title"]} class="w-full h-64 object-cover" />
-                    <div class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative">
+                <div
+                    class="flex flex-col shadow-lg overflow-hidden shrink-0 group"
+                >
+                    <img
+                        src={card6}
+                        alt={textos["serv.card6_title"]}
+                        class="w-full h-64 object-cover"
+                    />
+                    <div
+                        class="bg-[#051419] p-6 text-white min-h-[180px] flex flex-col justify-start relative"
+                    >
                         <div class="flex items-center gap-3 mb-3">
-                            <span class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 3h4v4l3 3-3 3v4h-4l-3 3-3-3H6v-4l-3-3 3-3V5h4z"></path></svg>
+                            <span
+                                class="text-amarillo-acento opacity-80 group-hover:scale-110 transition-transform"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    ><path
+                                        d="M12 2l3 3h4v4l3 3-3 3v4h-4l-3 3-3-3H6v-4l-3-3 3-3V5h4z"
+                                    ></path></svg
+                                >
                             </span>
-                            <h3 class="font-titulos text-xl uppercase text-white tracking-widest leading-tight">
+                            <h3
+                                class="font-titulos text-xl uppercase text-white tracking-widest leading-tight"
+                            >
                                 {textos["serv.card6_title"]}
                             </h3>
                         </div>
-                        <p class="text-gray-400 text-xs leading-relaxed font-light mt-2">
+                        <p
+                            class="text-gray-400 text-xs leading-relaxed font-light mt-2"
+                        >
                             {textos["serv.card6_desc"]}
                         </p>
                     </div>
@@ -174,32 +366,65 @@ const imagenBanner = "/imgdeintro.webp";
         </section>
 
         <!-- SECCIÓN BANNER OTROS SERVICIOS -->
-        <section class="max-w-[100vw] text-white py-24 mb-16 relative overflow-hidden -mx-6 px-6">
+        <section
+            class="max-w-[100vw] text-white py-24 mb-16 relative overflow-hidden -mx-6 px-6"
+        >
             <div class="absolute inset-0 w-full h-full">
-                <img src={imagenBanner} alt="" class="w-full h-full object-cover filter brightness-50" />
-                <div class="absolute inset-0 bg-blue-900/60 mix-blend-multiply"></div>
+                <img
+                    src={imagenBanner}
+                    alt=""
+                    class="w-full h-full object-cover filter brightness-50"
+                />
+                <div class="absolute inset-0 bg-blue-900/60 mix-blend-multiply">
+                </div>
             </div>
-            
-            <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center relative z-10">
+
+            <div
+                class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center relative z-10"
+            >
                 <div class="w-full md:w-1/2 space-y-6">
-                    <h2 class="font-titulos text-3xl md:text-5xl uppercase italic leading-none shadow-sm">
+                    <h2
+                        class="font-titulos text-3xl md:text-5xl uppercase italic leading-none shadow-sm"
+                    >
                         {textos["serv.banner_title"]}
                     </h2>
-                    <p class="text-[13px] md:text-sm font-light leading-relaxed max-w-xl opacity-90">
+                    <p
+                        class="text-[13px] md:text-sm font-light leading-relaxed max-w-xl opacity-90"
+                    >
                         {textos["serv.banner_desc"]}
                     </p>
-                    <a href={`/${lang}/contacto/`} class="inline-block bg-amarillo-acento text-black font-extrabold px-8 py-3 rounded-md hover:scale-105 hover:bg-yellow-400 transition-all uppercase text-xs mt-4 shadow-lg border border-transparent">
+                    <a
+                        href={`/${lang}/contacto/`}
+                        class="inline-block bg-amarillo-acento text-black font-extrabold px-8 py-3 rounded-md hover:scale-105 hover:bg-yellow-400 transition-all uppercase text-xs mt-4 shadow-lg border border-transparent"
+                    >
                         {textos["serv.banner_button"]}
                     </a>
                 </div>
-                
+
                 <div class="w-full md:w-1/2">
-                    <div class="relative bg-white p-3 rotate-2 shadow-2xl max-w-md mx-auto">
-                        <img src="/imgdeintro2.webp" alt="Si se cree y se trabaja se puede" class="w-full h-auto filter grayscale" />
-                        <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                            <span class="bg-white text-black font-extrabold px-4 py-1 text-2xl uppercase tracking-tighter mb-1">SI SE CREE</span>
-                            <span class="text-amarillo-acento font-extrabold text-5xl md:text-6xl uppercase tracking-tighter mix-blend-difference drop-shadow-md">Y SE TRABAJA</span>
-                            <span class="text-white font-light mt-4 italic border-t border-white/40 pt-2 px-8 uppercase text-xs">SE PUEDE</span>
+                    <div
+                        class="relative bg-white p-3 rotate-2 shadow-2xl max-w-md mx-auto"
+                    >
+                        <img
+                            src="/imgdeintro2.webp"
+                            alt="Si se cree y se trabaja se puede"
+                            class="w-full h-auto filter grayscale"
+                        />
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none"
+                        >
+                            <span
+                                class="bg-white text-black font-extrabold px-4 py-1 text-2xl uppercase tracking-tighter mb-1"
+                                >SI SE CREE</span
+                            >
+                            <span
+                                class="text-amarillo-acento font-extrabold text-5xl md:text-6xl uppercase tracking-tighter mix-blend-difference drop-shadow-md"
+                                >Y SE TRABAJA</span
+                            >
+                            <span
+                                class="text-white font-light mt-4 italic border-t border-white/40 pt-2 px-8 uppercase text-xs"
+                                >SE PUEDE</span
+                            >
                         </div>
                     </div>
                 </div>
@@ -208,19 +433,29 @@ const imagenBanner = "/imgdeintro.webp";
 
         <!-- SECCIÓN TORNEOS PARA EMPRESAS -->
         <section class="max-w-4xl mx-auto px-6 pb-24 text-center">
-            <h2 class="font-titulos text-2xl md:text-4xl text-black uppercase italic border-b border-gray-200 pb-6 mb-8 inline-block">
+            <h2
+                class="font-titulos text-2xl md:text-4xl text-black uppercase italic border-b border-gray-200 pb-6 mb-8 inline-block"
+            >
                 {textos["serv.tourney_title"]}
             </h2>
-            
-            <p class="font-titulos text-xl md:text-2xl text-black uppercase mb-12">
+
+            <p
+                class="font-titulos text-xl md:text-2xl text-black uppercase mb-12"
+            >
                 {textos["serv.tourney_subtitle_start"]}
-                <span class="text-amarillo-acento">{textos["serv.tourney_highlight"]}</span>
+                <span class="text-amarillo-acento"
+                    >{textos["serv.tourney_highlight"]}</span
+                >
                 {textos["serv.tourney_subtitle_end"]}
             </p>
-            
-            <div class="space-y-6 text-[13px] text-gray-500 font-light text-left max-w-4xl mx-auto mb-12">
+
+            <div
+                class="space-y-6 text-[13px] text-gray-500 font-light text-left max-w-4xl mx-auto mb-12"
+            >
                 <p>
-                    <span class="text-amarillo-acento font-medium">{textos["serv.tourney_p1_start"]}</span>
+                    <span class="text-amarillo-acento font-medium"
+                        >{textos["serv.tourney_p1_start"]}</span
+                    >
                     {textos["serv.tourney_p1_end"]}
                 </p>
                 <p>{textos["serv.tourney_p2"]}</p>
@@ -228,12 +463,16 @@ const imagenBanner = "/imgdeintro.webp";
                 <p>{textos["serv.tourney_p4"]}</p>
                 <p>{textos["serv.tourney_p5"]}</p>
             </div>
-            
-            <a href={`/${lang}/contacto/`} class="inline-block bg-amarillo-acento text-black font-extrabold px-12 py-3 rounded-full hover:scale-105 hover:bg-yellow-400 transition-all uppercase text-sm shadow-lg">
+
+            <a
+                href={`/${lang}/contacto/`}
+                class="inline-block bg-amarillo-acento text-black font-extrabold px-12 py-3 rounded-full hover:scale-105 hover:bg-yellow-400 transition-all uppercase text-sm shadow-lg"
+            >
                 {textos["serv.tourney_button"]}
             </a>
         </section>
     </main>
 
+    <LatestPosts lang={lang} />
     <Footer lang={lang} />
 </Layout>
