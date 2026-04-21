@@ -301,6 +301,13 @@ export const t = {
         "reglas.outro_title": "¿Todo claro? ¡Es hora de la práctica!",
         "reglas.outro_desc": "La teoría está muy bien, pero el sonido de la pala golpeando la bola solo se disfruta en la pista. Ven a visitarnos a Isla del Fraile, alquilamos material para principiantes y te ayudamos a dar tus primeros pasos.",
         "reglas.outro_btn1": "¡RESERVA AHORA!",
+
+        //latestposts
+        "latestposts.badge": "BLOG",
+        "latestposts.title": "PICKLEBALL ÁGUILAS: ÚLTIMAS NOTICIAS",
+        "latestposts.desc_start": "Página web dedicada al MUNDO DEL PICKLEBALL. ",
+        "latestposts.desc_highlight": "Noticias sobre este deporte, ",
+        "latestposts.desc_end": "consejos para jugar al pickleball, vídeos, eventos en Isla del Fraile, imágenes de jugadores y jugadoras, torneos solidarios y de competición, escuela de pickleball, promociones, ofertas y mucho más.",
     },
     en: {
         // ... navbar texts ...

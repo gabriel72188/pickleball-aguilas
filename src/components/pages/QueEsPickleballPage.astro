@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../Navbar.astro";
 import Footer from "../Footer.astro";
+import LatestPosts from "../LatestPosts.astro";
 import Reglas from "../Reglas.astro";
 import { t } from "../../i18n/ui.js";
 
@@ -40,10 +41,14 @@ const textos = t[lang];
     </header>
 
     <main class="py-12 pb-16 px-6">
-        <p class="font-bold text-2xl text-azul-oscuro text-center mb-10 max-w-4xl mx-auto">
+        <p
+            class="font-bold text-2xl text-azul-oscuro text-center mb-10 max-w-4xl mx-auto"
+        >
             {textos["que_es_page.intro_bold"]}
         </p>
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <div
+            class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16"
+        >
             <div class="flex-1 text-gray-700 text-lg leading-relaxed space-y-6">
                 <p>{textos["que_es_page.p1"]}</p>
                 <p set:html={textos["que_es_page.p2"]} />
@@ -149,5 +154,6 @@ const textos = t[lang];
         </div>
     </section>
 
+    <LatestPosts lang={lang} />
     <Footer lang={lang} />
 </Layout>
