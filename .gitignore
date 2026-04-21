@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # DB credentials
 public/db_php/config.db.php
+
+scratch/
