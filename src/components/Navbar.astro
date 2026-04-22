@@ -3,7 +3,13 @@
 import { t } from "../i18n/ui.js";
 
 const pathname = Astro.url.pathname;
-const lang = pathname.includes("/en") ? "en" : pathname.includes("/de") ? "de" : pathname.includes("/fr") ? "fr" : "es";
+const lang = pathname.includes("/en")
+  ? "en"
+  : pathname.includes("/de")
+    ? "de"
+    : pathname.includes("/fr")
+      ? "fr"
+      : "es";
 const textos = t[lang] || t["es"];
 
 const idiomasDisponibles = [
@@ -47,42 +53,58 @@ const getUrlParaIdioma = (codigoDestino) => {
       />
     </a>
 
-    <div class="hidden md:flex items-center gap-8 font-medium">
-      <a href={`/${lang}/`} class="hover:text-amarillo-acento transition-colors"
-        >{textos["nav.inicio"]}</a
+    <div
+      class="hidden lg:flex items-center gap-6 font-medium text-sm xl:text-base"
+    >
+      <a
+        href={`/${lang}/`}
+        class="hover:text-amarillo-acento transition-colors"
       >
+        {textos["nav.inicio"]}
+      </a>
       <a
         href={`/${lang}/contacto/`}
         class="hover:text-amarillo-acento transition-colors"
-        >{textos["nav.contacto"]}</a
       >
+        {textos["nav.contacto"]}
+      </a>
       <a
         href={`/${lang}/blog/`}
         class="hover:text-amarillo-acento transition-colors"
-        >{textos["nav.blog"]}</a
       >
+        {textos["nav.blog"]}
+      </a>
       <a
         href={`/${lang}/instalaciones/`}
         class="hover:text-amarillo-acento transition-colors"
-        >{textos["nav.instalaciones"]}</a
       >
+        {textos["nav.instalaciones"]}
+      </a>
       <a
         href={`/${lang}/servicios/`}
         class="hover:text-amarillo-acento transition-colors"
-        >{textos["nav.servicios"]}</a
       >
+        {textos["nav.servicios"]}
+      </a>
+
+      <a
+        href={`/${lang}/reglasfaciles/`}
+        class="hover:text-amarillo-acento transition-colors"
+      >
+        {textos["nav.reglas"] || "Reglas"}
+      </a>
 
       <a
         href="https://www.padelaguilas.club"
         target="_blank"
         rel="noopener noreferrer"
-        class="hover:text-amarillo-acento transition-colors">PADEL</a
+        class="hover:text-amarillo-acento transition-colors">Padel</a
       >
       <a
         href="https://www.aguilas.golf"
         target="_blank"
         rel="noopener noreferrer"
-        class="hover:text-amarillo-acento transition-colors">GOLF</a
+        class="hover:text-amarillo-acento transition-colors">Golf</a
       >
     </div>
 
@@ -136,14 +158,14 @@ const getUrlParaIdioma = (codigoDestino) => {
       <a
         href="https://app.sporttia.com/scs/3287/profile"
         target="_blank"
-        class="hidden md:inline-block bg-amarillo-acento text-azul-oscuro font-bold px-5 py-2 text-base rounded shadow-md hover:bg-yellow-400 hover:scale-105 transition-all whitespace-nowrap uppercase"
+        class="hidden lg:inline-block bg-amarillo-acento text-azul-oscuro font-bold px-4 xl:px-5 py-2 text-sm xl:text-base rounded shadow-md hover:bg-yellow-400 hover:scale-105 transition-all whitespace-nowrap uppercase"
       >
         {textos["nav.reserva"]}
       </a>
 
       <button
         id="btn-menu"
-        class="md:hidden flex items-center justify-center p-2 rounded text-white hover:bg-white/10 transition-colors cursor-pointer"
+        class="lg:hidden flex items-center justify-center p-2 rounded text-white hover:bg-white/10 transition-colors cursor-pointer"
         aria-label="Abrir menú"
       >
         <svg
@@ -168,46 +190,58 @@ const getUrlParaIdioma = (codigoDestino) => {
 
   <div
     id="menu-movil"
-    class="hidden md:hidden mt-4 pt-4 border-t border-white/10 flex-col gap-5 font-medium pb-4 px-2"
+    class="hidden lg:hidden mt-4 pt-4 border-t border-white/10 flex-col gap-5 font-medium pb-4 px-2"
   >
     <a
       href={`/${lang}/`}
       class="block hover:text-amarillo-acento transition-colors text-lg"
-      >{textos["nav.inicio"]}</a
     >
+      {textos["nav.inicio"]}
+    </a>
     <a
       href={`/${lang}/contacto/`}
       class="block hover:text-amarillo-acento transition-colors text-lg"
-      >{textos["nav.contacto"]}</a
     >
+      {textos["nav.contacto"]}
+    </a>
     <a
       href={`/${lang}/blog/`}
       class="block hover:text-amarillo-acento transition-colors text-lg"
-      >{textos["nav.blog"]}</a
     >
+      {textos["nav.blog"]}
+    </a>
     <a
       href={`/${lang}/instalaciones/`}
       class="block hover:text-amarillo-acento transition-colors text-lg"
-      >{textos["nav.instalaciones"]}</a
     >
+      {textos["nav.instalaciones"]}
+    </a>
     <a
       href={`/${lang}/servicios/`}
       class="block hover:text-amarillo-acento transition-colors text-lg"
-      >{textos["nav.servicios"]}</a
     >
+      {textos["nav.servicios"]}
+    </a>
+
+    <a
+      href={`/${lang}/reglasfaciles/`}
+      class="block hover:text-amarillo-acento transition-colors text-lg text-amarillo-acento/90"
+    >
+      {textos["nav.reglas"] || "Reglas"}
+    </a>
 
     <a
       href="https://www.padelaguilas.club"
       target="_blank"
       rel="noopener noreferrer"
       class="block hover:text-amarillo-acento transition-colors text-lg"
-      >PADEL</a
+      >Padel</a
     >
     <a
       href="https://www.aguilas.golf"
       target="_blank"
       rel="noopener noreferrer"
-      class="block hover:text-amarillo-acento transition-colors text-lg">GOLF</a
+      class="block hover:text-amarillo-acento transition-colors text-lg">Golf</a
     >
 
     <a
@@ -222,22 +256,17 @@ const getUrlParaIdioma = (codigoDestino) => {
 
 <script>
   const initNavInteractions = () => {
-    // 1. Hamburguesa
     const btnMenu = document.getElementById("btn-menu");
     const menuMovil = document.getElementById("menu-movil");
-
-    // 2. Selector de Idiomas
     const btnIdioma = document.getElementById("btn-idioma");
     const menuIdioma = document.getElementById("menu-idioma");
 
-    // Lógica Hamburguesa
     if (btnMenu && menuMovil) {
       btnMenu.onclick = (e) => {
-        e.stopPropagation(); // Evita que se cierre de golpe
+        e.stopPropagation();
         menuMovil.classList.toggle("hidden");
         menuMovil.classList.toggle("flex");
 
-        // Si abrimos la hamburguesa, cerramos el idioma por si acaso
         if (menuIdioma) {
           menuIdioma.classList.add("opacity-0", "invisible", "scale-95");
           menuIdioma.classList.remove("scale-100");
@@ -245,10 +274,9 @@ const getUrlParaIdioma = (codigoDestino) => {
       };
     }
 
-    // Lógica Idiomas (Funciona con clic en PC y en Móvil)
     if (btnIdioma && menuIdioma) {
       btnIdioma.onclick = (e) => {
-        e.stopPropagation(); // Evita que se cierre de golpe
+        e.stopPropagation();
         menuIdioma.classList.toggle("opacity-0");
         menuIdioma.classList.toggle("invisible");
         menuIdioma.classList.toggle("scale-95");
@@ -256,7 +284,6 @@ const getUrlParaIdioma = (codigoDestino) => {
       };
     }
 
-    // Truco maestro: Si haces clic en cualquier otra parte de la pantalla, se cierra el menú de idiomas
     document.addEventListener("click", (e) => {
       if (
         menuIdioma &&

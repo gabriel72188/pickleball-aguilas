@@ -3,11 +3,16 @@
 import { t } from "../i18n/ui.js";
 
 const pathname = Astro.url.pathname;
-const lang = pathname.includes("/en") ? "en" : pathname.includes("/de") ? "de" : pathname.includes("/fr") ? "fr" : "es";
+const lang = pathname.includes("/en")
+  ? "en"
+  : pathname.includes("/de")
+    ? "de"
+    : pathname.includes("/fr")
+      ? "fr"
+      : "es";
 const textos = t[lang];
 
 // Aquí irán las rutas de tus 4 imágenes.
-// Pon las imágenes en la carpeta 'public' de tu proyecto (ej: public/regla1.jpg)
 const reglas = [
   { img: "/regla1.png", alt: "Regla 1: El Saque" },
   { img: "/regla2.png", alt: "Regla 2: Puntuación" },

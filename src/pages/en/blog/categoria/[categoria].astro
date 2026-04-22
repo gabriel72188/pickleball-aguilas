@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import BlogCategoriaPage from "../../../../components/blog/BlogCategoriaPage.astro";
 
 export async function getStaticPaths() {
-    const categorias = ["Pickleball Tournaments", "Offer", "Info", "Classes"];
+    const categorias = ["Torneos de Pickleball", "Oferta", "Info", "Clases"];
     return categorias.map((cat) => ({
         params: { categoria: cat.toLowerCase().replace(/\s+/g, "-") },
         props: { nombreOriginal: cat },
@@ -13,10 +13,18 @@ export async function getStaticPaths() {
 
 const { nombreOriginal } = Astro.props;
 
-const posts = await getCollection("blog", ({ data, id }) =>
-    id.startsWith("en/") && data.draft !== true && data.category === nombreOriginal
+const posts = await getCollection(
+    "blog",
+    ({ data, id }) =>
+        id.startsWith("en/") &&
+        data.draft !== true &&
+        data.category === nombreOriginal &&
+        data.pubDate <= new Date(),
 );
-const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const sorted = posts.sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <BlogCategoriaPage lang="en" nombreOriginal={nombreOriginal} posts={sorted} />
+

@@ -14,7 +14,10 @@ export async function getStaticPaths() {
 const { nombreOriginal } = Astro.props;
 
 const posts = await getCollection("blog", ({ data, id }) =>
-    id.startsWith("es/") && data.draft !== true && data.category === nombreOriginal
+    id.startsWith("es/") &&
+    data.draft !== true &&
+    data.category === nombreOriginal &&
+    data.pubDate <= new Date()
 );
 const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---

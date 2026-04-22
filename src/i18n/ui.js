@@ -165,19 +165,20 @@ export const t = {
         'faq.q11': '¿Cuándo hacéis torneos de pádel?',
         'faq.a11': 'Disponemos de una programación de pádel que vamos haciendo pública cada vez que tenemos determinada la fecha. Inscríbete con nosotros y así podrás saber antes que nadie, las fechas y sorpresas que realizamos en cada torneo.',
 
-        // --- PÁGINA QUIENES SOMOS ---
+        // --- PÁGINA QUIENES SOMOS (PICKLEBALL) ---
         'about.head_title': 'Quiénes Somos - Pickleball Águilas Resort',
         'about.hero_title': 'QUIÉNES SOMOS',
-        'about.hero_desc': 'En la gestión de este maravilloso proyecto estamos Carla y Jose o Jose y Carla, el orden da igual, porque le ponemos todo nuestro corazón e ilusión en darte lo mejor de nosotros para que tú disfrutes al máximo en nuestras pistas de pickleball de Águilas.',
-        'about.badge': '🎾 PICKLEBALL ÁGUILAS CLUB',
-        'about.team_title': 'EQUIPAZO',
-        'about.team_desc1': 'Que sí, que hacer deporte nos sienta fenomenal para tener un cuerpo serrano. Pero además, hay que ver lo bien que te lo pasas después comentando la partida con los compis. Por eso nos pusimos a ofrecer Pistas deportivas de Pickleball, porque las risas y el buen rollo están asegurados.',
-        'about.team_desc2': 'ADEMÁS TENEMOS A LOS MEJORES PROFESORES, si lo que quieres es dar clases de pickleball!',
-        'about.mission_title': 'Nuestra Misión',
-        'about.mission_desc1': 'Pues eso... darte buenos momentos, llenos de risas, salud y energía vital, que de eso, vamos sobrados aquí!',
-        'about.mission_desc2': 'Nuestro objetivo es llenar tu depósito de felicidad al completo y a un precio mucho más barato que la gasolina y la luz.',
-        'about.img_team_alt': 'Nuestro equipo',
-        'about.img_video_alt': 'Ver vídeo de la pista',
+        'about.hero_desc': 'En la gestión de este maravilloso proyecto estamos Carla y Jose (o Jose y Carla, el orden es lo de menos). Le ponemos todo nuestro corazón para que descubras el deporte de moda y disfrutes al máximo en nuestras pistas.',
+        'about.badge': '🏓🤾‍♂️ LA FAMILIA PICKLEBALL',
+        'about.team_title': 'NUESTRA HISTORIA',
+        'about.team_desc1': 'Sabemos que hacer deporte es clave para la salud, pero seamos sinceros: lo mejor del pickleball es lo rápido que aprendes y lo bien que te lo pasas después comentando la jugada. Los piques sanos en "la cocina" y el buen rollo están 100% asegurados en Isla del Fraile.',
+        'about.team_desc2': '¡Y si es tu primera vez, cuidado que engancha! Además, contamos con los mejores instructores para que domines la pala desde el primer día.',
+        'about.mission_title': 'Nuestro Objetivo',
+        'about.mission_desc1': 'Crear una comunidad donde todo el mundo es bienvenido, sin importar su edad, nivel físico o si nunca ha cogido una raqueta.',
+        'about.mission_desc2': 'Nuestra meta es llenar tu semana de energía, deporte y carcajadas a un precio imbatible. ¡Nos vemos en la pista!',
+        'about.img_team_alt': 'Carla y Jose en las pistas de Pickleball',
+        'about.img_video_alt': 'Ver vídeo de nuestras pistas de Pickleball',
+        'about.video_title': 'Conoce nuestras instalaciones',
 
         // --- PÁGINA TRABAJA CON NOSOTROS ---
         'work.head_title': 'Trabaja con nosotros - Pickleball Águilas Resort',
@@ -486,6 +487,7 @@ export const t = {
         'about.mission_desc2': 'Our goal is to fill your happiness tank completely and at a much cheaper price than gas and electricity.',
         'about.img_team_alt': 'Our team',
         'about.img_video_alt': 'Watch court video',
+        'about.video_title': 'Discover our facilities',
 
         // --- WORK WITH US PAGE ---
         'work.head_title': 'Work With Us - Pickleball Águilas Resort',
@@ -783,6 +785,7 @@ export const t = {
         'about.mission_desc2': 'Unser Ziel ist es, Ihren Glückstank voll aufzufüllen, und das zu einem viel günstigeren Preis als Benzin und Strom.',
         'about.img_team_alt': 'Unser Team',
         'about.img_video_alt': 'Platzvideo ansehen',
+        'about.video_title': 'Lerne unsere Anlagen kennen',
 
         // --- ARBEITE MIT UNS ---
         'work.head_title': 'Arbeite mit uns - Pickleball Águilas Resort',
@@ -1079,6 +1082,7 @@ export const t = {
         'about.mission_desc2': 'Notre objectif est de remplir votre réservoir de bonheur à un prix bien plus bas que l\'essence et l\'électricité.',
         'about.img_team_alt': 'Notre équipe',
         'about.img_video_alt': 'Voir la vidéo du terrain',
+        'about.video_title': 'Découvrez nos installations',
 
         // --- TRAVAILLEZ AVEC NOUS ---
         'work.head_title': 'Travaillez avec nous - Pickleball Águilas Resort',

@@ -4,10 +4,16 @@ import { getCollection } from "astro:content";
 import BlogListPage from "../../../components/blog/BlogListPage.astro";
 
 export async function getStaticPaths({ paginate }) {
-    const posts = await getCollection("blog", ({ data, id }) =>
-        id.startsWith("en/") && data.draft !== true && data.pubDate <= new Date()
+    const posts = await getCollection(
+        "blog",
+        ({ data, id }) =>
+            id.startsWith("en/") &&
+            data.draft !== true &&
+            data.pubDate <= new Date(),
     );
-    const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+    const sorted = posts.sort(
+        (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+    );
     return paginate(sorted, { pageSize: 6 });
 }
 

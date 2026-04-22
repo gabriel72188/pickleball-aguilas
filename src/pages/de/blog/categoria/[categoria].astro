@@ -13,10 +13,17 @@ export async function getStaticPaths() {
 
 const { nombreOriginal } = Astro.props;
 
-const posts = await getCollection("blog", ({ data, id }) =>
-    id.startsWith("de/") && data.draft !== true && data.category === nombreOriginal
+const posts = await getCollection(
+    "blog",
+    ({ data, id }) =>
+        id.startsWith("de/") &&
+        data.draft !== true &&
+        data.category === nombreOriginal &&
+        data.pubDate <= new Date(),
 );
-const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const sorted = posts.sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <BlogCategoriaPage lang="de" nombreOriginal={nombreOriginal} posts={sorted} />
