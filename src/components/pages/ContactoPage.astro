@@ -42,7 +42,7 @@ const textos = t[lang];
         >
           <div class="mb-8">
             <h2
-              class="font-titulos text-3xl text-azul-principal mb-2 uppercase tracking-tighter"
+              class="font-titulos text-3xl text-azul-principal mb-2 uppercase"
             >
               {textos["unete.titulo"]}
             </h2>
@@ -91,7 +91,7 @@ const textos = t[lang];
             <div>
               <label
                 for="nombre"
-                class="block text-sm font-bold text-gray-700 uppercase tracking-wider mb-2"
+                class="block text-sm font-bold text-gray-500 uppercase tracking-wide mb-2"
               >
                 {textos["form.nombre"]}
               </label>
@@ -110,7 +110,7 @@ const textos = t[lang];
             <div>
               <label
                 for="correo"
-                class="block text-sm font-bold text-gray-700 uppercase tracking-wider mb-2"
+                class="block text-sm font-bold text-gray-500 uppercase tracking-wide mb-2"
               >
                 {textos["form.correo"]}
               </label>
@@ -127,7 +127,7 @@ const textos = t[lang];
             <div>
               <label
                 for="telefono"
-                class="block text-sm font-bold text-gray-700 uppercase tracking-wider mb-2"
+                class="block text-sm font-bold text-gray-500 uppercase tracking-wide mb-2"
               >
                 {textos["form.telefono"]}
               </label>
@@ -171,16 +171,16 @@ const textos = t[lang];
           <div
             class="bg-white rounded-2xl shadow-[0_25px_80px_-15px_rgba(234,179,8,0.15)] p-8 md:p-10 border border-white/5"
           >
-            <h3
-              class="font-titulos text-2xl mb-8 text-azul-principal uppercase leading-tight tracking-tight"
+            <h2
+              class="font-titulos text-3xl mb-8 text-azul-principal uppercase"
             >
               {textos["contacto.tagline"]}
-            </h3>
+            </h2>
 
             <div class="space-y-8">
               <div>
                 <h4
-                  class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+                  class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2"
                 >
                   {textos["contacto.direccion.tit"]}
                 </h4>
@@ -193,46 +193,82 @@ const textos = t[lang];
 
               <div>
                 <h4
-                  class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+                  class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2"
                 >
                   {textos["contacto.app.tit"]}
                 </h4>
-                <p
-                  class="text-base text-azul-principal font-bold bg-blue-50 inline-block px-5 py-3 rounded-lg border border-blue-100 shadow-sm"
-                >
-                  {textos["contacto.app.val"]}
-                </p>
+                <div class="flex flex-wrap items-center gap-3 mt-1">
+                  <a 
+                    href="https://app.sporttia.com/scs/3287/profile" 
+                    target="_blank" 
+                    class="bg-azul-principal text-white font-bold px-5 py-3 rounded-lg shadow-md hover:bg-azul-oscuro transition-all text-sm uppercase tracking-wide flex items-center gap-2"
+                  >
+                    {textos["contacto.app.val1"]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                  <span class="text-gray-500 font-medium italic text-sm">
+                    {textos["contacto.app.val2"]}
+                  </span>
+                  <a 
+                    href="tel:+34601507505" 
+                    class="bg-amarillo-acento text-azul-oscuro font-bold px-5 py-3 rounded-lg shadow-md hover:bg-yellow-400 transition-all text-sm uppercase tracking-wide flex items-center gap-2"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    +34 601 507 505
+                  </a>
+                </div>
               </div>
 
               <div>
                 <h4
-                  class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2"
+                  class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2"
                 >
                   {textos["contacto.siguenos"]}
                 </h4>
-                <a
-                  href="https://instagram.com/pickleball_aguilas"
-                  target="_blank"
-                  class="inline-flex items-center gap-2 text-lg font-bold text-gray-700 hover:text-azul-principal transition-colors"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"
-                    ></rect><path
-                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                    ></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"
-                    ></line></svg
+                <div class="flex flex-col gap-3">
+                  <a
+                    href="https://instagram.com/pickleball_aguilas"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 text-base font-medium text-azul-oscuro hover:text-azul-principal transition-colors"
                   >
-                  @pickleball_aguilas
-                </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"
+                      ></rect><path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"
+                      ></line></svg
+                    >
+                    @pickleball_aguilas
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/1EQr66LV4i/"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 text-base font-medium text-azul-oscuro hover:text-azul-principal transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="none"
+                    >
+                      <path
+                        d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
+                      ></path>
+                    </svg>
+                    Pickleball Águilas Resort
+                  </a>
+                </div>
               </div>
             </div>
           </div>

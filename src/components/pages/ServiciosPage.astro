@@ -1,8 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Navbar from "../Navbar.astro";
-import Footer from "../Footer.astro";
-import LatestPosts from "../LatestPosts.astro";
 import { t } from "../../i18n/ui.js";
 
 const { lang } = Astro.props;
@@ -11,18 +8,16 @@ const textos = t[lang];
 // Imágenes base (se pueden parametrizar)
 const imagenHeader = "/imagen-fondo2.jpg";
 const card1 = "/imgdeintro2.webp";
-const card2 = "/imgdeintro.webp";
-const card3 = "/jose-carla.webp";
-const card4 = "/jose-carla.webp";
-const card5 = "/imgdeintro.webp";
-const card6 = "/imgdeintro2.webp";
+const card2 = "/instalaciones/bebida.webp";
+const card3 = "/imgdeintro.webp";
+const card4 = "/instalaciones/grips.webp";
+const card5 = "/instalaciones/pelota.webp";
+const card6 = "/instalaciones/masclub.webp";
 const imagenBanner = "/imgdeintro.webp";
 ---
 
 <Layout title={textos["serv.head_title"]} lang={lang}>
-    <Navbar />
-
-    <!-- HEADER -->
+    <!-- HEADER 
     <header
         class="relative bg-azul-oscuro py-24 px-6 flex flex-col items-center justify-center text-center overflow-hidden min-h-[40vh]"
     >
@@ -44,9 +39,9 @@ const imagenBanner = "/imgdeintro.webp";
                 {textos["serv.hero_title"]}
             </h1>
         </div>
-    </header>
+    </header> -->
 
-    <main class="py-16 md:py-24 px-6 overflow-hidden bg-white">
+    <main class="py-16 md:py-0 px-6 overflow-hidden bg-white">
         <!-- SECCIÓN INTRO SERVICIOS -->
         <section class="max-w-4xl mx-auto text-center py-8 mb-16">
             <span
@@ -472,7 +467,4 @@ const imagenBanner = "/imgdeintro.webp";
             </a>
         </section>
     </main>
-
-    <LatestPosts lang={lang} />
-    <Footer lang={lang} />
 </Layout>

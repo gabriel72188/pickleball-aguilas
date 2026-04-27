@@ -6,6 +6,7 @@ export const t = {
         'nav.contacto': 'Contacto',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Instalaciones',
+        'nav.reglas': 'Reglas',
         'nav.servicios': 'Servicios',
         'nav.unete': 'Únete',
         'nav.reserva': '¡RESERVA YA!',
@@ -53,7 +54,8 @@ export const t = {
         'contacto.direccion.tit': '📍 Dónde estamos',
         'contacto.direccion.val': 'Urbanización Isla del Fraile, Calle D, 1, Águilas, Murcia, España 30880',
         'contacto.app.tit': '🚀 Reservas',
-        'contacto.app.val': 'Próximamente reservas en App Sporttia',
+        'contacto.app.val1': 'RESERVA YA DESDE SPORTTIA',
+        'contacto.app.val2': 'o desde el',
         'contacto.tagline': '¡Súmate al deporte que está arrasando!',
         'contacto.siguenos': 'Síguenos en redes:',
 
@@ -309,6 +311,25 @@ export const t = {
         "latestposts.desc_start": "Página web dedicada al MUNDO DEL PICKLEBALL. ",
         "latestposts.desc_highlight": "Noticias sobre este deporte, ",
         "latestposts.desc_end": "consejos para jugar al pickleball, vídeos, eventos en Isla del Fraile, imágenes de jugadores y jugadoras, torneos solidarios y de competición, escuela de pickleball, promociones, ofertas y mucho más.",
+
+        // --- PRUEBA GRATIS ---
+        'free.head_title': 'Prueba Gratis - Pickleball Águilas Resort',
+        'free.badge': 'Únete a la familia',
+        'free.hero_title': 'Solicita tu prueba gratis',
+        'free.hero_desc': 'Déjanos tus datos y ven a descubrir el deporte de moda sin compromiso. ¡Te prestamos todo el material!',
+        'free.form_title': 'Rellena tus datos',
+        'free.label_name': 'Nombre y Apellidos',
+        'free.place_name': 'P. ej. Carlos López',
+        'free.label_email': 'Correo Electrónico',
+        'free.place_email': 'tu@email.com',
+        'free.label_phone': 'Teléfono',
+        'free.place_phone': '600 000 000',
+        'free.btn_submit': 'Quiero mi prueba gratis',
+        'free.error_msg': 'Hubo un error al enviar. Por favor, inténtalo de nuevo.',
+        'free.success_title': '¡Gracias por unirte!',
+        'free.success_desc': 'Hemos recibido tus datos correctamente. En breve nos pondremos en contacto contigo para cerrar el día de tu prueba gratis.',
+        'free.wa_text': 'Únete para seguir al tanto y buscar compañeros de pista:',
+        'free.wa_btn': 'Unirme al grupo',
     },
     en: {
         // ... navbar texts ...
@@ -316,6 +337,7 @@ export const t = {
         'nav.contacto': 'Contact',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Facilities',
+        'nav.reglas': 'Rules',
         'nav.servicios': 'Services',
         'nav.unete': 'Join Us',
         'nav.reserva': 'BOOK NOW!',
@@ -363,7 +385,8 @@ export const t = {
         'contacto.direccion.tit': '📍 Location',
         'contacto.direccion.val': 'Isla del Fraile Urbanization, Street D, 1, Águilas, Murcia, Spain 30880',
         'contacto.app.tit': '🚀 Bookings',
-        'contacto.app.val': 'Coming soon on the Sporttia App',
+        'contacto.app.val1': 'BOOK NOW ON SPORTTIA',
+        'contacto.app.val2': 'or call',
         'contacto.tagline': 'Join the sport that is taking over!',
         'contacto.siguenos': 'Follow us:',
 
@@ -613,6 +636,25 @@ export const t = {
         "reglas.outro_btn1": "BOOK NOW!",
         "reglas.outro_btn2": "Back to Home",
 
+        // --- PRUEBA GRATIS ---
+        'free.head_title': 'Free Trial - Pickleball Águilas Resort',
+        'free.badge': 'Join the family',
+        'free.hero_title': 'Request your free trial',
+        'free.hero_desc': 'Leave us your details and come discover the trendy sport with no commitment. We provide all the equipment!',
+        'free.form_title': 'Fill in your details',
+        'free.label_name': 'Full Name',
+        'free.place_name': 'e.g. John Doe',
+        'free.label_email': 'Email Address',
+        'free.place_email': 'you@email.com',
+        'free.label_phone': 'Phone',
+        'free.place_phone': '+44 7700 900000',
+        'free.btn_submit': 'I want my free trial',
+        'free.error_msg': 'There was an error submitting. Please try again.',
+        'free.success_title': 'Thanks for joining!',
+        'free.success_desc': 'We have successfully received your details. We will contact you shortly to schedule your free trial day.',
+        'free.wa_text': 'Join to stay updated and find court partners:',
+        'free.wa_btn': 'Join the group',
+
     },
     de: {
         // --- NAVIGATION ---
@@ -620,6 +662,7 @@ export const t = {
         'nav.contacto': 'Kontakt',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Anlagen',
+        'nav.reglas': 'Regeln',
         'nav.servicios': 'Dienstleistungen',
         'nav.unete': 'Mitmachen',
         'nav.reserva': 'JETZT BUCHEN!',
@@ -667,7 +710,8 @@ export const t = {
         'contacto.direccion.tit': '📍 Wo wir sind',
         'contacto.direccion.val': 'Urbanización Isla del Fraile, Calle D, 1, Águilas, Murcia, Spanien 30880',
         'contacto.app.tit': '🚀 Buchungen',
-        'contacto.app.val': 'Buchungen bald über die Sporttia-App verfügbar',
+        'contacto.app.val1': 'JETZT ÜBER SPORTTIA BUCHEN',
+        'contacto.app.val2': 'oder rufen Sie an',
         'contacto.tagline': 'Werden Sie Teil des Sports, der die Welt erobert!',
         'contacto.siguenos': 'Folgen Sie uns:',
 
@@ -910,6 +954,25 @@ export const t = {
         "reglas.outro_btn1": "JETZT BUCHEN!",
         "reglas.outro_btn2": "Zurück zur Startseite",
 
+        // --- PRUEBA GRATIS ---
+        'free.head_title': 'Kostenloses Probetraining - Pickleball Águilas Resort',
+        'free.badge': 'Werde Teil der Familie',
+        'free.hero_title': 'Fordere dein Probetraining an',
+        'free.hero_desc': 'Hinterlasse deine Daten und entdecke die Trendsportart unverbindlich. Wir stellen die gesamte Ausrüstung zur Verfügung!',
+        'free.form_title': 'Fülle deine Daten aus',
+        'free.label_name': 'Vor- und Nachname',
+        'free.place_name': 'z.B. Max Mustermann',
+        'free.label_email': 'E-Mail-Adresse',
+        'free.place_email': 'du@email.com',
+        'free.label_phone': 'Telefon',
+        'free.place_phone': '+49 151 12345678',
+        'free.btn_submit': 'Ich möchte mein Probetraining',
+        'free.error_msg': 'Beim Senden ist ein Fehler aufgetreten. Bitte versuche es erneut.',
+        'free.success_title': 'Danke fürs Mitmachen!',
+        'free.success_desc': 'Wir haben deine Daten erfolgreich erhalten. Wir werden uns in Kürze mit dir in Verbindung setzen, um den Tag deines Probetrainings zu vereinbaren.',
+        'free.wa_text': 'Tritt bei, um auf dem Laufenden zu bleiben und Spielpartner zu finden:',
+        'free.wa_btn': 'Der Gruppe beitreten',
+
     },
     fr: {
         // --- NAVIGATION ---
@@ -917,6 +980,7 @@ export const t = {
         'nav.contacto': 'Contact',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Installations',
+        'nav.reglas': 'Règles',
         'nav.servicios': 'Services',
         'nav.unete': 'Rejoignez-nous',
         'nav.reserva': 'RÉSERVEZ !',
@@ -964,7 +1028,8 @@ export const t = {
         'contacto.direccion.tit': '📍 Où nous trouver',
         'contacto.direccion.val': 'Urbanización Isla del Fraile, Calle D, 1, Águilas, Murcia, Espagne 30880',
         'contacto.app.tit': '🚀 Réservations',
-        'contacto.app.val': 'Réservations bientôt disponibles sur l\'App Sporttia',
+        'contacto.app.val1': 'RÉSERVEZ MAINTENANT SUR SPORTTIA',
+        'contacto.app.val2': 'ou appelez le',
         'contacto.tagline': 'Rejoignez le sport qui fait fureur !',
         'contacto.siguenos': 'Suivez-nous :',
 
@@ -1206,6 +1271,25 @@ export const t = {
         "reglas.outro_desc": "La théorie c'est bien, mais le son de la raquette frappant la balle ne s'apprécie que sur le terrain. Venez nous rendre visite à Isla del Fraile, nous louons du matériel pour les débutants et nous vous aidons à faire vos premiers pas.",
         "reglas.outro_btn1": "RÉSERVEZ MAINTENANT !",
         "reglas.outro_btn2": "Retour à l'accueil",
+
+        // --- PRUEBA GRATIS ---
+        'free.head_title': 'Essai Gratuit - Pickleball Águilas Resort',
+        'free.badge': 'Rejoignez la famille',
+        'free.hero_title': 'Demandez votre essai gratuit',
+        'free.hero_desc': 'Laissez-nous vos coordonnées et venez découvrir le sport à la mode sans engagement. Nous vous prêtons tout le matériel !',
+        'free.form_title': 'Remplissez vos coordonnées',
+        'free.label_name': 'Nom et Prénom',
+        'free.place_name': 'ex. Jean Dupont',
+        'free.label_email': 'Adresse E-mail',
+        'free.place_email': 'vous@email.com',
+        'free.label_phone': 'Téléphone (WhatsApp)',
+        'free.place_phone': '+33 6 12 34 56 78',
+        'free.btn_submit': 'Je veux mon essai gratuit',
+        'free.error_msg': 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer.',
+        'free.success_title': 'Merci de nous rejoindre !',
+        'free.success_desc': 'Nous avons bien reçu vos coordonnées. Nous vous contacterons sous peu pour fixer le jour de votre essai gratuit.',
+        'free.wa_text': 'Rejoignez-nous pour rester informé et trouver des partenaires de jeu :',
+        'free.wa_btn': 'Rejoindre le groupe',
 
     }
 };

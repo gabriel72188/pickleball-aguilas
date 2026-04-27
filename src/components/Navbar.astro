@@ -43,70 +43,64 @@ const getUrlParaIdioma = (codigoDestino) => {
 };
 ---
 
-<nav class="bg-azul-oscuro text-white py-4 px-6 shadow-lg sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <a href={`/${lang}/`} class="flex items-center gap-3 z-20 group">
-      <img
-        src="/logo-pickleball-amarillo.png"
-        alt="Logo Pickleball Águilas Resort"
-        class="w-14 md:w-20 h-auto object-contain shrink-0"
-      />
-    </a>
-
-    <div
-      class="hidden lg:flex items-center gap-6 font-medium text-sm xl:text-base"
-    >
-      <a
-        href={`/${lang}/`}
-        class="hover:text-amarillo-acento transition-colors"
-      >
-        {textos["nav.inicio"]}
-      </a>
-      <a
-        href={`/${lang}/contacto/`}
-        class="hover:text-amarillo-acento transition-colors"
-      >
-        {textos["nav.contacto"]}
-      </a>
-      <a
-        href={`/${lang}/blog/`}
-        class="hover:text-amarillo-acento transition-colors"
-      >
-        {textos["nav.blog"]}
-      </a>
-      <a
-        href={`/${lang}/instalaciones/`}
-        class="hover:text-amarillo-acento transition-colors"
-      >
-        {textos["nav.instalaciones"]}
-      </a>
-      <a
-        href={`/${lang}/servicios/`}
-        class="hover:text-amarillo-acento transition-colors"
-      >
-        {textos["nav.servicios"]}
-      </a>
-
-      <a
-        href={`/${lang}/reglasfaciles/`}
-        class="hover:text-amarillo-acento transition-colors"
-      >
-        {textos["nav.reglas"] || "Reglas"}
-      </a>
-
-      <a
-        href="https://www.padelaguilas.club"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-amarillo-acento transition-colors">Padel</a
-      >
-      <a
-        href="https://www.aguilas.golf"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-amarillo-acento transition-colors">Golf</a
-      >
+<header class="sticky top-0 z-50 shadow-lg w-full">
+  <!-- Franja Amarilla (Solo PC) -->
+  <div class="hidden lg:flex bg-amarillo-acento text-azul-oscuro py-2 px-6">
+    <div class="max-w-7xl mx-auto w-full flex justify-between items-center text-sm xl:text-base font-bold">
+      <div class="flex gap-6">
+        <a href="https://www.padelaguilas.club" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Padel</a>
+        <a href="https://www.aguilas.golf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Golf</a>
+      </div>
+      <div class="flex gap-6 items-center">
+        <a href={`/${lang}/blog/`} class="hover:text-white transition-colors">
+          {textos["nav.blog"] || "Blog"}
+        </a>
+        <div class="flex gap-4 items-center">
+          <a href="https://www.facebook.com/share/1EQr66LV4i/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/pickleball_aguilas?igsh=azcybGh3YjZmbnUy" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <nav class="bg-azul-oscuro text-white py-4 px-6 relative">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href={`/${lang}/`} class="flex items-center gap-3 z-20 group">
+        <img
+          src="/logo-pickleball-amarillo.png"
+          alt="Logo Pickleball Águilas Resort"
+          class="w-14 md:w-20 h-auto object-contain shrink-0"
+        />
+      </a>
+
+      <div
+        class="hidden lg:flex items-center gap-6 font-medium text-sm xl:text-base lg:absolute lg:left-1/2 lg:-translate-x-1/2"
+      >
+        <a
+          href={`/${lang}/instalaciones/`}
+          class="hover:text-amarillo-acento transition-colors"
+        >
+          {textos["nav.instalaciones"]}
+        </a>
+
+        <a
+          href={`/${lang}/reglasfaciles/`}
+          class="hover:text-amarillo-acento transition-colors"
+        >
+          {textos["nav.reglas"] || "Reglas"}
+        </a>
+
+        <a
+          href={`/${lang}/contacto/`}
+          class="hover:text-amarillo-acento transition-colors"
+        >
+          {textos["nav.contacto"]}
+        </a>
+      </div>
 
     <div class="flex items-center gap-2 sm:gap-4 z-20">
       <div class="relative">
@@ -192,40 +186,24 @@ const getUrlParaIdioma = (codigoDestino) => {
     id="menu-movil"
     class="hidden lg:hidden mt-4 pt-4 border-t border-white/10 flex-col gap-5 font-medium pb-4 px-2"
   >
+    <!-- 
     <a
       href={`/${lang}/`}
       class="block hover:text-amarillo-acento transition-colors text-lg"
     >
       {textos["nav.inicio"]}
     </a>
-    <a
-      href={`/${lang}/contacto/`}
-      class="block hover:text-amarillo-acento transition-colors text-lg"
-    >
-      {textos["nav.contacto"]}
-    </a>
-    <a
-      href={`/${lang}/blog/`}
-      class="block hover:text-amarillo-acento transition-colors text-lg"
-    >
-      {textos["nav.blog"]}
-    </a>
+     -->
     <a
       href={`/${lang}/instalaciones/`}
-      class="block hover:text-amarillo-acento transition-colors text-lg"
+      class={`block hover:text-amarillo-acento transition-colors text-lg ${pathname.includes("/instalaciones") ? "text-amarillo-acento font-bold" : ""}`}
     >
       {textos["nav.instalaciones"]}
-    </a>
-    <a
-      href={`/${lang}/servicios/`}
-      class="block hover:text-amarillo-acento transition-colors text-lg"
-    >
-      {textos["nav.servicios"]}
     </a>
 
     <a
       href={`/${lang}/reglasfaciles/`}
-      class="block hover:text-amarillo-acento transition-colors text-lg text-amarillo-acento/90"
+      class={`block hover:text-amarillo-acento transition-colors text-lg ${pathname.includes("/reglasfaciles") ? "text-amarillo-acento font-bold" : ""}`}
     >
       {textos["nav.reglas"] || "Reglas"}
     </a>
@@ -243,6 +221,18 @@ const getUrlParaIdioma = (codigoDestino) => {
       rel="noopener noreferrer"
       class="block hover:text-amarillo-acento transition-colors text-lg">Golf</a
     >
+    <a
+      href={`/${lang}/blog/`}
+      class={`block hover:text-amarillo-acento transition-colors text-lg ${pathname.includes("/blog") ? "text-amarillo-acento font-bold" : ""}`}
+    >
+      {textos["nav.blog"]}
+    </a>
+    <a
+      href={`/${lang}/contacto/`}
+      class={`block hover:text-amarillo-acento transition-colors text-lg ${pathname.includes("/contacto") ? "text-amarillo-acento font-bold" : ""}`}
+    >
+      {textos["nav.contacto"]}
+    </a>
 
     <a
       href="https://app.sporttia.com/scs/3287/profile"
@@ -253,6 +243,7 @@ const getUrlParaIdioma = (codigoDestino) => {
     </a>
   </div>
 </nav>
+</header>
 
 <script>
   const initNavInteractions = () => {

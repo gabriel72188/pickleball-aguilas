@@ -9,14 +9,79 @@
         <meta charset="UTF-8" />
         <meta http-equiv="refresh" content="0;url=/es/reglasfaciles" />
         <title>Redirigiendo a las reglas de Pickleball...</title>
-
         <meta name="robots" content="noindex, follow" />
+
+        <style>
+            body {
+                background-color: #2c4a9b; /* Azul oscuro */
+                color: #ffd453; /* Amarillo acento */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    sans-serif;
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #ffffff; /* Texto secundario en blanco para no saturar de amarillo */
+            }
+
+            a {
+                color: #ffd453;
+                text-decoration: underline;
+                font-weight: bold;
+                transition: opacity 0.2s ease;
+            }
+
+            a:hover {
+                opacity: 0.8;
+            }
+
+            /* Animación suave de "cargando" para darle dinamismo */
+            .loader {
+                border: 4px solid rgba(255, 255, 255, 0.2);
+                border-top: 4px solid #ffd453;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 1s linear infinite;
+                margin-bottom: 20px;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
     </head>
     <body>
+        <div class="loader"></div>
+
+        <h1>Redirigiendo a las reglas básicas...</h1>
         <p>
-            Redirigiendo a las reglas básicas... <a href="/es/reglasfaciles"
-                >Haz clic aquí si no te redirige automáticamente</a
-            >.
+            <a href="/es/reglasfaciles">Haz clic aquí</a> si no te redirige automáticamente.
         </p>
     </body>
 </html>

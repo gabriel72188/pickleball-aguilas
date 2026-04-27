@@ -9,17 +9,26 @@ const lang = pathname.includes("/en") ? "en" : pathname.includes("/de") ? "de" :
 // 2. Cargamos los textos del idioma correcto
 const textos = t[lang];
 
-// 3. (Opcional) URL de la imagen de fondo.
+// 3. URL de la imagen de fondo (usada como póster) y del vídeo.
 const imagenFondoUrl = "/imagen-fondo2.jpg";
+const videoFondoUrl = "/videologo.mp4";
 
 // 4. NUEVO: El nombre del archivo de tu logo (debe estar en la carpeta 'public')
 const logoUrl = "/logo-pickleball-amarillo.png";
 ---
 
 <section
-  class="relative bg-azul-principal bg-cover bg-center bg-no-repeat min-h-[85vh] flex items-center justify-center text-white px-6 py-20"
-  style={`background-image: url('${imagenFondoUrl}');`}
+  class="relative bg-azul-principal min-h-[85vh] flex items-center justify-center text-white px-6 py-20 overflow-hidden"
 >
+  <video
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src={videoFondoUrl}
+    poster={imagenFondoUrl}
+    autoplay
+    loop
+    muted
+    playsinline
+  ></video>
   <div class="absolute id='hero-overlay' inset-0 bg-black/65 z-10"></div>
 
   <div class="max-w-4xl mx-auto text-center z-20 flex flex-col items-center">

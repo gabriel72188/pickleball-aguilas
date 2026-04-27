@@ -41,16 +41,16 @@ const enlace_que_es = enlaceQueEs[lang];
     </div>
 
     <div
-      class="max-w-sm mx-auto mb-16 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 relative group bg-black"
+      class="max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 relative group bg-black"
     >
-      <video
-        class="w-full aspect-[9/16] object-cover"
-        controls
-        poster="/poster-video.png"
-      >
-        <source src="/introvideo.mp4" type="video/mp4" />
-        Tu navegador no soporta el reproductor de vídeo.
-      </video>
+      <iframe
+        class="w-full aspect-video"
+        src="https://www.youtube.com/embed/rD1O3R9B0Sw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
