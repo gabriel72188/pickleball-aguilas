@@ -1,30 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panel de Administración - Pickleball Águilas</title>
+    <meta charset="UTF-8" />
+    <title>Panel de Administración</title>
+    <meta name="robots" content="noindex, follow" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <style>
+        #pantalla-redireccion {
+            background-color: #2c4a9b;
+            color: #ffd453;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            text-align: center;
+        }
+
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid #ffd453;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        a {
+            color: #ffd453;
+        }
+    </style>
 </head>
 
-<body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<body style="margin: 0;">
+
+    <div id="pantalla-redireccion">
+        <div class="loader"></div>
+        <h1>Abriendo el panel de administración seguro...</h1>
+        <p><a href="https://willowy-kelpie-22e4d8.netlify.app/admin/#/">Haz clic aquí</a> si no te redirige
+            automáticamente.</p>
+    </div>
 
     <script>
-        if (window.netlifyIdentity) {
+        var hostActual = window.location.hostname;
+        var hostNetlify = "willowy-kelpie-22e4d8.netlify.app";
 
-            window.netlifyIdentity.init({
-                APIUrl: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/identity"
-            });
-
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
+        if (hostActual !== hostNetlify && hostActual !== "localhost") {
+            document.getElementById('pantalla-redireccion').style.display = 'flex';
+            setTimeout(function () {
+                window.location.href = "https://" + hostNetlify + "/admin/";
+            }, 1000);
+        } else {
+            var scriptCMS = document.createElement('script');
+            scriptCMS.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
+            document.head.appendChild(scriptCMS);
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
+                });
+            }
         }
     </script>
 </body>
