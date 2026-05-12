@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  site_domain: "https://willowy-kelpie-22e4d8.netlify.app"
+  branch: main
+
+media_folder: "public/img-productos" # Donde se guardan las fotos que suba
+public_folder: "/img-productos" # ruta pública de las fotos
+
+i18n:
+  structure: multiple_folders
+  locales: [es, en, fr, de]
+  default_locale: es
+
+collections:
+  - name: "productos"
+    label: "Artículos en Venta"
+    folder: "src/content/productos" # CMS creará las subcarpetas /es, /en, /fr, /de aqui
+    create: true
+    slug: "{{slug}}"
+    i18n: true # panel multi-idioma
+    fields:
+      # i18n: true significa que hay que traducirlo en cada pestaña
+      - { label: "Título del Producto", name: "title", widget: "string", i18n: true }
+      - { label: "Descripción", name: "body", widget: "markdown", i18n: true }
+      
+      # i18n: duplicate significa que solo lo sube en la pestaña es y se copia solo al resto
+      - { label: "Precio (€)", name: "precio", widget: "number", value_type: "float", i18n: duplicate }
+      - { label: "Imagen", name: "imagen", widget: "image", i18n: duplicate }
