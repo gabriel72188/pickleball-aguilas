@@ -13,6 +13,10 @@
 
     <script>
         if (window.netlifyIdentity) {
+            window.netlifyIdentity.init({
+                APIUrl: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/identity"
+            });
+
             window.netlifyIdentity.on("init", user => {
                 if (!user) {
                     window.netlifyIdentity.on("login", () => {
