@@ -1,31 +1,90 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panel de Administración - Pickleball Águilas</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0;url=https://willowy-kelpie-22e4d8.netlify.app/admin/#/" />
+    <title>Redirigiendo al Panel de Administración...</title>
+    <meta name="robots" content="noindex, follow" />
+
+    <style>
+        body {
+            background-color: #2c4a9b;
+            /* Azul oscuro */
+            color: #ffd453;
+            /* Amarillo acento */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                sans-serif;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ffffff;
+            /* Texto secundario en blanco para no saturar de amarillo */
+        }
+
+        a {
+            color: #ffd453;
+            text-decoration: underline;
+            font-weight: bold;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        /* Animación suave de "cargando" para darle dinamismo */
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid #ffd453;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <div class="loader"></div>
 
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.init({
-                APIUrl: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/identity"
-            });
-
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
-    </script>
+    <h1>Abriendo el panel de administración seguro...</h1>
+    <p>
+        <a href="https://willowy-kelpie-22e4d8.netlify.app/admin/#/">Haz clic aquí</a> si no te redirige automáticamente
+        en 3 segundos.
+    </p>
 </body>
 
 </html>
