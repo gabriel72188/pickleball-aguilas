@@ -1,0 +1,105 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../Navbar.astro";
+import Footer from "../Footer.astro";
+import LatestPosts from "../LatestPosts.astro";
+import { t } from "../../i18n/ui.js";
+import { getCollection } from "astro:content";
+
+const { lang } = Astro.props;
+const textos = t[lang];
+
+// Obtener los productos
+const todosProductos = await getCollection("productos");
+
+// Agrupar los productos por su nombre base (sin el prefijo del idioma)
+const productosPorBase = {};
+todosProductos.forEach(p => {
+    const parts = p.id.split('/');
+    const langPrefix = parts[0];
+    const baseName = parts.slice(1).join('/'); // Ej: "prueba.md"
+    
+    if (!productosPorBase[baseName]) {
+        productosPorBase[baseName] = {};
+    }
+    productosPorBase[baseName][langPrefix] = p;
+});
+
+// Crear la lista final combinando las traducciones con fallback
+const productosAMostrar = Object.values(productosPorBase).map(versiones => {
+    // Orden de prioridad para las traducciones
+    const prefLangs = [lang, 'en', 'es'];
+    
+    // Función para buscar el mejor valor de un campo específico
+    const getBestField = (resolver) => {
+        for (const l of prefLangs) {
+            if (versiones[l] && resolver(versiones[l])) {
+                return resolver(versiones[l]);
+            }
+        }
+        // Fallback a cualquier idioma si no está en los preferidos
+        const fallback = Object.values(versiones).find(v => resolver(v));
+        return fallback ? resolver(fallback) : null;
+    };
+
+    const baseProduct = versiones[lang] || versiones['en'] || versiones['es'] || Object.values(versiones)[0];
+
+    return {
+        id: baseProduct.id,
+        body: getBestField(v => v.body?.trim() ? v.body : null),
+        data: {
+            title: getBestField(v => v.data.title),
+            precio: getBestField(v => v.data.precio),
+            imagen: getBestField(v => v.data.imagen)
+        }
+    };
+});
+---
+
+<Layout title={textos["articulos.head_title"]} lang={lang}>
+    <Navbar />
+
+    <header class="relative bg-azul-oscuro py-24 px-6 flex flex-col items-center justify-center text-center overflow-hidden min-h-[40vh]">
+        <img src="/imagen-fondo2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover z-0 opacity-50" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
+        <div class="relative z-20 max-w-4xl mx-auto flex flex-col items-center justify-center">
+            <span class="text-amarillo-acento font-bold uppercase tracking-widest text-sm mb-4 inline-block px-4 py-1 border-2 border-amarillo-acento rounded-full">
+                {textos["articulos.badge"]}
+            </span>
+            <h1 class="font-titulos text-5xl md:text-6xl text-white uppercase tracking-tighter shadow-sm mb-6 italic">
+                {textos["articulos.hero_title"]}
+            </h1>
+            <p class="text-xl text-gray-200 font-light max-w-3xl leading-relaxed">
+                {textos["articulos.hero_desc"]}
+            </p>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-24 px-6 overflow-hidden bg-gray-50">
+        <section class="max-w-7xl mx-auto mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {productosAMostrar.length > 0 ? (
+                    productosAMostrar.map((producto) => (
+                        <div class="bg-white rounded-[2rem] shadow-xl p-8 hover:-translate-y-2 transition-all duration-300 border-b-4 border-amarillo-acento flex flex-col h-full group">
+                            <div class="relative overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-gray-50 shadow-inner">
+                                <img src={producto.data.imagen} alt={producto.data.title} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 class="text-2xl font-bold text-azul-oscuro mb-3 uppercase tracking-tight">{producto.data.title}</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6 flex-grow">{producto.body}</p>
+                            <div class="flex justify-between items-center mt-auto pt-5 border-t border-gray-100">
+                                <span class="text-3xl font-titulos text-amarillo-acento italic drop-shadow-sm">{producto.data.precio} €</span>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <div class="col-span-full text-center text-gray-500 py-12 text-lg">
+                        {textos["articulos.no_products"]}
+                    </div>
+                )}
+            </div>
+        </section>
+    </main>
+
+    <LatestPosts lang={lang} />
+    <Footer lang={lang} />
+</Layout>

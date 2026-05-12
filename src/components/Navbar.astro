@@ -88,6 +88,13 @@ const getUrlParaIdioma = (codigoDestino) => {
         </a>
 
         <a
+          href={`/${lang}/articulos/`}
+          class="hover:text-amarillo-acento transition-colors"
+        >
+          {textos["nav.articulos"]}
+        </a>
+
+        <a
           href={`/${lang}/reglasfaciles/`}
           class="hover:text-amarillo-acento transition-colors"
         >
@@ -199,6 +206,13 @@ const getUrlParaIdioma = (codigoDestino) => {
       class={`block hover:text-amarillo-acento transition-colors text-lg ${pathname.includes("/instalaciones") ? "text-amarillo-acento font-bold" : ""}`}
     >
       {textos["nav.instalaciones"]}
+    </a>
+
+    <a
+      href={`/${lang}/articulos/`}
+      class={`block hover:text-amarillo-acento transition-colors text-lg ${pathname.includes("/articulos") ? "text-amarillo-acento font-bold" : ""}`}
+    >
+      {textos["nav.articulos"]}
     </a>
 
     <a
