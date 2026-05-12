@@ -7,17 +7,7 @@ export const privacidadTextos = {
             </h2>
 
             <section class="space-y-6">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">
-                        Información del titular de la web
-                    </h3>
-                    <p>
-                        Inscripción en el Registro Mercantil con
-                        Nº:……………………………….
-                    </p>
-                    <p>Colegiado en ……………………. con Nº …………….</p>
-                    <p>Entidad Autorizada ………………………….</p>
-                </div>
+
 
                 <div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">
@@ -519,17 +509,7 @@ export const privacidadTextos = {
             </h2>
 
             <section class="space-y-6">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">
-                        Information of the website owner
-                    </h3>
-                    <p>
-                        Registration in the Mercantile Registry with
-                        No.:……………………………….
-                    </p>
-                    <p>Member of ……………………. with No. …………….</p>
-                    <p>Authorized Entity ………………………….</p>
-                </div>
+
 
                 <div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">
@@ -1015,12 +995,7 @@ export const privacidadTextos = {
             <h2 class="text-3xl font-titulos text-azul-oscuro mb-8 uppercase border-b-2 border-amarillo-acento pb-2 inline-block">DATENSCHUTZRICHTLINIE</h2>
 
             <section class="space-y-6">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Informationen zum Webseitenbetreiber</h3>
-                    <p>Eintragung im Handelsregister mit Nr.:……………………………….</p>
-                    <p>Mitglied von ……………………. mit Nr. …………….</p>
-                    <p>Autorisierte Stelle ………………………….</p>
-                </div>
+
 
                 <div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Datenschutzbeauftragter</h3>
@@ -1157,12 +1132,7 @@ export const privacidadTextos = {
             <h2 class="text-3xl font-titulos text-azul-oscuro mb-8 uppercase border-b-2 border-amarillo-acento pb-2 inline-block">POLITIQUE DE CONFIDENTIALITÉ</h2>
 
             <section class="space-y-6">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Informations du propriétaire du site</h3>
-                    <p>Inscription au Registre du Commerce avec N° :……………………………….</p>
-                    <p>Membre de ……………………. avec N° …………….</p>
-                    <p>Entité autorisée ………………………….</p>
-                </div>
+
 
                 <div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Responsable de la protection des données</h3>
