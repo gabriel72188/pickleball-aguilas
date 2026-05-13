@@ -35,5 +35,5 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/ 
-        server-dir: ./public_html/
-        state-name: .sync-state-v3.json
+        server-dir: ./
+        state-name: .sync-state-v2.json
