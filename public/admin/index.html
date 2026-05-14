@@ -8,24 +8,15 @@
 </head>
 
 <body>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
-        // Forzamos al portero a mirar a Netlify desde el segundo 1
+        // 1. Despertamos al portero remoto ANTES de que el panel arranque
         if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
+            window.netlifyIdentity.init({
+                APIUrl: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/identity"
             });
         }
-
-        // Esto es un truco extra: le inyectamos la URL de Netlify a la configuración local
-        if (localStorage.getItem("netlifySiteURL") === null) {
-            localStorage.setItem("netlifySiteURL", "https://willowy-kelpie-22e4d8.netlify.app");
-        }
     </script>
+
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 
