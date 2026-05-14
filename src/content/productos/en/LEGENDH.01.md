@@ -1,5 +1,5 @@
 ---
-title: LEGENDH.01
+title: LEGEND H.01
 precio: 220
 imagen: /img-productos/LEGENDH01.jpeg
 ---
