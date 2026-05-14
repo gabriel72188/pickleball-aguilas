@@ -37,3 +37,9 @@ jobs:
         local-dir: ./dist/ 
         server-dir: /domains/pickleballaguilas.club/public_html/
         state-name: .sync-state-v6.json
+
+    - name: Desplegar espejo en Netlify (Para Admin)
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: "acec68f4-3690-4cea-8b3a-426b9333fa51"
+      run: npx netlify-cli deploy --dir=./dist --prod
