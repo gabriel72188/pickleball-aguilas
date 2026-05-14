@@ -34,4 +34,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/ 
         server-dir: ./
-        state-name: .sync-state-v2.json
+        state-name: .sync-state-v4.json
