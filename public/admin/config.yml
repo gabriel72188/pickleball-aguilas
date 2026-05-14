@@ -26,3 +26,5 @@ collections:
       # i18n: duplicate significa que solo lo sube en la pestaña es y se copia solo al resto
       - { label: "Precio (€)", name: "precio", widget: "number", value_type: "float", i18n: duplicate }
       - { label: "Imagen", name: "imagen", widget: "image", i18n: duplicate }
+      - { label: "Visible", name: "visible", widget: "boolean", default: true, i18n: duplicate }
+      - { label: "Orden (Menor a mayor)", name: "orden", widget: "number", value_type: "int", default: 0, i18n: duplicate }

@@ -50,10 +50,17 @@ const productosAMostrar = Object.values(productosPorBase).map(versiones => {
         data: {
             title: getBestField(v => v.data.title),
             precio: getBestField(v => v.data.precio),
-            imagen: getBestField(v => v.data.imagen)
+            imagen: getBestField(v => v.data.imagen),
+            visible: getBestField(v => v.data.visible !== undefined ? v.data.visible : true),
+            orden: getBestField(v => v.data.orden !== undefined ? v.data.orden : 0)
         }
     };
 });
+
+// Filtrar los que no sean visibles y ordenarlos
+const productosFiltrados = productosAMostrar
+    .filter(p => p.data.visible !== false)
+    .sort((a, b) => a.data.orden - b.data.orden);
 ---
 
 <Layout title={textos["articulos.head_title"]} lang={lang}>
@@ -78,8 +85,8 @@ const productosAMostrar = Object.values(productosPorBase).map(versiones => {
     <main class="py-16 md:py-24 px-6 overflow-hidden bg-gray-50">
         <section class="max-w-7xl mx-auto mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {productosAMostrar.length > 0 ? (
-                    productosAMostrar.map((producto) => (
+                {productosFiltrados.length > 0 ? (
+                    productosFiltrados.map((producto) => (
                         <button class="text-left bg-white rounded-[2rem] shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 flex flex-col h-full group overflow-hidden product-modal-trigger w-full focus:outline-none"
                             data-title={producto.data.title}
                             data-price={producto.data.precio}
