@@ -6,15 +6,16 @@
     <title>Panel de Administración</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
-        // Inicializar Identity apuntando al sitio original de Netlify
-        // ANTES de que cargue Decap CMS
-        window.addEventListener('load', function() {
-            if (window.netlifyIdentity) {
-                window.netlifyIdentity.init({
-                    APIUrl: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/identity"
-                });
-            }
-        });
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.init({
+                APIUrl: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/identity"
+            });
+
+            // Después de loguearte, quédate en ESTA página (Hostinger)
+            window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+            });
+        }
     </script>
 </head>
 
