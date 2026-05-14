@@ -27,3 +27,6 @@ pnpm-debug.log*
 public/db_php/config.db.php
 
 scratch/
+
+# Local Netlify folder
+.netlify

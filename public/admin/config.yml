@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: gabriel72188/pickleball-aguilas
   branch: main
+  base_url: https://willowy-kelpie-22e4d8.netlify.app
 
 media_folder: "public/img-productos" # Donde se guardan las fotos que suba
 public_folder: "/img-productos" # ruta pública de las fotos
