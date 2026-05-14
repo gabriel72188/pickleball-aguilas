@@ -14,11 +14,11 @@ const todosProductos = await getCollection("productos");
 
 // Agrupar los productos por su nombre base (sin el prefijo del idioma)
 const productosPorBase = {};
-todosProductos.forEach(p => {
-    const parts = p.id.split('/');
+todosProductos.forEach((p) => {
+    const parts = p.id.split("/");
     const langPrefix = parts[0];
-    const baseName = parts.slice(1).join('/'); // Ej: "prueba.md"
-    
+    const baseName = parts.slice(1).join("/"); // Ej: "prueba.md"
+
     if (!productosPorBase[baseName]) {
         productosPorBase[baseName] = {};
     }
@@ -26,10 +26,10 @@ todosProductos.forEach(p => {
 });
 
 // Crear la lista final combinando las traducciones con fallback
-const productosAMostrar = Object.values(productosPorBase).map(versiones => {
+const productosAMostrar = Object.values(productosPorBase).map((versiones) => {
     // Orden de prioridad para las traducciones
-    const prefLangs = [lang, 'en', 'es'];
-    
+    const prefLangs = [lang, "en", "es"];
+
     // Función para buscar el mejor valor de un campo específico
     const getBestField = (resolver) => {
         for (const l of prefLangs) {
@@ -38,45 +38,72 @@ const productosAMostrar = Object.values(productosPorBase).map(versiones => {
             }
         }
         // Fallback a cualquier idioma si no está en los preferidos
-        const fallback = Object.values(versiones).find(v => resolver(v));
+        const fallback = Object.values(versiones).find((v) => resolver(v));
         return fallback ? resolver(fallback) : null;
     };
 
-    const baseProduct = versiones[lang] || versiones['en'] || versiones['es'] || Object.values(versiones)[0];
+    const baseProduct =
+        versiones[lang] ||
+        versiones["en"] ||
+        versiones["es"] ||
+        Object.values(versiones)[0];
 
     return {
         id: baseProduct.id,
-        body: getBestField(v => v.body?.trim() ? v.body : null),
+        body: getBestField((v) => (v.body?.trim() ? v.body : null)),
         data: {
-            title: getBestField(v => v.data.title),
-            precio: getBestField(v => v.data.precio),
-            imagen: getBestField(v => v.data.imagen),
-            visible: getBestField(v => v.data.visible !== undefined ? v.data.visible : true),
-            orden: getBestField(v => v.data.orden !== undefined ? v.data.orden : 0)
-        }
+            title: getBestField((v) => v.data.title),
+            precio: getBestField((v) => v.data.precio),
+            imagen: getBestField((v) => v.data.imagen),
+            visible:
+                baseProduct.data.visible !== undefined
+                    ? baseProduct.data.visible
+                    : true,
+            orden:
+                baseProduct.data.orden !== undefined
+                    ? baseProduct.data.orden
+                    : 0,
+        },
     };
 });
 
 // Filtrar los que no sean visibles y ordenarlos
 const productosFiltrados = productosAMostrar
-    .filter(p => p.data.visible !== false)
+    .filter((p) => p.data.visible !== false)
     .sort((a, b) => a.data.orden - b.data.orden);
 ---
 
 <Layout title={textos["articulos.head_title"]} lang={lang}>
     <Navbar />
 
-    <header class="relative bg-azul-oscuro py-24 px-6 flex flex-col items-center justify-center text-center overflow-hidden min-h-[40vh]">
-        <img src="/imagen-fondo2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover z-0 opacity-50" />
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
-        <div class="relative z-20 max-w-4xl mx-auto flex flex-col items-center justify-center">
-            <span class="text-amarillo-acento font-bold uppercase tracking-widest text-sm mb-4 inline-block px-4 py-1 border-2 border-amarillo-acento rounded-full">
+    <header
+        class="relative bg-azul-oscuro py-24 px-6 flex flex-col items-center justify-center text-center overflow-hidden min-h-[40vh]"
+    >
+        <img
+            src="/imagen-fondo2.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
+        />
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"
+        >
+        </div>
+        <div
+            class="relative z-20 max-w-4xl mx-auto flex flex-col items-center justify-center"
+        >
+            <span
+                class="text-amarillo-acento font-bold uppercase tracking-widest text-sm mb-4 inline-block px-4 py-1 border-2 border-amarillo-acento rounded-full"
+            >
                 {textos["articulos.badge"]}
             </span>
-            <h1 class="font-titulos text-5xl md:text-6xl text-white uppercase tracking-tighter shadow-sm mb-6 italic">
+            <h1
+                class="font-titulos text-5xl md:text-6xl text-white uppercase tracking-tighter shadow-sm mb-6 italic"
+            >
                 {textos["articulos.hero_title"]}
             </h1>
-            <p class="text-xl text-gray-200 font-light max-w-3xl leading-relaxed">
+            <p
+                class="text-xl text-gray-200 font-light max-w-3xl leading-relaxed"
+            >
                 {textos["articulos.hero_desc"]}
             </p>
         </div>
@@ -85,54 +112,115 @@ const productosFiltrados = productosAMostrar
     <main class="py-16 md:py-24 px-6 overflow-hidden bg-gray-50">
         <section class="max-w-7xl mx-auto mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {productosFiltrados.length > 0 ? (
-                    productosFiltrados.map((producto) => (
-                        <button class="text-left bg-white rounded-[2rem] shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 flex flex-col h-full group overflow-hidden product-modal-trigger w-full focus:outline-none"
-                            data-title={producto.data.title}
-                            data-price={producto.data.precio}
-                            data-img={producto.data.imagen}
-                            data-desc={producto.body}
-                        >
-                            <div class="relative aspect-square flex items-center justify-center p-8 w-full">
-                                <img src={producto.data.imagen} alt={producto.data.title} class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500 mix-blend-multiply" />
-                            </div>
-                            <div class="p-8 flex flex-col flex-grow w-full">
-                                <h3 class="text-xl font-bold text-azul-oscuro leading-tight uppercase tracking-tight mb-3 line-clamp-2">{producto.data.title}</h3>
-                                <div class="flex-grow mb-6">
-                                    <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">{producto.body}</p>
+                {
+                    productosFiltrados.length > 0 ? (
+                        productosFiltrados.map((producto) => (
+                            <button
+                                class="text-left bg-white rounded-[2rem] shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 flex flex-col h-full group overflow-hidden product-modal-trigger w-full focus:outline-none"
+                                data-title={producto.data.title}
+                                data-price={producto.data.precio}
+                                data-img={producto.data.imagen}
+                                data-desc={producto.body}
+                            >
+                                <div class="relative aspect-square flex items-center justify-center p-8 w-full">
+                                    <img
+                                        src={producto.data.imagen}
+                                        alt={producto.data.title}
+                                        class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500 mix-blend-multiply"
+                                    />
                                 </div>
-                                <div class="flex justify-between items-center mt-auto pt-5 border-t border-gray-100 w-full">
-                                    <span class="text-2xl font-bold text-azul-oscuro">{producto.data.precio} €</span>
-                                    <span class="w-10 h-10 rounded-full bg-amarillo-acento text-azul-oscuro flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-sm group-hover:shadow-md">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                        </svg>
-                                    </span>
+                                <div class="p-8 flex flex-col flex-grow w-full">
+                                    <h3 class="text-xl font-bold text-azul-oscuro leading-tight uppercase tracking-tight mb-3 line-clamp-2">
+                                        {producto.data.title}
+                                    </h3>
+                                    <div class="flex-grow mb-6">
+                                        <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">
+                                            {producto.body}
+                                        </p>
+                                    </div>
+                                    <div class="flex justify-between items-center mt-auto pt-5 border-t border-gray-100 w-full">
+                                        <span class="text-2xl font-bold text-azul-oscuro">
+                                            {producto.data.precio} €
+                                        </span>
+                                        <span class="w-10 h-10 rounded-full bg-amarillo-acento text-azul-oscuro flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-sm group-hover:shadow-md">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="h-5 w-5"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        </button>
-                    ))
-                ) : (
-                    <div class="col-span-full text-center text-gray-500 py-12 text-lg">
-                        {textos["articulos.no_products"]}
-                    </div>
-                )}
+                            </button>
+                        ))
+                    ) : (
+                        <div class="col-span-full text-center text-gray-500 py-12 text-lg">
+                            {textos["articulos.no_products"]}
+                        </div>
+                    )
+                }
             </div>
         </section>
     </main>
 
-    <dialog id="product-modal" class="backdrop:bg-black/60 bg-transparent p-4 w-full max-w-4xl m-auto fixed inset-0 z-50 overflow-visible opacity-0 transition-opacity duration-300 open:opacity-100 hidden open:flex items-center justify-center">
-        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row relative max-h-[90vh] w-full transform scale-95 transition-transform duration-300">
-            <button id="close-modal" class="absolute top-4 right-4 z-10 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+    <dialog
+        id="product-modal"
+        class="backdrop:bg-black/60 bg-transparent p-4 w-full max-w-4xl m-auto fixed inset-0 z-50 overflow-visible opacity-0 transition-opacity duration-300 open:opacity-100 hidden open:flex items-center justify-center"
+    >
+        <div
+            class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row relative max-h-[90vh] w-full transform scale-95 transition-transform duration-300"
+        >
+            <button
+                id="close-modal"
+                class="absolute top-4 right-4 z-10 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    ><path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"></path></svg
+                >
             </button>
-            <div class="md:w-1/2 bg-slate-50 p-8 flex items-center justify-center relative min-h-[30vh]">
-                <img id="modal-img" src="" alt="" class="max-w-full max-h-[40vh] md:max-h-[70vh] object-contain mix-blend-multiply drop-shadow-lg" />
+            <div
+                class="md:w-1/2 bg-slate-50 p-8 flex items-center justify-center relative min-h-[30vh]"
+            >
+                <img
+                    id="modal-img"
+                    src=""
+                    alt=""
+                    class="max-w-full max-h-[40vh] md:max-h-[70vh] object-contain mix-blend-multiply drop-shadow-lg"
+                />
             </div>
             <div class="md:w-1/2 p-8 md:p-12 flex flex-col overflow-y-auto">
-                <h3 id="modal-title" class="text-3xl font-bold text-azul-oscuro mb-4 uppercase tracking-tight"></h3>
-                <p id="modal-desc" class="text-gray-600 leading-relaxed mb-8 flex-grow whitespace-pre-line"></p>
-                <span id="modal-price" class="text-3xl font-bold text-amarillo-acento mt-auto inline-block"></span>
+                <h3
+                    id="modal-title"
+                    class="text-3xl font-bold text-azul-oscuro mb-4 uppercase tracking-tight"
+                >
+                </h3>
+                <p
+                    id="modal-desc"
+                    class="text-gray-600 leading-relaxed mb-8 flex-grow whitespace-pre-line"
+                >
+                </p>
+                <span
+                    id="modal-price"
+                    class="text-3xl font-bold text-amarillo-acento mt-auto inline-block"
+                ></span>
             </div>
         </div>
     </dialog>
@@ -146,14 +234,16 @@ const productosFiltrados = productosAMostrar
         const triggers = document.querySelectorAll(".product-modal-trigger");
         const modal = document.getElementById("product-modal");
         const closeModalBtn = document.getElementById("close-modal");
-        
+
         if (!modal || triggers.length === 0) return;
 
-        const modalImg = document.getElementById("modal-img") as HTMLImageElement;
+        const modalImg = document.getElementById(
+            "modal-img",
+        ) as HTMLImageElement;
         const modalTitle = document.getElementById("modal-title");
         const modalPrice = document.getElementById("modal-price");
         const modalDesc = document.getElementById("modal-desc");
-        const modalInner = modal.querySelector('div');
+        const modalInner = modal.querySelector("div");
 
         function openModal(data) {
             modalImg.src = data.img;
@@ -161,30 +251,30 @@ const productosFiltrados = productosAMostrar
             modalTitle.textContent = data.title;
             modalPrice.textContent = data.price + " €";
             modalDesc.textContent = data.desc;
-            
-            modal.classList.remove('hidden');
+
+            modal.classList.remove("hidden");
             // Allow display block to apply before opacity transition
             requestAnimationFrame(() => {
-                modal.classList.add('opacity-100');
-                modalInner.classList.remove('scale-95');
-                modalInner.classList.add('scale-100');
+                modal.classList.add("opacity-100");
+                modalInner.classList.remove("scale-95");
+                modalInner.classList.add("scale-100");
             });
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = "hidden";
             (modal as HTMLDialogElement).showModal();
         }
 
         function closeModal() {
-            modal.classList.remove('opacity-100');
-            modalInner.classList.remove('scale-100');
-            modalInner.classList.add('scale-95');
+            modal.classList.remove("opacity-100");
+            modalInner.classList.remove("scale-100");
+            modalInner.classList.add("scale-95");
             setTimeout(() => {
                 (modal as HTMLDialogElement).close();
-                modal.classList.add('hidden');
-                document.body.style.overflow = '';
+                modal.classList.add("hidden");
+                document.body.style.overflow = "";
             }, 300); // Matches transition duration
         }
 
-        triggers.forEach(trigger => {
+        triggers.forEach((trigger) => {
             trigger.addEventListener("click", () => {
                 openModal({
                     title: trigger.getAttribute("data-title"),
