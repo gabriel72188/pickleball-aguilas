@@ -1,8 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-  identity_url: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/identity"
-  gateway_url: "https://willowy-kelpie-22e4d8.netlify.app/.netlify/git"
+  site_domain: willowy-kelpie-22e4d8.netlify.app
 
 media_folder: "public/img-productos" # Donde se guardan las fotos que suba
 public_folder: "/img-productos" # ruta pública de las fotos
