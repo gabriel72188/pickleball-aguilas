@@ -14,7 +14,7 @@ i18n:
 
 collections:
   - name: "productos"
-    label: "Artículos en Venta"
+    label: "Tienda"
     folder: "src/content/productos" # CMS creará las subcarpetas /es, /en, /fr, /de aqui
     create: true
     slug: "{{slug}}"

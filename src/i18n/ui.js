@@ -6,7 +6,7 @@ export const t = {
         'nav.contacto': 'Contacto',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Instalaciones',
-        'nav.articulos': 'Artículos',
+        'nav.articulos': 'Tienda',
         'nav.reglas': 'Reglas',
         'nav.servicios': 'Servicios',
         'nav.unete': 'Únete',
@@ -336,9 +336,9 @@ export const t = {
         'free.wa_btn': 'Unirme al grupo',
 
         // --- PÁGINA ARTÍCULOS ---
-        'articulos.head_title': 'Artículos - Pickleball Águilas Resort',
+        'articulos.head_title': 'Tienda - Pickleball Águilas Resort',
         'articulos.badge': 'NUESTROS PRODUCTOS',
-        'articulos.hero_title': 'Artículos de Pickleball',
+        'articulos.hero_title': 'Tienda de Pickleball',
         'articulos.hero_desc': 'Descubre nuestra selección de artículos de pickleball para que puedas equiparte con la mejor calidad.',
         'articulos.no_products': 'Próximamente tendremos productos disponibles.',
     },
@@ -348,7 +348,7 @@ export const t = {
         'nav.contacto': 'Contact',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Facilities',
-        'nav.articulos': 'Articles',
+        'nav.articulos': 'Store',
         'nav.reglas': 'Rules',
         'nav.servicios': 'Services',
         'nav.unete': 'Join Us',
@@ -671,9 +671,9 @@ export const t = {
         'free.wa_btn': 'Join the group',
 
         // --- PÁGINA ARTÍCULOS ---
-        'articulos.head_title': 'Products - Pickleball Águilas Resort',
+        'articulos.head_title': 'Store - Pickleball Águilas Resort',
         'articulos.badge': 'OUR PRODUCTS',
-        'articulos.hero_title': 'Pickleball Products',
+        'articulos.hero_title': 'Pickleball Store',
         'articulos.hero_desc': 'Discover our selection of pickleball products so you can equip yourself with the best quality.',
         'articulos.no_products': 'Products will be available soon.',
 
@@ -684,7 +684,7 @@ export const t = {
         'nav.contacto': 'Kontakt',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Anlagen',
-        'nav.articulos': 'Artikel',
+        'nav.articulos': 'Shop',
         'nav.reglas': 'Regeln',
         'nav.servicios': 'Dienstleistungen',
         'nav.unete': 'Mitmachen',
@@ -1000,9 +1000,9 @@ export const t = {
         'free.wa_btn': 'Der Gruppe beitreten',
 
         // --- PÁGINA ARTÍCULOS ---
-        'articulos.head_title': 'Artikel - Pickleball Águilas Resort',
+        'articulos.head_title': 'Shop - Pickleball Águilas Resort',
         'articulos.badge': 'UNSERE PRODUKTE',
-        'articulos.hero_title': 'Pickleball-Artikel',
+        'articulos.hero_title': 'Pickleball-Shop',
         'articulos.hero_desc': 'Entdecken Sie unsere Auswahl an Pickleball-Artikeln, damit Sie sich mit der besten Qualität ausstatten können.',
         'articulos.no_products': 'Produkte werden in Kürze verfügbar sein.',
 
@@ -1013,7 +1013,7 @@ export const t = {
         'nav.contacto': 'Contact',
         'nav.blog': 'Blog',
         'nav.instalaciones': 'Installations',
-        'nav.articulos': 'Articles',
+        'nav.articulos': 'Boutique',
         'nav.reglas': 'Règles',
         'nav.servicios': 'Services',
         'nav.unete': 'Rejoignez-nous',
@@ -1329,9 +1329,9 @@ export const t = {
         'free.wa_btn': 'Rejoindre le groupe',
 
         // --- PÁGINA ARTÍCULOS ---
-        'articulos.head_title': 'Articles - Pickleball Águilas Resort',
+        'articulos.head_title': 'Boutique - Pickleball Águilas Resort',
         'articulos.badge': 'NOS PRODUITS',
-        'articulos.hero_title': 'Articles de Pickleball',
+        'articulos.hero_title': 'Boutique de Pickleball',
         'articulos.hero_desc': 'Découvrez notre sélection d\'articles de pickleball pour vous équiper avec la meilleure qualité.',
         'articulos.no_products': 'Les produits seront bientôt disponibles.',
 
