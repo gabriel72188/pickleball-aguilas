@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  site_id: acec68f4-3690-4cea-8b3a-426b9333fa51
   site_domain: willowy-kelpie-22e4d8.netlify.app
 
 media_folder: "public/img-productos" # Donde se guardan las fotos que suba
