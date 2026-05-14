@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <title>Panel de Administración</title>
+    <script>
+        var host = window.location.hostname;
+        if (host === "www.pickleballaguilas.club" || host === "pickleballaguilas.club") {
+            document.write("<h2 style='text-align:center; font-family:sans-serif; margin-top:20vh;'>Redirigiendo a la zona segura...</h2>");
+            window.location.href = "https://willowy-kelpie-22e4d8.netlify.app/admin/";
+        }
+    </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
