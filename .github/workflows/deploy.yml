@@ -3,8 +3,7 @@ name: 🚀 Desplegar Web en Hostinger
 on:
   push:
     branches:
-  schedule:
-    - cron: '0 0 1 * *'
+      - main
 
 jobs:
   build-and-deploy:
@@ -26,6 +25,9 @@ jobs:
     - name: Compilar el proyecto Astro
       run: npm run build
 
+    - name: Verificar archivos construidos
+      run: ls -la ./dist/
+
     - name: Subir a Hostinger por FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
@@ -33,5 +35,5 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/ 
-        server-dir: ./public_html/
-        state-name: .sync-state-v5.json
+        server-dir: /domains/pickleballaguilas.club/public_html/
+        state-name: .sync-state-v6.json
